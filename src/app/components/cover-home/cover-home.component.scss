@@ -1,0 +1,168 @@
+.container-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+
+    .container-main-cover {
+        display: flex;
+        align-items: center;
+
+        div {
+            margin: 0 15rem 0 0;
+            h1 {
+                margin: 0 0 2.5rem 0;
+                font-size: var(--font-title-big);
+                color: black;
+            }
+        }
+
+        picture {
+            img {
+                width: 32rem;
+            }
+        }
+    }
+
+    .container-triggers {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 5rem 0 0 0;
+
+        div {
+            display: flex;
+            align-items: flex-start;
+            width: 30rem;
+
+            img {
+                margin: auto 1.5rem;
+            }
+            .text-trigger {
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-size: var(--font-big);
+                    font-weight: 500;
+                    color: var(--color-2);
+                }
+                .paragraph {
+                    font-size: var(--font-small);
+                }
+            }   
+        }
+    }
+}
+
+.container-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-color: var(--color-dark);
+    .title {
+        margin: 0 0 2rem 0;
+        font-size: var(--font-title-medium);
+        font-weight: 700;
+        color: var(--color-gray);
+    }
+
+    .container__cards {
+        display: flex;
+
+        .card-projects {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 4rem;
+            width: 42vw;
+            height: 40vh;
+            border-radius: 3rem;
+            background-color: var(--color-gray);
+
+            .card-projects__info-left {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+
+                .info-left__title {
+                    margin: 0 0 2rem 0;
+                    font-size: var(--font-big);
+                    font-weight: 500;
+                }
+                .info-left__container--options {
+                    display: flex;
+                    margin: 0 0 1.2rem 1rem;
+
+                    .options__icon-verication {
+                        width: 2.4rem;
+                        background-image: url(../../../assets/icon/icon-verification.svg);
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                    .options__option {
+                        margin: 0 0 0 0.5rem;
+                        font-size: var(--font-small);
+                        cursor: pointer;
+                    }
+                }  
+                .info-left__container--options:hover {
+                    transform: scale(1.05) translateZ(0px);
+                }
+                .info-left__button {
+                    margin: 1.5rem auto 0 auto;
+                }
+            }
+            .card-projects__info-right {
+                margin: 0 auto;
+            }
+        }
+
+        .card-energy:hover {
+            transform: scale(1.01) translateZ(0px);
+            box-shadow: var(--color-5) 0px 3px 0px;
+        }
+        .card-pool:hover {
+            transform: scale(1.01) translateZ(0px);
+            box-shadow: var(--color-1) 0px 3px 0px;
+        }
+    }
+}
+
+.container--allies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-color: var(--color-dark);
+
+    .allies__title {
+        margin: 0 0 2rem 0;
+        font-size: var(--font-title-medium);
+        font-weight: 700;
+        color: var(--color-gray);
+    }
+    .container--allies__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        max-width: 80vw;
+
+        figure {
+            img {
+                width: 12rem;
+            }
+        }
+    }
+}
+

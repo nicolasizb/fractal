@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    // FONTS: 300, 400, 500, 700
+    --font-text: 'Sora', sans-serif;
+    --font-small: 1.4rem;
+    --font-medium: 1.6rem;
+    --font-big: 1.8rem;
+    --font-title-big: 3.5rem;
+    --font-title-medium: 2.8rem;
+    
+    // COLOR PALETTE 1
+    --color-1: #3086A9;
+    --color-2: #3B9D81;
+    --color-3: #34BE81;
+    --color-4: #87BE4B;
+    --color-5: #F0AE20;
+
+    // OTHERS COLORS 
+    --color-gray: #F7F7F5;
+    --color-dark: #212129;
+}
+
+html {
+    font-family: var(--font-text);
+    font-size: 62.5%;
+}
+
+// RULES SCSS
+
+// 1. Position
+// 2. Container size
+// 3. External decoration of the container
+// 4. Interior decoration of the container
+// 5. Text-decoration
+
+// RULES BUTTON
+
+// 1. BIG => 210, 48
+// 1. MEDIUM => 160, 40

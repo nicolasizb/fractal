@@ -1,0 +1,162 @@
+<section class="container-cover">
+    <div class="container-main-cover">
+        <div>
+            <h1>Energía limpia, económica y digital</h1>
+            <app-button-call-to-action
+                [textListener]="selectTextButtonOne"
+                [widthListener]="containerButtonOne.width"
+                [heightListener]="containerButtonOne.height" 
+            ></app-button-call-to-action>
+        </div>
+        <picture>
+            <img src="../../../assets/vector/vector-cover.svg" alt="person-vector">
+        </picture>
+    </div>
+    <div class="container-triggers">
+        <div>
+            <img src="" alt="/">
+            <div class="text-trigger">
+                <p class="title">Ecosistema de energía</p>
+                <p class="paragraph">Impactamos la cadena completa de la energía.</p>
+            </div>
+        </div>
+        <div>
+            <img src="" alt="/">
+            <div class="text-trigger">
+                <p class="title">Tecnología</p>
+                <p class="paragraph">Utilizamos tecnología para transformar la energía</p>
+            </div>
+        </div>
+        <div>
+            <img src="" alt="/">
+            <div class="text-trigger">
+                <p class="title">Sostenibilidad</p>
+                <p class="paragraph">Trabajamos en pro del medio ambiente y el desarrollo económico</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-projects">
+    <p class="title">Impactamos la cadena completa de la energía</p>
+    <div class="container__cards">
+        <div class="card-projects card-energy">
+            <div class="card-projects__info-left">
+                <p class="info-left__title">Energías Renovables</p>
+                <div class="info-left__container--options">
+                    <span class="options__icon-verication"></span>
+                    <a class="options__option">Energía solar</a>
+                </div>
+                <div class="info-left__container--options">
+                    <span class="options__icon-verication"></span>
+                    <a class="options__option">Movilidad eléctrica</a>
+                </div>
+                <div class="info-left__container--options">
+                    <span class="options__icon-verication"></span>
+                    <a class="options__option">Almacenamiento de energía</a>
+                </div>
+                <div class="info-left__button">
+                    <app-button-call-to-action 
+                        [textListener]="selectTextButtonTwo"
+                        [widthListener]="containerButtonTwo.width"
+                        [heightListener]="containerButtonTwo.height" 
+                        [spanListener]="spanListenerButtonTwo"
+                    ></app-button-call-to-action>
+                </div> 
+            </div>
+            <figure class="card-projects__info-right">
+                <img src="../../../assets/vector/vector-women-solar.svg" width="200" alt="vector-energy">
+            </figure>
+        </div>
+        <div class="card-projects card-pool">
+            <div class="card-projects__info-left">
+                <p class="info-left__title">Piscinas</p>
+                <div class="info-left__container--options">
+                    <span class="options__icon-verication"></span>
+                    <a class="options__option">Energía solar</a>
+                </div>
+                <div class="info-left__container--options">
+                    <span class="options__icon-verication"></span>
+                    <a class="options__option">Movilidad eléctrica</a>
+                </div>
+                <div class="info-left__container--options">
+                    <span class="options__icon-verication"></span>
+                    <a class="options__option">Almacenamiento de energía</a>
+                </div>
+                <div class="info-left__button">
+                    <app-button-call-to-action 
+                    class="button"
+                        [textListener]="selectTextButtonTwo"
+                        [widthListener]="containerButtonTwo.width"
+                        [heightListener]="containerButtonTwo.height" 
+                        [spanListener]="spanListenerButtonTwo"
+                    ></app-button-call-to-action>
+                    <span></span>
+                </div> 
+            </div>
+            <figure class="card-projects__info-right">
+                <img src="../../../assets/vector/vector-men-water.svg" width="180" alt="vector-men">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section class="container--allies">
+    <p class="allies__title">CON LA CONFIANZA DE EMPRESAS LÍDERES</p>
+    <div class="container--allies__cards">
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+    </div>
+</section>
+
+<section class="container--build--maintenance">
+    <div class="card--build">
+        <div class="card--build__info--left">
+            <div>
+                <span class="options__icon--verication"></span>
+                <a class="options__paragraph">Construcción de plantas solares.</a>
+            </div>
+            <div>
+                <span class="options__icon--verication"></span>
+                <a class="options__paragraph">Construcción de plantas solares.</a>
+            </div>
+            <div>
+                <span class="options__icon--verication"></span>
+                <a class="options__paragraph">Construcción de plantas solares.</a>
+            </div>
+            <div>
+                <span class="options__icon--verication"></span>
+                <a class="options__paragraph">Construcción de plantas solares.</a>
+            </div>
+            <app-button-call-to-action
+                [textListener]="selectTextButtonTwo"
+                [widthListener]="containerButtonTwo.width"
+                [heightListener]="containerButtonTwo.height" 
+                [spanListener]="spanListenerButtonTwo"
+            >
+            </app-button-call-to-action>
+        </div>
+        <figure>
+            <img src="" alt="">
+        </figure>
+    </div>
+</section>

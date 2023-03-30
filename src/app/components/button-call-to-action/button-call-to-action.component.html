@@ -1,0 +1,7 @@
+<button [ngStyle]="{
+    'width.px': widthListener,
+    'height.px': heightListener
+}">
+    <p>{{ textListener }}</p>
+    <img *ngIf="this.spanListener" src="../../../assets/icon/icon-arrow.svg" />
+</button>
