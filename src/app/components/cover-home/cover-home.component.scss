@@ -5,13 +5,14 @@
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding: 0 4rem;
     background-color: white;
 
     .container-main-cover {
         display: flex;
         align-items: center;
-        height: 70vh;
-
+        height: 65vh;
+        margin: 6rem 0 0 0;
         div {
             margin: 0 15rem 0 0;
             h1 {
@@ -31,13 +32,17 @@
     .container-triggers {
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1;
         width: 100%;
-        height: 15vh;
+        height: 25vh;
 
         div {
             display: flex;
             align-items: flex-start;
             width: 30rem;
+            height: 6rem;
 
             img {
                 margin: auto 1.5rem;
@@ -46,6 +51,7 @@
                 display: flex;
                 flex-direction: column;
                 .title {
+                    margin: 0 0 0.5rem 0;
                     font-size: var(--font-big);
                     font-weight: 500;
                     color: var(--color-2);
@@ -69,6 +75,7 @@
 
     .title {
         margin: 0 0 3rem 0;
+        text-align: center;
         font-size: var(--font-title-medium);
         font-weight: 500;
         color: var(--color-gray);
@@ -76,12 +83,11 @@
 
     .container__cards {
         display: flex;
-
         .card-projects {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 0 4rem;
+            margin: 0 3rem;
             width: 42vw;
             height: 40vh;
             border-radius: 3rem;
@@ -94,6 +100,7 @@
 
                 .info-left__title {
                     margin: 0 0 2rem 0;
+                    text-align: center;
                     font-size: var(--font-big);
                     font-weight: 600;
                 }
@@ -148,8 +155,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20vh;
-    padding: 0 5rem;
+    height: 100%;
+    padding: 4rem 8rem;
+    text-align: center;
     background-color: var(--color-dark);
     .container--promise__title {
         margin: 0 0 1.5rem 0;
@@ -159,9 +167,11 @@
     }
     .title--color {
         color: var(--color-5);
+        font-weight: 500;
     }
     .container--promise__paragraph {
         text-align: center;
+        word-spacing: var(--word-spacing);
         font-size: var(--font-big);
         font-weight: 300;
         color: var(--color-gray);
@@ -174,7 +184,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 135vh;
+    height: 100%;
+    padding: 2rem 0;
     background-color: var(--color-dark);
 
     .container-card {
@@ -338,22 +349,22 @@
     }
 }
 
-.container--allies {
+.container--clients {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 105vh;
+    height: 80vh;
     background-color: white;
 
-    .allies--title {
+    .clients--title {
         margin: 0 0 2rem 0;
         font-size: var(--font-title-medium);
         font-weight: 500;
         color: var(--color-dark);
     }
-    .allies--testimonials {
+    .clients--testimonials {
         position: relative;
         display: flex;
         align-items: center;
@@ -454,18 +465,152 @@
             }
         }
     }
-    .allies--cards {
+}
+
+.container--allies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    padding: 0 8rem;
+
+    figure {
+        img {
+            width: 7rem;
+        }
+    }  
+}
+
+.container--trigger--button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 23rem;
+    padding: 0 5rem;
+    background-color: var(--color-dark);
+
+    .trigger--button__info--left {
+        width: 55rem;
+        .info--left__title {
+            width: 40rem;
+            margin: 0 0 1.5rem 0;
+            font-size: var(--font-title-medium);
+            font-weight: 500;
+            color: var(--color-5);
+        }
+        .info--left__paragraph {
+            word-spacing: var(--word-spacing);
+            font-size: var(--font-medium);
+            font-weight: 300;
+            color: var(--color-gray);
+        }
+        .info--left__paragraph-color {
+            font-weight: 500;
+            color: var(--color-gray);
+        }
+    }
+    .trigger--button__info--right {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        max-width: 80vw;
-        height: 2vh;
+        gap: 3rem;
+        justify-content: space-between;
+        .info--right__button-one {
+            margin: 0 auto;
+        }
+        .info--right__button-two {
+            margin: 0 auto;
+        }
+    }
+}
 
-        figure {
-            img {
-                width: 12rem;
+// TABLET
+@media screen and (min-width: 681px) and (max-width: 900px) {
+
+    .container-cover {
+        .container-main-cover {
+            picture {
+                img {
+                    width: 28rem;
+                }
             }
         }
+    }
+
+    .container-projects {
+        .card-projects__info-right {
+            display: none;
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: 680px) {
+
+    .container-cover {
+        min-width: 30rem;
+
+        .container-main-cover {
+            flex-direction: column;
+            justify-content: center;
+            width: 90%;
+            height: 30vh;
+            margin: 10rem 0 5rem 0;
+    
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                h1 {
+                    text-align: center;
+                }
+            }
+            picture {
+                display: none;
+            }
+        }
+    
+        .container-triggers {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 35vh;
+        }
+    }
+
+    .container-projects {
+        min-width: 30rem;
+        height: 100vh;
+
+        .title {
+            margin: 2rem 0 3rem 0;
+        }
+    
+        .container__cards {
+            flex-direction: column;
+            .card-projects {
+                display: flex;
+                width: 70vw;
+                height: 40vh;
+    
+                .card-projects__info-right {
+                    display: none;
+                }
+            }
+            .card-energy {
+                margin: 0 auto 3rem auto;
+            }
+
+        }
+    }
+
+    .container--promise {
+        min-width: 30rem;
+        height: 100%;
+        padding: 5rem;
     }
 }

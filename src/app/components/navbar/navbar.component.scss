@@ -5,35 +5,142 @@
 // 5. Interior decoration of the container
 // 6. Text-decoration
 
-nav {
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 12vh;
-    background-color: white;
-    z-index: 10;
-
-    picture {
-        img {
-            cursor: pointer;
-        }
-    }
-
-    ul {
+.container--nav--desktop {
+    display: none;
+    .nav--desktop {
+        position: fixed;
         display: flex;
-        list-style: none;
-        li {
-            margin: 0 3rem;
-            font-size: var(--font-medium);
-            font-weight: 400;
-            color: black;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 12vh;
+        padding: 2rem 3rem;
+        background-color: white;
+        z-index: 10;
+    
+        picture {
+            margin: auto 0;
+            img {
+                height: 5rem;
+                cursor: pointer;
+            }
         }
-        li:hover {
-            color: var(--color-2);
-            transform: scale(1.1) translateZ(0px);
-            cursor: pointer;
+    
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            li {
+                margin: 0 3rem;
+                text-align: center;
+                font-size: var(--font-medium);
+                font-weight: 400;
+                color: black;
+            }
+            li:hover {
+                color: var(--color-2);
+                transform: scale(1.1) translateZ(0px);
+                cursor: pointer;
+            }
         }
     }
 }
+
+.container--nav--mobile {
+    display: none;
+    .nav--mobile {  
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 12vh;
+        padding: 2rem 3rem;
+        background-color: white;
+        z-index: 10;
+
+        .nav--mobile__container--logo {
+            margin: auto 0;
+            img {
+                height: 5rem;
+            }
+        }
+        .nav--mobile__container--menu {
+
+            .container--menu__icon {
+                border: none;
+                background-color: white;
+
+                .icon--false {
+                    display: block;
+                    width: 4rem;
+                }
+            }
+        }
+    }
+    .nav--mobile__container--dropdown {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 3rem;
+        background-color: var(--color-dark);
+        transform: translateX(100%);
+        transition: all ease-out .5s;
+        z-index: 10;
+
+        &.active {
+            transform: translateX(0);
+        }
+
+        .container--dropdown__icon {
+            border: none;
+            background-color: inherit;
+            .icon--menu--close {
+                width: 4rem;
+            }
+        }
+        .container--dropdown__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            li {
+                width: 100%;
+                padding: 3rem 0;
+                list-style: none;
+                border-bottom: dotted 0.1rem var(--color-gray);
+                a {
+                    text-decoration: none;
+                    font-size: var(--font-medium);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+// DESKTOP
+@media screen and (min-width: 981px) {
+    .container--nav--desktop {
+        display: block;
+    }
+    .container--nav--mobile {
+        display: none;
+    }
+}
+
+// TABLET
+@media screen and (max-width: 980px) {
+    .container--nav--desktop {
+        display: none;
+    }
+    .container--nav--mobile {
+        display: block;
+    }
+}
+
+// // MOBILE
+// @media screen and (max)

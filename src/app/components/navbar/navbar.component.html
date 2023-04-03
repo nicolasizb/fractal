@@ -1,16 +1,46 @@
-<nav>
-    <picture>
-        <img src="../../../assets/img/background-icon.png" alt="">
-    </picture>
-    <ul>
-        <li><a>¿Quiénes somos?</a></li>
-        <li><a>Servicios</a></li>
-        <li><a>Proyectos</a></li>
-        <li><a>Contacto</a></li>
-    </ul>
-    <app-button-call-to-action
-    [textListener]="selectTextOne"
-    [widthListener]="containerButton.width"
-    [heightListener]="containerButton.height"
-    ></app-button-call-to-action>
-</nav>
+<div class="container--nav--desktop">
+    <nav class="nav--desktop">
+        <picture>
+            <img src="../../../assets/img/background-icon.png" alt="logo-amp">
+        </picture>
+        <ul>
+            <li><a>¿Quiénes somos?</a></li>
+            <li><a>Servicios</a></li>
+            <li><a>Proyectos</a></li>
+            <li><a>Contacto</a></li>
+        </ul>
+        <app-button-call-to-action
+            [textListener]="selectTextOne"
+            [widthListener]="containerButton.width"
+            [heightListener]="containerButton.height"
+            [colorBorderListener]="containerButton.colorBorder"
+            [backgroundColorListener]="containerButton.backgroundColor"
+        ></app-button-call-to-action>
+    </nav>
+</div>
+
+<div class="container--nav--mobile">
+    <nav class="nav--mobile">
+        <picture class="nav--mobile__container--logo">
+            <img src="../../../assets/img/background-icon.png" alt="logo-amp">
+        </picture>
+
+        <div class="nav--mobile__container--menu">
+            <button class="container--menu__icon" (click)="toggleMenu()">
+                <img class="icon--false"  src="../../../assets/icon/icon-menu.svg" alt="icon-menu">
+            </button>
+        </div>
+    </nav>
+    
+    <div class="nav--mobile__container--dropdown" [class.active]="menuButtonStatus" >
+        <button class="container--dropdown__icon" (click)="toggleMenu()">
+            <img class="icon--menu--close" src="../../../assets/icon/icon-menu-close.svg" alt="icon-menu">
+        </button>
+        <ul class="container--dropdown__list">
+            <li><a>¿Quiénes somos?</a></li>
+            <li><a>Servicios</a></li>
+            <li><a>Proyectos</a></li>
+            <li><a>Contacto</a></li>
+        </ul>
+    </div>
+</div>

@@ -12,9 +12,13 @@
     --font-big: 1.8rem;
     --font-title-big: 3.5rem;
     --font-title-medium: 2.8rem;
+    --font-title-small: 2.4rem;
 
     // LINE-HEIGHT
     --line-height-1: 2rem;
+
+    // WORD-SPACING
+    --word-spacing: 0.3rem;
     
     // COLOR PALETTE 1
     --color-1: #3086A9;
@@ -26,7 +30,9 @@
     // OTHERS COLORS 
     --color-gray: #F7F7F5;
     --color-gray-2: #f1f1f1;
+    --color-gray-3: #969694;
     --color-dark: #212129;
+    --color-dark-2: #292928;
 }
 
 html {
@@ -41,6 +47,7 @@ html {
 // 3. External decoration of the container
 // 4. Interior decoration of the container
 // 5. Text-decoration
+
 
 // RULES BUTTON
 

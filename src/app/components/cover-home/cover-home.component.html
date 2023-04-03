@@ -3,9 +3,11 @@
         <div>
             <h1>Energía limpia, económica y digital</h1>
             <app-button-call-to-action
-                [textListener]="selectTextButtonOne"
-                [widthListener]="containerButtonOne.width"
-                [heightListener]="containerButtonOne.height" 
+            [widthListener]="containerButtonOne.width"
+            [heightListener]="containerButtonOne.height"
+            [colorBorderListener]="containerButtonOne.colorBorder"
+            [backgroundColorListener]="containerButtonOne.backgroundColor"
+            [textListener]="containerButtonOne.text"
             ></app-button-call-to-action>
         </div>
         <picture>
@@ -56,16 +58,19 @@
                     <a class="options__option">Almacenamiento de energía</a>
                 </div>
                 <div class="info-left__button">
-                    <app-button-call-to-action 
-                        [textListener]="selectTextButtonTwo"
-                        [widthListener]="containerButtonTwo.width"
-                        [heightListener]="containerButtonTwo.height" 
-                        [spanListener]="spanListenerButtonTwo"
+                    <app-button-call-to-action
+                    class="button"
+                    [widthListener]="containerButtonTwo.width"
+                    [heightListener]="containerButtonTwo.height"
+                    [colorBorderListener]="containerButtonTwo.colorBorder"
+                    [backgroundColorListener]="containerButtonTwo.backgroundColor"
+                    [spanListener]="containerButtonTwo.span"
+                    [textListener]="containerButtonTwo.text"
                     ></app-button-call-to-action>
                 </div> 
             </div>
             <figure class="card-projects__info-right">
-                <img src="../../../assets/vector/vector-women-solar.svg" width="200" alt="vector-energy">
+                <img src="../../../assets/vector/vector-women-solar.svg" width="180" alt="vector-energy">
             </figure>
         </div>
         <div class="card-projects card-pool">
@@ -86,16 +91,18 @@
                 <div class="info-left__button">
                     <app-button-call-to-action 
                     class="button"
-                        [textListener]="selectTextButtonTwo"
-                        [widthListener]="containerButtonTwo.width"
-                        [heightListener]="containerButtonTwo.height" 
-                        [spanListener]="spanListenerButtonTwo"
+                    [widthListener]="containerButtonTwo.width"
+                    [heightListener]="containerButtonTwo.height"
+                    [colorBorderListener]="containerButtonTwo.colorBorder"
+                    [backgroundColorListener]="containerButtonTwo.backgroundColor"
+                    [spanListener]="containerButtonTwo.span"
+                    [textListener]="containerButtonTwo.text"
                     ></app-button-call-to-action>
                     <span></span>
                 </div> 
             </div>
             <figure class="card-projects__info-right">
-                <img src="../../../assets/vector/vector-men-water.svg" width="180" alt="vector-men">
+                <img src="../../../assets/vector/vector-men-water.svg" width="160" alt="vector-men">
             </figure>
         </div>
     </div>
@@ -193,9 +200,9 @@
     </div>
 </section>
 
-<section class="container--allies">
-    <p class="allies--title">Empresas que confiaron en nosotros</p>
-    <div class="allies--testimonials">
+<section class="container--clients">
+    <p class="clients--title">Empresas que confiaron en nosotros</p>
+    <div class="clients--testimonials">
         <button class="testimonials__container--span left">
             <span class="container--span__arrow left"></span>
         </button>
@@ -216,27 +223,57 @@
             <span class="container--span__arrow right"></span>
         </button>
     </div>
-    <div class="allies--cards">
-        <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
-        </figure>
-        <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
-        </figure>
-        <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
-        </figure>
-        <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
-        </figure>
-        <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
-        </figure>
-        <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
-        </figure>
-        <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
-        </figure>
+</section>
+
+<section class="container--allies">
+    <figure>
+        <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+    </figure>
+</section>
+
+<section class="container--trigger--button">
+    <div class="trigger--button__info--left">
+        <p class="info--left__title">Quiero energía limpia económica y digital</p>
+        <p class="info--left__paragraph">Haz clic en <b class="info--left__paragraph-color">¡Sí quiero!</b> para unirte al ecosistema de energía de ERCO o en conversemos para que un experto resuelva tus dudas.</p>
+    </div>
+    <div class="trigger--button__info--right">
+        <app-button-call-to-action
+        class="info--right__button-one"
+        [widthListener]="containerButtonThree.width"
+        [heightListener]="containerButtonThree.height"
+        [colorBorderListener]="containerButtonThree.colorBorder"
+        [backgroundColorListener]="containerButtonThree.backgroundColor"
+        [spanListener]="containerButtonThree.span"
+        [textListener]="containerButtonThree.text"
+        >
+        </app-button-call-to-action>
+        <app-button-call-to-action
+        class="info--right__button-two"
+        [widthListener]="containerButtonFour.width"
+        [heightListener]="containerButtonFour.height"
+        [colorBorderListener]="containerButtonFour.colorBorder"
+        [backgroundColorListener]="containerButtonFour.backgroundColor"
+        [spanListener]="containerButtonFour.span"
+        [textListener]="containerButtonFour.text"
+        >
+        </app-button-call-to-action>
     </div>
 </section>

@@ -11,13 +11,15 @@ export class NavbarComponent {
 
   containerButton = {
     width: 210,
-    height: 48
+    height: 48,
+    colorBorder: '#212129',
+    backgroundColor: '#F0AE20'
   }
 
-  constructor(
-    private dataInfoPage: DataInfoPageService
-  ) {
-    
-  }
+  menuButtonStatus: true | false = false;
 
+  toggleMenu() {
+    this.menuButtonStatus = !this.menuButtonStatus;
+    console.log('status ==>', this.menuButtonStatus)
+  }
 }
