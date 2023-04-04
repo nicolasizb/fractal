@@ -8,11 +8,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CoverHomeComponent } from './components/cover-home/cover-home.component';
 import { ButtonCallToActionComponent } from './components/button-call-to-action/button-call-to-action.component';
 import { FooterComponent } from './components/footer/footer.component';
+
 import { HomeComponent } from './pages/home/home.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ServicesComponent } from './pages/services/services.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { ServicesComponent } from './pages/services/services.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
@@ -21,13 +22,13 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     NavbarComponent,
     CoverHomeComponent,
     ButtonCallToActionComponent,
-    FooterComponent,
     HomeComponent,
     AboutUsComponent,
+    ServicesComponent,
     ProjectsComponent,
     ContactComponent,
-    ServicesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
