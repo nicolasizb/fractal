@@ -36,6 +36,6 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
