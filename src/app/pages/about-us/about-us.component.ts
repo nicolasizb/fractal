@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent {
-  
+  containerButtonOne = {
+    width: 210,
+    height: 48,
+    colorBorder: '#212129',
+    backgroundColor: '#F0AE20',
+    span: false,
+    text: 'Quiero cotizar'
+  }
 }

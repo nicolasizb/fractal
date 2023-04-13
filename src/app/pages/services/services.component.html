@@ -1,1 +1,21 @@
-<p>services works!</p>
+<section class="container--services">
+    <div>
+        <div class="container--services__text">
+            <p class="text__title">Servicios</p>
+            <p class="text__paragraph">
+                Fundamos esta empresa en 2012 para ofrecer ingeniería de alta calidad a empresas de todos los tamaños.
+            </p>
+            <app-button-call-to-action
+                [widthListener]="containerButtonOne.width"
+                [heightListener]="containerButtonOne.height"
+                [colorBorderListener]="containerButtonOne.colorBorder"
+                [backgroundColorListener]="containerButtonOne.backgroundColor"
+                [textListener]="containerButtonOne.text"
+            ></app-button-call-to-action>
+        </div>
+        <figure class="container--about--us__figure">
+            <img src="../../../assets/vector/vector-men-water.svg" alt="">
+        </figure>
+    </div>
+</section>
+

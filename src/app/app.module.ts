@@ -11,9 +11,9 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { HomeComponent } from './pages/home/home.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { ServicesComponent } from './pages/services/services.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ServicesComponent } from './pages/services/services.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
@@ -24,9 +24,9 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     ButtonCallToActionComponent,
     HomeComponent,
     AboutUsComponent,
-    ServicesComponent,
     ProjectsComponent,
     ContactComponent,
+    ServicesComponent,
     NotFoundComponent,
     FooterComponent,
   ],
@@ -36,6 +36,6 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

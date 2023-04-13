@@ -1,0 +1,44 @@
+.container--services {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 12rem 3rem 4rem;
+    background-color: white;
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 95rem;
+        margin: 0 auto;
+
+        .container--services__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            max-width: 35%;
+            .text__title {
+                margin: 0 0 2.5rem 0;
+                font-size: var(--font-title-big);
+                font-weight: 600;
+                color: var(--color-dark);
+            }
+            .text__paragraph {
+                margin: 0 0 2.5rem 0;
+                font-size: var(--font-big);
+                font-weight: 400;
+                line-height: var(--line-height-1);
+                color: var(--color-dark);
+            }
+        }
+        .container--about--us__figure {
+            display: block;
+            img {
+                width: 18rem;
+            }
+        }
+    }
+}
