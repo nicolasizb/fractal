@@ -1,1 +1,326 @@
-<app-cover-home></app-cover-home>
+<section class="container-cover">
+    <div>
+        <div class="container-main-cover">
+            <div>
+                <h1>Energía limpia, económica y digital</h1>
+                <app-button-call-to-action
+                [widthListener]="containerButtonOne.width"
+                [heightListener]="containerButtonOne.height"
+                [colorBorderListener]="containerButtonOne.colorBorder"
+                [backgroundColorListener]="containerButtonOne.backgroundColor"
+                [textListener]="containerButtonOne.text"
+                ></app-button-call-to-action>
+            </div>
+            <picture>
+                <img src="../../../assets/vector/vector-cover.svg" alt="person-vector">
+            </picture>
+        </div>
+        <div class="container-triggers">
+            <div>
+                <img src="" alt="/">
+                <div class="text-trigger">
+                    <p class="title">Ecosistema de energía</p>
+                    <p class="paragraph">Impactamos la cadena completa de la energía.</p>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="/">
+                <div class="text-trigger">
+                    <p class="title">Tecnología</p>
+                    <p class="paragraph">Utilizamos tecnología para transformar la energía</p>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="/">
+                <div class="text-trigger">
+                    <p class="title">Sostenibilidad</p>
+                    <p class="paragraph">Trabajamos en pro del medio ambiente y el desarrollo económico</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-projects">
+    <div>
+        <p class="title">Nuestras líneas de negocio</p>
+        <div class="container__cards">
+            <div class="card-projects card-energy">
+                <div class="card-projects__info-left">
+                    <p class="info-left__title">Energías Renovables</p>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Energía solar</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Movilidad eléctrica</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Almacenamiento de energía</a>
+                    </div>
+                    <div class="info-left__button">
+                        <app-button-call-to-action
+                        class="button"
+                        [widthListener]="containerButtonTwo.width"
+                        [heightListener]="containerButtonTwo.height"
+                        [colorBorderListener]="containerButtonTwo.colorBorder"
+                        [backgroundColorListener]="containerButtonTwo.backgroundColor"
+                        [spanListener]="containerButtonTwo.span"
+                        [textListener]="containerButtonTwo.text"
+                        ></app-button-call-to-action>
+                    </div> 
+                </div>
+                <figure class="card-projects__info-right">
+                    <img class="info-right__img img--women" src="../../../assets/vector/vector-women-solar.svg" alt="vector-energy">
+                </figure>
+            </div>
+            <div class="card-projects card-pool">
+                <div class="card-projects__info-left">
+                    <p class="info-left__title">Piscinas</p>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Energía solar</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Movilidad eléctrica</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Almacenamiento de energía</a>
+                    </div>
+                    <div class="info-left__button">
+                        <app-button-call-to-action 
+                        class="button"
+                        [widthListener]="containerButtonTwo.width"
+                        [heightListener]="containerButtonTwo.height"
+                        [colorBorderListener]="containerButtonTwo.colorBorder"
+                        [backgroundColorListener]="containerButtonTwo.backgroundColor"
+                        [spanListener]="containerButtonTwo.span"
+                        [textListener]="containerButtonTwo.text"
+                        ></app-button-call-to-action>
+                        <span></span>
+                    </div> 
+                </div>
+                <figure class="card-projects__info-right">
+                    <img class="info-right__img img--men" src="../../../assets/vector/vector-men-water.svg" alt="vector-men">
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container--promise">
+    <div>
+        <p class="container--promise__title">En AMP, utilizamos la tecnología para <b class="title--color">transformar la energía</b></p>
+        <p class="container--promise__paragraph">¡En AMP lo hacemos diferente! Contamos con tecnología en los procesos internos y externos para que nuestros clientes y usuarios logren tener mayor eficiencia, rentabilidad y crecimiento.</p>
+    </div>
+</section>
+
+<!-- <section class="">
+    <div class="div">
+        <div class="container-card maintenance">
+            <div class="card--maintenance">
+                <figure class="card-build__info--rigth">
+                    <img src="../../../assets/img/swimming-pool.jpg" alt="">
+                </figure>
+                <div class="card--maintenance__info--left">
+                    <p class="info--left__title">Gestión de activos</p>
+                    <div class="info--left__options">
+                        <span class="options__icon--verication"></span>
+                        <a class="options__paragraph">Servicios de monitoreo centralizado.</a>
+                    </div>
+                    <div class="info--left__options">
+                        <span class="options__icon--verication"></span>
+                        <a class="options__paragraph">Mantenimiento y servicios.</a>
+                    </div>
+                    <div class="info--left__options">
+                        <span class="options__icon--verication"></span>
+                        <a class="options__paragraph">Comisionamiento.</a>
+                    </div>
+                    <div class="info--left__options">
+                        <span class="options__icon--verication"></span>
+                        <a class="options__paragraph">Administración.</a>
+                    </div>
+                    <div class="info--left__options">
+                        <span class="options__icon--verication"></span>
+                        <a class="options__paragraph">Retrofit.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="container--build--maintenance">
+    <div class="div">
+        <div class="container--card build">
+            <div class="container--card__info--left">
+                <p class="info--left__title">Plantas de generación</p>
+                <div class="info--left__options">
+                    <span class="options__icon--verication"></span>
+                    <a class="options__paragraph">Desarrollo de proyectos a Gran Escala.</a>
+                </div>
+                <div class="info--left__options">
+                    <span class="options__icon--verication"></span>
+                    <a class="options__paragraph">Mantenimiento y servicios.</a>
+                </div>
+                <div class="info--left__options">
+                    <span class="options__icon--verication"></span>
+                    <a class="options__paragraph">Comisionamiento.</a>
+                </div>
+                <div class="info--left__options">
+                    <span class="options__icon--verication"></span>
+                    <a class="options__paragraph">Administración.</a>
+                </div>
+                <div class="info--left__options">
+                    <span class="options__icon--verication"></span>
+                    <a class="options__paragraph">Retrofit.</a>
+                </div>
+            </div>
+            <figure class="container--card__info--rigth">
+                <img src="../../../assets/img/solar.jpg" alt="">
+            </figure>
+        </div>
+
+        <div class="container--card maintenance">
+            <figure class="container--card__info--rigth">
+                <img src="../../../assets/img/swimming-pool.jpg" alt="">
+            </figure>
+            <div class="container--card__info--left">
+                <p class="info--left__title">Gestión de activos</p>
+                <div class="info--left__options">
+                    <span class="options__icon--verication"></span>
+                    <a class="options__paragraph">Servicios de monitoreo centralizado.</a>
+                </div>
+                <div class="info--left__options">
+                    <span class="options__icon--verication"></span>
+                    <a class="options__paragraph">Construcción de plantas solares.</a>
+                </div>
+                <div class="info--left__options">
+                    <span class="options__icon--verication"></span>
+                    <a class="options__paragraph">Generación de energía limpia.</a>
+                </div>
+                <div class="info--left__options">
+                    <span class="options__icon--verication"></span>
+                    <a class="options__paragraph">Gestión de activos.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container--data">
+    <div>
+        <div class="data--relative">
+            <figure class="data--relative__container--icon">
+                <img src="" alt="/">
+            </figure>
+            <p class="data--relative__text">años de experiencia</p>
+        </div>
+        <div class="data--relative">
+            <figure class="data--relative__container--icon">
+                <img src="" alt="/">
+            </figure>
+            <p class="data--relative__text">clientes felices</p>
+        </div>
+        <div class="data--relative">
+            <figure class="data--relative__container--icon">
+                <img src="" alt="/">
+            </figure>
+            <p class="data--relative__text">clientes felices</p>
+        </div>
+        <div class="data--relative">
+            <figure class="data--relative__container--icon">
+                <img src="" alt="/">
+            </figure>
+            <p class="data--relative__text">años de experiencia</p>
+        </div>
+    </div>
+</section>
+
+<section class="container--clients">
+    <div>
+        <p class="clients--title">Empresas que confiaron en nosotros</p>
+        <div class="clients--testimonials">
+            <button class="testimonials__container--span left">
+                <span class="container--span__arrow left"></span>
+            </button>
+            <div class="testimonials__client-card">
+                <div class="testimonials__info--left">
+                    <p class="info--left__representative--name">Fernando Izquierdo</p>
+                    <p class="info--left__business--name">AMP Integral Solutions</p>
+                    <p class="info--left__testimonial--text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!"</p>
+                    <figure class="info--left__container--img">
+                        <img class="container--img__logo-business" src="../../../assets/img/background-icon.png" alt="logo-business">
+                    </figure>
+                </div>
+                <figure class="testimonials__info--right">
+                    <img class="info--right__project-image" src="../../../assets/img/solar.jpg" alt="">
+                </figure>
+            </div>
+            <button class="testimonials__container--span right">
+                <span class="container--span__arrow right"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="container--allies">
+    <div>
+        <figure>
+        <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+        </figure>
+        </div>
+</section>
+
+<section class="container--trigger--button">
+    <div>
+        <div class="trigger--button__info--left">
+            <p class="info--left__title">Quiero energía limpia económica y digital</p>
+            <p class="info--left__paragraph">Haz clic en <b class="info--left__paragraph-color">¡Sí quiero!</b> para unirte al ecosistema de energía de ERCO o en conversemos para que un experto resuelva tus dudas.</p>
+        </div>
+        <div class="trigger--button__info--right">
+            <app-button-call-to-action
+            class="info--right__button-one"
+            [widthListener]="containerButtonThree.width"
+            [heightListener]="containerButtonThree.height"
+            [colorBorderListener]="containerButtonThree.colorBorder"
+            [backgroundColorListener]="containerButtonThree.backgroundColor"
+            [spanListener]="containerButtonThree.span"
+            [textListener]="containerButtonThree.text"
+            >
+            </app-button-call-to-action>
+            <app-button-call-to-action
+            class="info--right__button-two"
+            [widthListener]="containerButtonFour.width"
+            [heightListener]="containerButtonFour.height"
+            [colorBorderListener]="containerButtonFour.colorBorder"
+            [backgroundColorListener]="containerButtonFour.backgroundColor"
+            [spanListener]="containerButtonFour.span"
+            [textListener]="containerButtonFour.text"
+            >
+            </app-button-call-to-action>
+        </div>
+    </div>
+</section>

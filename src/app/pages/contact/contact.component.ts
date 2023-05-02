@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-
+  containerButtonOne = {
+    width: 210,
+    height: 48,
+    colorBorder: '#212129',
+    backgroundColor: '#F0AE20',
+    span: false,
+    text: 'Quiero cotizar'
+  }
 }

@@ -20,6 +20,9 @@ export class NavbarComponent {
 
   toggleMenu() {
     this.menuButtonStatus = !this.menuButtonStatus;
-    console.log('status ==>', this.menuButtonStatus)
+  }
+
+  clickEventRouterLink() {
+    this.menuButtonStatus = false;
   }
 }

@@ -41,10 +41,10 @@
             <img class="icon--menu--close" src="../../../assets/icon/icon-menu-close.svg" alt="icon-menu">
         </button>
         <ul class="container--dropdown__list">
-            <li><a routerLinkActive="active" routerLink="quienes-somos" >¿Quiénes somos?</a></li>
-            <li><a routerLinkActive="active" routerLink="servicios" >Servicios</a></li>
-            <li><a routerLinkActive="active" routerLink="proyectos" >Proyectos</a></li>
-            <li><a routerLinkActive="active" routerLink="contacto" >Contacto</a></li>
+            <li><a routerLinkActive="active" routerLink="quienes-somos" (click)="clickEventRouterLink()" >¿Quiénes somos?</a></li>
+            <li><a routerLinkActive="active" routerLink="servicios"(click)="clickEventRouterLink()" >Servicios</a></li>
+            <li><a routerLinkActive="active" routerLink="proyectos" (click)="clickEventRouterLink()" >Proyectos</a></li>
+            <li><a routerLinkActive="active" routerLink="contacto" (click)="clickEventRouterLink()" >Contacto</a></li>
         </ul>
     </div>
 </div>
