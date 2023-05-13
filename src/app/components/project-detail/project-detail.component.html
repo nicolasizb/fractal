@@ -1,0 +1,65 @@
+<article class="project" *ngIf="stateDetailEnergyListener" >
+    <button class="project__button--close" (click)="hideProjectEnergyDetail()" ><span></span></button>
+    <p class="project__descriptionSmall" >{{ projectEnergySelectedListener.descriptionSmall }}</p>
+    <div class="project__segmentation" >
+        <p class="segmentation energy" >{{ projectEnergySelectedListener.scale }}</p>
+        <p class="segmentation energy" >{{ projectEnergySelectedListener.category }}</p>
+    </div>
+    <img class="project__img" [src]="projectEnergySelectedListener.img" alt="">
+    <div class="project__description" >
+        <p class="description__title energy" >Descripción</p>
+        <p class="description__paragraph" >{{ projectEnergySelectedListener.descriptionLarge }}</p>
+    </div>
+    <div class="project__details">
+        <p class="details__title energy" >Detalles</p>
+        <div class="details__contain" >
+            <p class="contain__title" >Sistema:</p>
+            <p class="contain__detail energy" >{{ projectEnergySelectedListener.details.system }}</p>
+        </div>
+        <div  class="details__contain" >
+            <p class="contain__title" >Número de paneles:</p>
+            <p class="contain__detail energy" >{{ projectEnergySelectedListener.details.numberPanels }}</p> 
+        </div>
+        <div  class="details__contain" >
+            <p class="contain__title" >Potencia de paneles:</p>
+            <p class="contain__detail energy" >{{ projectEnergySelectedListener.details.powerPanels }}</p>
+        </div>
+        <div  class="details__contain" >
+            <p class="contain__title" >Generarión anual:</p>
+            <p class="contain__detail energy" >{{ projectEnergySelectedListener.details.annualGeneration }}</p>
+        </div>
+    </div>
+</article>
+
+<article class="project" *ngIf="stateDetailSwimmingListener" >
+    <button class="project__button--close" (click)="hideProjectSwimmingDetail()" ><span></span></button>
+    <p class="project__descriptionSmall" >{{ projectSwimmingSelectedListener.descriptionSmall }}</p>
+    <div class="project__segmentation" >
+        <p class="segmentation swimming" >{{ projectSwimmingSelectedListener.scale }}</p>
+        <p class="segmentation swimming" >{{ projectSwimmingSelectedListener.category }}</p>
+    </div>
+    <img class="project__img" [src]="projectSwimmingSelectedListener.img" alt="">
+    <div class="project__description" >
+        <p class="description__title swimming" >Descripción</p>
+        <p class="description__paragraph" >{{ projectSwimmingSelectedListener.descriptionLarge }}</p>
+    </div>
+    <div class="project__details">
+        <p class="details__title swimming" >Detalles</p>
+        <div class="details__contain" >
+            <p class="contain__title" >Sistema:</p>
+            <p class="contain__detail swimming" >{{ projectSwimmingSelectedListener.details.systemWater }}</p>
+        </div>
+        <div  class="details__contain" >
+            <p class="contain__title" >Número de paneles:</p>
+            <p class="contain__detail swimming" >{{ projectSwimmingSelectedListener.details.filters }}</p> 
+        </div>
+        <div  class="details__contain" >
+            <p class="contain__title" >Potencia de paneles:</p>
+            <p class="contain__detail swimming" >{{ projectSwimmingSelectedListener.details.space }}</p>
+        </div>
+        <div  class="details__contain" >
+            <p class="contain__title" >Generarión anual:</p>
+            <p class="contain__detail swimming" >{{ projectSwimmingSelectedListener.details.maintence }}</p>
+        </div>
+    </div>
+</article>

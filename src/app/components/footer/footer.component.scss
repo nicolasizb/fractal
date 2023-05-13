@@ -4,9 +4,9 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
     border-bottom: 0.2rem solid var(--color-gray-3);
-    background-color: black;
+    background-color: var(--color-dark);
 
     > div {
         display: flex;
@@ -106,6 +106,9 @@
                     font-weight: 300;
                     color: var(--color-gray-3);
                 }
+                a:hover {
+                    color: var(--color-3);
+                }
             }
         }
     }
@@ -119,7 +122,8 @@
     height: 100%;
     padding: 1rem 2rem;
     text-align: center;
-    background-color: black;
+    background-color: var(--color-dark);
+
     p {
         font-size: var(--font-small);
         font-weight: 300;

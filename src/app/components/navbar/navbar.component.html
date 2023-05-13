@@ -2,16 +2,39 @@
     <nav class="nav--desktop">
         <picture>
             <a routerlinkActive="active" routerLink="">
-               <img src="../../../assets/img/background-icon.png" alt="logo-amp">
+               <img src="../../../assets/img/background-icon.png" alt="logo-amp" (click)="clickPage()" >
             </a>
         </picture>
         <ul>
-            <li><a routerLinkActive="active" routerLink="quienes-somos" >¿Quiénes somos?</a></li>
-            <li><a routerLinkActive="active" routerLink="servicios" >Servicios</a></li>
-            <li><a routerLinkActive="active" routerLink="proyectos" >Proyectos</a></li>
-            <li><a routerLinkActive="active" routerLink="contacto" >Contacto</a></li>
+            <li class="li" ><a routerLinkActive="active" routerLink="quienes-somos" (click)="clickPage()" >¿Quiénes somos?</a></li>
+            <li class="li li__services" [class.active]="containerServiceText">
+                <a (click)="toggleContainerServices()" >Servicios</a>
+                <div class="container__services" [class.active]="containerServicesContainer" >
+                    <div class="services__project--choose" 
+                        (click)="toggleContainerChooseProject()" >
+                        <p [class.active]="iconActiveProjectsChoose" >Construcción de proyectos<span [class.active]="iconActiveProjectsChoose" class="services__project--icon"></span></p>    
+                    </div>
+                    <div class="container--projects" [class.active]="containerChooseProject" >
+                        <div class="div">
+                            <p class="projects__energy" [class.active]="iconActiveProjectEnergy" (click)="toggleContainerProjectScaleEnergy()" >Proyectos de energía solar<span [class.active]="iconActiveProjectEnergy" class="services__project--icon"></span></p>
+                            <div class="container__energy--scale" *ngIf="containerProjectScaleEnergy" >
+                                <a routerLink="servicios/proyectos-energia-solar/casa" (click)="clickPage()" >Casa<span></span></a>
+                                <a (click)="clickPage()" >Empresa<span></span></a>
+                            </div>
+                            <a class="projects__civil" >Obra civil<span></span></a>
+                        </div>
+                    </div>
+                    <div class="services__operation--maintenence" >
+                        <a>Operación o mantenimiento<span class="services__project--icon"></span></a>    
+                    </div>
+                </div>
+            </li>
+            <li class="li" (click)="clickPage()" ><a routerLinkActive="active" routerLink="proyectos" >Proyectos</a></li>
+            <li class="li" (click)="clickPage()" ><a routerLinkActive="active" routerLink="contacto" >Contacto</a></li>
         </ul>
         <app-button-call-to-action
+            routerLink="contacto"
+            (click)="clickPage()"
             [textListener]="selectTextOne"
             [widthListener]="containerButton.width"
             [heightListener]="containerButton.height"
@@ -25,7 +48,7 @@
     <nav class="nav--mobile">
         <picture class="nav--mobile__container--logo">
             <a routerlinkActive="active" routerLink="" >
-                <img src="../../../assets/img/background-icon.png" alt="logo-amp">
+                <img src="../../../assets/img/logo-amp.jpg" alt="logo-amp">
             </a>
         </picture>
 
@@ -41,10 +64,43 @@
             <img class="icon--menu--close" src="../../../assets/icon/icon-menu-close.svg" alt="icon-menu">
         </button>
         <ul class="container--dropdown__list">
-            <li><a routerLinkActive="active" routerLink="quienes-somos" (click)="clickEventRouterLink()" >¿Quiénes somos?</a></li>
-            <li><a routerLinkActive="active" routerLink="servicios"(click)="clickEventRouterLink()" >Servicios</a></li>
-            <li><a routerLinkActive="active" routerLink="proyectos" (click)="clickEventRouterLink()" >Proyectos</a></li>
-            <li><a routerLinkActive="active" routerLink="contacto" (click)="clickEventRouterLink()" >Contacto</a></li>
+            <li class="li"><a routerLinkActive="active" routerLink="quienes-somos" (click)="clickEventRouterLink()" (click)="clickPage()" >¿Quiénes somos?</a></li>
+            <li class="li li__services" [class.active]="containerServiceText" >
+                <a (click)="toggleContainerServices()" >Servicios<span class="container__services--icon"></span></a>
+                <div class="container__services" [class.active]="containerServicesContainer" >
+                    <div class="services__project--choose" 
+                        (click)="toggleContainerChooseProject()" >
+                        <p [class.active]="iconActiveProjectsChoose" >Construcción de proyectos<span [class.active]="iconActiveProjectsChoose" class="services__project--icon"></span></p>        
+                    </div>
+                    <div class="container--projects" [class.active]="containerChooseProject" >
+                        <div class="div">
+                            <p class="projects__energy" (click)="toggleContainerProjectScaleEnergy()" [class.active]="iconActiveProjectEnergy" >Proyectos de energía solar<span [class.active]="iconActiveProjectEnergy" class="services__project--icon"></span></p>
+                            <div class="container__energy--scale" *ngIf="containerProjectScaleEnergy" >
+                                <a class="scaleOne scale" routerLink="servicios/proyectos-energia-solar/casa" >Casa<span class="icon"></span></a>
+                                <a class="scaleTwo scale" >Empresa<span></span></a>
+                            </div>
+                            <a class="projects__civil" >Obra civil<span></span></a>
+                        </div>
+                    </div>
+                    <div class="services__operation--maintenence" >
+                        <a>Operación o mantenimiento<span></span></a>    
+                    </div>
+                </div>
+            </li>
+            <li class="li" ><a routerLinkActive="active" routerLink="proyectos" (click)="clickEventRouterLink()" (click)="clickPage()" >Proyectos</a></li>
+            <li class="li" ><a routerLinkActive="active" routerLink="contacto" (click)="clickEventRouterLink()" (click)="clickPage()" >Contacto</a></li>
         </ul>
+        <div class="container--dropdown__button" >
+            <app-button-call-to-action
+            routerLink="contacto"
+            (click)="clickPage()"
+            (click)="clickEventRouterLink()"
+            [textListener]="selectTextOne"
+            [widthListener]="containerButton.width"
+            [heightListener]="containerButton.height"
+            [colorBorderListener]="containerButton.colorBorder"
+            [backgroundColorListener]="containerButton.backgroundColor"
+            ></app-button-call-to-action>
+        </div>
     </div>
 </div>

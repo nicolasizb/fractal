@@ -1,4 +1,4 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -14,4 +14,11 @@ export class ContactComponent {
     span: false,
     text: 'Quiero cotizar'
   }
+
+  containerHead = {
+    title: 'Nos encanta convertir ideas en realidad',
+    paragraph: 'Trabajamos codo a codo con nuestros clientes en los proyectos más desafiantes.',
+    img: '../../../assets/vector/vector-men-water.svg'
+  }
+
 }

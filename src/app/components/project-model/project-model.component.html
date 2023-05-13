@@ -1,0 +1,17 @@
+<button (click)="showProjectDetailEnergy()" class="card energy" *ngIf="activeEnergyListener">
+    <img [src]="projectEnergy.img" alt="image">
+    <div class="card__segmentation">
+        <div class="segmentation energyText">{{ projectEnergy.scale }}</div>
+        <div class="segmentation energyText">{{ projectEnergy.category }}</div>
+    </div>
+    <p class="card__description">{{ projectEnergy.descriptionSmall }}</p>
+</button>
+
+<button (click)="showProjectDetailSwimming()" class="card swimming" *ngIf="activeSwimmingListener">
+    <img [src]="projectSwimming.img" alt="image">
+    <div class="card__segmentation">
+        <div class="segmentation swimmingText">{{ projectSwimming.scale }}</div>
+        <div class="segmentation swimmingText">{{ projectSwimming.category }}</div>
+    </div>
+    <p class="card__description">{{ projectSwimming.descriptionSmall }}</p>
+</button>

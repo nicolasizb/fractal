@@ -4,6 +4,7 @@
             <div>
                 <h1>Energía limpia, económica y digital</h1>
                 <app-button-call-to-action
+                routerLink="contacto"
                 [widthListener]="containerButtonOne.width"
                 [heightListener]="containerButtonOne.height"
                 [colorBorderListener]="containerButtonOne.colorBorder"
@@ -43,25 +44,32 @@
 
 <section class="container-projects">
     <div>
-        <p class="title">Nuestras líneas de negocio</p>
+        <p class="title">Nuestros servicios</p>
         <div class="container__cards">
             <div class="card-projects card-energy">
                 <div class="card-projects__info-left">
                     <p class="info-left__title">Energías Renovables</p>
                     <div class="info-left__container--options">
                         <span class="options__icon-verication"></span>
-                        <a class="options__option">Energía solar</a>
+                        <a class="options__option">Análisis Eficiente energía empresarial.</a>
                     </div>
                     <div class="info-left__container--options">
                         <span class="options__icon-verication"></span>
-                        <a class="options__option">Movilidad eléctrica</a>
+                        <a class="options__option">Cálculo Eficiencia Energética.</a>
                     </div>
                     <div class="info-left__container--options">
                         <span class="options__icon-verication"></span>
-                        <a class="options__option">Almacenamiento de energía</a>
+                        <a class="options__option">Instalación de paneles
+                            fotovoltaicos e implementación.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Cálculos para paneles térmosolares
+                            ACS.</a>
                     </div>
                     <div class="info-left__button">
                         <app-button-call-to-action
+                        routerLink="servicios/energias-renovables"
                         class="button"
                         [widthListener]="containerButtonTwo.width"
                         [heightListener]="containerButtonTwo.height"
@@ -81,18 +89,33 @@
                     <p class="info-left__title">Piscinas</p>
                     <div class="info-left__container--options">
                         <span class="options__icon-verication"></span>
-                        <a class="options__option">Energía solar</a>
+                        <a class="options__option">Administración</a>
                     </div>
                     <div class="info-left__container--options">
                         <span class="options__icon-verication"></span>
-                        <a class="options__option">Movilidad eléctrica</a>
+                        <a class="options__option">Guías y Normativas.</a>
                     </div>
                     <div class="info-left__container--options">
                         <span class="options__icon-verication"></span>
-                        <a class="options__option">Almacenamiento de energía</a>
+                        <a class="options__option">Tratamiento y
+                            contaminación.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Desinfección.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Balance del agua.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Dosificación y control de
+                            Químicos.</a>
                     </div>
                     <div class="info-left__button">
-                        <app-button-call-to-action 
+                        <app-button-call-to-action
+                        routerLink="servicios/piscinas"
                         class="button"
                         [widthListener]="containerButtonTwo.width"
                         [heightListener]="containerButtonTwo.height"
@@ -118,41 +141,6 @@
         <p class="container--promise__paragraph">¡En AMP lo hacemos diferente! Contamos con tecnología en los procesos internos y externos para que nuestros clientes y usuarios logren tener mayor eficiencia, rentabilidad y crecimiento.</p>
     </div>
 </section>
-
-<!-- <section class="">
-    <div class="div">
-        <div class="container-card maintenance">
-            <div class="card--maintenance">
-                <figure class="card-build__info--rigth">
-                    <img src="../../../assets/img/swimming-pool.jpg" alt="">
-                </figure>
-                <div class="card--maintenance__info--left">
-                    <p class="info--left__title">Gestión de activos</p>
-                    <div class="info--left__options">
-                        <span class="options__icon--verication"></span>
-                        <a class="options__paragraph">Servicios de monitoreo centralizado.</a>
-                    </div>
-                    <div class="info--left__options">
-                        <span class="options__icon--verication"></span>
-                        <a class="options__paragraph">Mantenimiento y servicios.</a>
-                    </div>
-                    <div class="info--left__options">
-                        <span class="options__icon--verication"></span>
-                        <a class="options__paragraph">Comisionamiento.</a>
-                    </div>
-                    <div class="info--left__options">
-                        <span class="options__icon--verication"></span>
-                        <a class="options__paragraph">Administración.</a>
-                    </div>
-                    <div class="info--left__options">
-                        <span class="options__icon--verication"></span>
-                        <a class="options__paragraph">Retrofit.</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 <section class="container--build--maintenance">
     <div class="div">
@@ -243,11 +231,8 @@
 
 <section class="container--clients">
     <div>
-        <p class="clients--title">Empresas que confiaron en nosotros</p>
+        <p class="clients--title">Clientes que confiaron en nosotros</p>
         <div class="clients--testimonials">
-            <button class="testimonials__container--span left">
-                <span class="container--span__arrow left"></span>
-            </button>
             <div class="testimonials__client-card">
                 <div class="testimonials__info--left">
                     <p class="info--left__representative--name">Fernando Izquierdo</p>
@@ -256,14 +241,21 @@
                     <figure class="info--left__container--img">
                         <img class="container--img__logo-business" src="../../../assets/img/background-icon.png" alt="logo-business">
                     </figure>
+                    <app-button-call-to-action
+                    routerLink="proyectos"
+                    class="button"
+                    [widthListener]="containerButtonThree.width"
+                    [heightListener]="containerButtonThree.height"
+                    [colorBorderListener]="containerButtonThree.colorBorder"
+                    [backgroundColorListener]="containerButtonThree.backgroundColor"
+                    [spanListener]="containerButtonThree.span"
+                    [textListener]="containerButtonThree.text"
+                    ></app-button-call-to-action>
                 </div>
                 <figure class="testimonials__info--right">
                     <img class="info--right__project-image" src="../../../assets/img/solar.jpg" alt="">
                 </figure>
             </div>
-            <button class="testimonials__container--span right">
-                <span class="container--span__arrow right"></span>
-            </button>
         </div>
     </div>
 </section>
@@ -271,56 +263,46 @@
 <section class="container--allies">
     <div>
         <figure>
-        <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+            <img src="../../../assets/img/logo-cruz-roja.jpg" alt="logo">
         </figure>
         <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+            <img src="../../../assets/img/logo-vigilancia-acosta.png" alt="logo">
         </figure>
         <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+            <img src="../../../assets/img/logo-movi-fit.jpg" alt="logo">
         </figure>
         <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+            <img src="../../../assets/img/logo-fiscalia.svg" alt="logo">
         </figure>
         <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
-        </figure>
-        <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
-        </figure>
-        <figure>
-            <img src="../../../assets/img/LOGOS-CRUZ-ROJA-COLOMBIANA_RGB_150x150px.jpg" alt="">
+            <img src="../../../assets/img//logo-gaiag.jpg" alt="logo">
         </figure>
         </div>
 </section>
 
-<section class="container--trigger--button">
+<app-section-triggers
+[titleContainerTriggersListener]="sectionTriggers.titleContainer"
+[paragraphContainerTriggersListener]="sectionTriggers.paragraphContainer"
+
+[iconTriggerListenerOne]="sectionTriggers.iconTriggerOne"
+[titleTriggerListenerOne]="sectionTriggers.titleCardOne"
+[paragraphTriggerListenerOne]="sectionTriggers.paragraphCardOne"
+
+[iconTriggerListenerTwo]="sectionTriggers.iconTriggerTwo"
+[titleTriggerListenerTwo]="sectionTriggers.titleCardTwo"
+[paragraphTriggerListenerTwo]="sectionTriggers.paragraphCardTwo"
+
+[iconTriggerListenerThree]="sectionTriggers.iconTriggerThree"
+[titleTriggerListenerThree]="sectionTriggers.titleCardThree"
+[paragraphTriggerListenerThree]="sectionTriggers.paragraphCardThree"
+></app-section-triggers>
+
+<section class="container--call-to-action">
     <div>
-        <div class="trigger--button__info--left">
-            <p class="info--left__title">Quiero energía limpia económica y digital</p>
-            <p class="info--left__paragraph">Haz clic en <b class="info--left__paragraph-color">¡Sí quiero!</b> para unirte al ecosistema de energía de ERCO o en conversemos para que un experto resuelva tus dudas.</p>
-        </div>
-        <div class="trigger--button__info--right">
-            <app-button-call-to-action
-            class="info--right__button-one"
-            [widthListener]="containerButtonThree.width"
-            [heightListener]="containerButtonThree.height"
-            [colorBorderListener]="containerButtonThree.colorBorder"
-            [backgroundColorListener]="containerButtonThree.backgroundColor"
-            [spanListener]="containerButtonThree.span"
-            [textListener]="containerButtonThree.text"
-            >
-            </app-button-call-to-action>
-            <app-button-call-to-action
-            class="info--right__button-two"
-            [widthListener]="containerButtonFour.width"
-            [heightListener]="containerButtonFour.height"
-            [colorBorderListener]="containerButtonFour.colorBorder"
-            [backgroundColorListener]="containerButtonFour.backgroundColor"
-            [spanListener]="containerButtonFour.span"
-            [textListener]="containerButtonFour.text"
-            >
-            </app-button-call-to-action>
-        </div>
+        <app-section-call-to-action
+        [titleListener]="sectionCallToAction.title"
+        [paragraphListener]="sectionCallToAction.paragraph"
+        [imgListener]="sectionCallToAction.img"
+        ></app-section-call-to-action>
     </div>
 </section>

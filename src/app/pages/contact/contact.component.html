@@ -1,23 +1,8 @@
-<section class="container--contact">
-    <div>
-        <div class="container--contact__text">
-            <p class="text__title">Nos encanta convertir ideas en realidad</p>
-            <p class="text__paragraph">
-                Trabajamos codo a codo con nuestros clientes en los proyectos más desafiantes.
-            </p>
-            <app-button-call-to-action
-                [widthListener]="containerButtonOne.width"
-                [heightListener]="containerButtonOne.height"
-                [colorBorderListener]="containerButtonOne.colorBorder"
-                [backgroundColorListener]="containerButtonOne.backgroundColor"
-                [textListener]="containerButtonOne.text"
-            ></app-button-call-to-action>
-        </div>
-        <figure class="container--contact__figure">
-            <img src="../../../assets/vector/vector-men-water.svg" alt="">
-        </figure>
-    </div>
-</section>
+<app-head-page
+[headTitleTextListener]="containerHead.title"
+[headParagraphTextListener]="containerHead.paragraph"
+[imgVectorListener]="containerHead.img"
+></app-head-page>
 
 <section class="form">
     <div>

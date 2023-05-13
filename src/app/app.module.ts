@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -13,8 +14,13 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { ServicesComponent } from './pages/services/services.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { SectionCallToActionComponent } from './components/section-call-to-action/section-call-to-action.component';
+import { ProjectModelComponent } from './components/project-model/project-model.component';
+import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
+import { HeadPageComponent } from './components/head-page/head-page.component';
+import { SectionTriggersComponent } from './components/section-triggers/section-triggers.component';
+import { ProjectEnergyHouseComponent } from './pages/project-energy-house/project-energy-house.component';
 
 @NgModule({
   declarations: [
@@ -26,9 +32,14 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     AboutUsComponent,
     ProjectsComponent,
     ContactComponent,
-    ServicesComponent,
     NotFoundComponent,
     FooterComponent,
+    SectionCallToActionComponent,
+    ProjectModelComponent,
+    ProjectDetailComponent,
+    HeadPageComponent,
+    SectionTriggersComponent,
+    ProjectEnergyHouseComponent,
   ],
   imports: [
     BrowserModule,

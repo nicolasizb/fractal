@@ -1,23 +1,8 @@
-<section class="container--about--us">
-    <div>
-        <div class="container--about--us__text">
-            <p class="text__title">Sobre nosotros</p>
-            <p class="text__paragraph">
-                Fundamos esta empresa en 2012 para ofrecer ingeniería de alta calidad a empresas de todos los tamaños.
-            </p>
-            <app-button-call-to-action
-                [widthListener]="containerButtonOne.width"
-                [heightListener]="containerButtonOne.height"
-                [colorBorderListener]="containerButtonOne.colorBorder"
-                [backgroundColorListener]="containerButtonOne.backgroundColor"
-                [textListener]="containerButtonOne.text"
-            ></app-button-call-to-action>
-        </div>
-        <figure class="container--about--us__figure">
-            <img src="../../../assets/vector/vector-men-water.svg" alt="">
-        </figure>
-    </div>
-</section>
+<app-head-page
+[headTitleTextListener]="containerHead.title"
+[headParagraphTextListener]="containerHead.paragraph"
+[imgVectorListener]="containerHead.img"
+></app-head-page>
 
 <section class="container--images">
     <div>
@@ -79,5 +64,15 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="container--call-to-action">
+    <div>
+        <app-section-call-to-action
+        [titleListener]="sectionCallToAction.title"
+        [paragraphListener]="sectionCallToAction.paragraph"
+        [imgListener]="sectionCallToAction.img">
+        </app-section-call-to-action>
     </div>
 </section>

@@ -13,16 +13,26 @@
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 9rem;
+        height: 8rem;
         padding: 1rem 3rem;
         background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         z-index: 10;
     
         picture {
-            img {
-                margin: auto auto;
-                height: 5vh;
-                cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            a {
+                height: 70%;
+                img {
+                    margin: 0 auto;
+                    height: 100%;
+                    border-radius: 4rem 0;
+                    cursor: pointer;
+                }
             }
         }
     
@@ -30,26 +40,272 @@
             display: flex;
             align-items: center;
             list-style: none;
-            li {
+
+            .li {
+                position: relative;
                 margin: 0 3rem;
                 text-align: center;
+
                 a {
                     text-decoration: none;
                     font-size: var(--font-medium);
                     font-weight: 400;
-                    color: black;
+                    color: var(--color-dark);
+          
+                    &.active {
+                        color: var(--color-2);
+                    }
                 }
                 a:hover {
-                    color: var(--color-2);
-                    cursor: pointer;
-                }
-                .active {
                     color: var(--color-2);
                     cursor: pointer;
                 }
             }
             li:hover {
                 transform: scale(1.1) translateZ(0px);
+            }
+            .li__services {
+                position: relative;
+                height: 100%;
+                padding: 1.5rem;
+                border-radius: 1.5rem 1.5rem 0 0;
+
+                a {
+                    color: var(--color-dark);
+                }
+                .container__services {
+                    position: absolute;
+                    display: none;
+                    top: 99%;
+                    left: 0;
+                    width: 100%;
+                    min-width: 35rem;
+                    padding: 1.5rem 2rem;
+                    border-radius: 0 1.5rem 1.5rem 1.5rem;
+                    background-color: var(--color-dark);
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+                    .services__project--choose {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 100%;
+                        margin: 0 0 0.5rem 0;
+                        font-size: var(--font-medium);
+                        font-weight: 300;
+                        color: var(--color-gray);
+                        cursor: pointer;
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            padding: 1rem 0 1rem 3.5rem;
+                            border-radius: 0.5rem;
+                            align-self: center;
+
+                            .services__project--icon {
+                                position: relative;
+                                display: block;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                margin: 0 0 0 0.5rem;
+                                background-image: url(../../../assets/icon/icon-arrow-color-gray.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+
+                                &.active {
+                                    transform: rotate(90deg);
+                                    background-image: url(../../../assets/icon/icon-arrow-color-dark.svg);
+                                }
+                            }
+                            &.active {
+                                background-color: var(--color-gray);
+                                font-weight: 500;
+                                color: var(--color-dark);
+                            }
+                        }
+                        p:hover {
+                            transform: scale(1.05) translateY(0);
+                            background-color: var(--color-gray);
+                            font-weight: 500;
+                            color: var(--color-dark);
+
+                            span {
+                                background-image: url(../../../assets/icon/icon-arrow-color-dark.svg);
+                            }
+                        }
+                    }
+                    .services__choose:hover {
+                        transform: scale(1.05) translate(0px);
+                    }
+                    .container--projects {
+                        display: none;
+
+                        .div {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                            background-color: var(--color-dark);
+                            color: var(--color-gray);
+                            font-size: var(--font-small);
+                            font-weight: 300;
+
+                            .projects__energy {
+                                display: flex;
+                                align-items: center;
+                                padding: 1.5rem 0 1rem 6rem;
+                                color: var(--color-gray-3);
+                                cursor: pointer;
+
+                                .services__project--icon {
+                                    position: relative;
+                                    display: block;
+                                    width: 1.5rem;
+                                    height: 1.5rem;
+                                    margin: 0 0 0 0.5rem;
+                                    background-image: url(../../../assets/icon/icon-arrow-color-gray.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+    
+                                    &.active {
+                                        transform: rotate(90deg);
+                                        background-image: url(../../../assets/icon/icon-arrow-color-5.svg);
+                                    }
+                                }
+                                &.active {
+                                    color: var(--color-5);
+                                }
+                            }
+                            .projects__energy:hover {
+                                transform: scale(1.05) translateY(0);  
+                                color: var(--color-5);    
+                                
+                                .services__project--icon {
+                                    background-image: url(../../../assets/icon/icon-arrow-color-5.svg);
+                                }
+                            }
+                            .container__energy--scale {
+                                padding: 0 2rem;
+
+                                a {
+                                    display: flex;
+                                    align-items: center;
+                                    width: 12rem;
+                                    height: 100%;
+                                    margin: 0 0 1rem 7.5rem;
+                                    border-radius: 0.3rem;
+                                    padding: 0.3rem 1rem 0.3rem 3rem;
+                                    font-size: var(--font-small);
+                                    color: var(--color-gray);
+                                    cursor: pointer;
+
+                                    span {
+                                        position: relative;
+                                        display: block;
+                                        width: 1.5rem;
+                                        height: 1.5rem;
+                                        margin: 0 0 0 0.5rem;
+                                        background-image: url(../../../assets/icon/icon-arrow-color-gray.svg);
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        background-size: contain;
+                                    }                                    
+                                }
+                                a:hover {
+                                    transform: scale(1.05) translateY(0);
+                                    background-color: var(--color-gray);
+                                    font-weight: 400;
+                                    color: var(--color-dark);
+                                }
+                            }
+                            .projects__civil {
+                                display: flex;
+                                align-items: center;
+                                margin: 0 0 0 4.6rem;
+                                padding: 0.5rem 1.5rem;
+                                border-radius: 0.3rem;
+                                width: 22.5rem;
+                                color: var(--color-gray);
+                                font-size: var(--font-small);
+                                font-weight: 300;
+
+                                span {
+                                    display: block;
+                                    width: 1.5rem;
+                                    height: 1.5rem;
+                                    margin: 0 0 0 0.5rem;
+                                    background-image: url(../../../assets/icon/icon-arrow-color-gray.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                            }
+                            .projects__civil:hover {
+                                transform: scale(1.05) translateY(0);
+                                background-color: var(--color-gray);
+                                font-weight: 500;
+                                color: var(--color-dark);
+                            }
+                        }
+                        &.active {
+                            display: block;
+                        }
+                    }
+                    .services__operation--maintenence {      
+                        width: 100%;
+                                              
+                        a {
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            padding: 1rem 2rem 1rem 3.5rem;
+                            border-radius: 0.5rem;
+                            font-size: var(--font-medium);
+                            font-weight: 300;
+
+                            span {
+                                display: block;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                margin: 0 0 0 0.5rem;
+                                background-image: url(../../../assets/icon/icon-arrow-color-gray.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                            }
+                        }
+                    }
+                    .services__operation--maintenence:hover {
+                        transform: scale(1.05) translateY(0);
+
+                        a {
+                            background-color: var(--color-gray);
+                            font-weight: 500;
+                            color: var(--color-dark);
+
+                            span {
+                                background-image: url(../../../assets/icon/icon-arrow-color-dark.svg);
+                            }
+                        }
+                    }
+                    &.active {
+                        display: block;
+                    }
+                }
+                &.active {
+                    background-color: var(--color-dark);
+                    transform: scale(1) translateZ(0px);
+
+                    a {
+                        color: var(--color-gray);
+                    }
+                }
             }
         }
     }
@@ -63,15 +319,17 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 9rem;
-        padding: 2rem 3rem;
+        height: 7rem;
+        padding: 1rem 3rem;
         background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         z-index: 10;
 
         .nav--mobile__container--logo {
+            height: 100%;
             img {
-                margin: auto auto;
-                height: 5vh;
+                height: 100%;
+                border-radius: 3rem 0;
             }
         }
         .nav--mobile__container--menu {
@@ -94,7 +352,7 @@
         bottom: 0;
         right: 0;
         padding: 2rem 3rem;
-        background-color: var(--color-dark);
+        background-color: var(--color-gray);
         transform: translateX(100%);
         transition: all ease-out .5s;
         z-index: 10;
@@ -115,21 +373,207 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: flex-start;
-            li {
+
+            .li {
                 width: 100%;
                 padding: 3rem 0;
                 list-style: none;
-                border-bottom: dotted 0.1rem var(--color-gray);
+                border-bottom: dashed 0.1rem var(--color-dark);
                 a {
                     text-decoration: none;
                     font-size: var(--font-medium);
-                    color: white;
+                    color: var(--color-dark);
                 }
                 .active {
                     color: var(--color-2);
                     cursor: pointer;
                 }
             }
+            .li__services {
+                position: relative;
+                height: 100%;
+                border-radius: 1.5rem 1.5rem 0 0;
+                cursor: pointer;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: var(--color-dark);
+
+                    .container__services--icon {
+                        position: relative;
+                        display: block;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        margin: 0 0 0 0.5rem;
+                        background-image: url(../../../assets/icon/icon-arrow-color-dark.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                    }
+                }
+
+                .container__services {
+                    position: relative;
+                    display: none;
+                    padding: 0 1.5rem 0;
+                    border-radius: 0 1.5rem 1.5rem 1.5rem;
+                    background-color: var(--color-gray);
+
+                    .services__project--choose {
+                        width: 100%;
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            margin: 1rem 0 1.5rem 0;
+                            padding: 1rem 2rem;
+                            border-radius: 0.5rem;
+                            font-size: var(--font-medium);
+                            font-weight: 400;
+                            color: var(--color-dark);
+                            cursor: pointer;
+
+                            .services__project--icon {
+                                position: relative;
+                                display: block;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                margin: 0 0 0 0.5rem;
+                                background-image: url(../../../assets/icon/icon-arrow-color-dark.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+
+                                &.active {
+                                    transform: rotate(90deg);
+                                    background-image: url(../../../assets/icon/icon-arrow-color-gray.svg);
+                                }
+                            }
+                            &.active {
+                                background-color: var(--color-dark);
+                                color: var(--color-gray);
+                            }
+                        }                        
+                    }
+                    .container--projects {
+                        display: none;
+
+                        .div {
+                            .projects__energy {
+                                display: flex;
+                                align-items: center;
+                                margin: 2rem 0 2rem 3.5rem;
+                                font-size: var(--font-small);
+                                font-weight: 400;
+                                color: var(--color-dark);
+
+                                .services__project--icon {
+                                    position: relative;
+                                    display: block;
+                                    width: 1.3rem;
+                                    height: 1.3rem;
+                                    margin: 0 0 0 0.5rem;
+                                    background-image: url(../../../assets/icon/icon-arrow-color-dark.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+    
+                                    &.active {
+                                        transform: rotate(90deg);
+                                        background-image: url(../../../assets/icon/icon-arrow-color-5.svg);
+                                    }
+                                }
+                                &.active {
+                                    font-weight: 500;
+                                    color: var(--color-5);
+                                }
+                            }
+                            .container__energy--scale {
+                                margin: 1.5rem 0 2rem 8rem;
+
+                                .scale {
+                                    display: flex;
+                                    align-items: center;
+                                    width: 100%;
+                                    font-weight: 300;
+                                    font-size: var(--font-small);
+                                    color: var(--color-dark);
+
+                                    span {
+                                        position: relative;
+                                        display: block;
+                                        width: 1.5rem;
+                                        height: 1.5rem;
+                                        margin: 0 0 0 0.5rem;
+                                        background-image: url(../../../assets/icon/icon-arrow-color-dark.svg);
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        background-size: contain;
+                                    }
+                                }
+
+                                .scaleOne {
+                                    margin: 1.8rem 0 1.5rem 0;
+                                }
+                            }
+                            .projects__civil {
+                                display: flex;
+                                align-items: center;
+                                margin: 2rem 0 2rem 3.5rem;
+                                font-size: var(--font-small);
+
+                                span {
+                                    display: block;
+                                    width: 1.3rem;
+                                    height: 1.3rem;
+                                    margin: 0 0 0 0.5rem;
+                                    background-image: url(../../../assets/icon/icon-arrow-color-dark.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                            }                        
+                        }
+                        &.active {
+                            display: block;
+                        }
+                    }                   
+                    &.active {
+                        display: block;
+                    }
+                    .services__operation--maintenence {
+                        display: flex;
+                        align-items: center;      
+                        margin: 0 2rem;
+
+                        span {
+                            display: block;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            margin: 0 0 0 0.5rem;
+                            background-image: url(../../../assets/icon/icon-arrow-color-dark.svg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                        }
+                    }      
+                }
+                &.active {
+                    a {
+                        .container__services--icon {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+
+        }
+        .container--dropdown__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
         }
     }
 }
@@ -154,6 +598,3 @@
         display: block;
     }
 }
-
-// // MOBILE
-// @media screen and (max)
