@@ -1,0 +1,75 @@
+<section class="container--interaction" >
+    <div>
+        <article class="container--interaction__card" >
+            <div class="card__titles--service" *ngIf="serviceStateOne || serviceStateTwo" >
+                <button (click)="toggleServiceState()" [ngStyle]="{
+                    'color': serviceStateOne ? titleColorServiceListener : '#212129'
+                }" class="title" [class.active]="serviceStateOne" ><p>{{ titleServiceOneListener }}</p></button>
+                <button (click)="toggleServiceState()" [ngStyle]="{
+                    'color': serviceStateTwo ? titleColorServiceListener : '#212129'
+                }" class="title" [class.active]="serviceStateTwo" ><p>{{ titleServiceTwoListener }}</p></button>
+            </div>
+            <div class="card__info--service" *ngIf="serviceStateOne" >
+                <div class="service__info" >                    
+                    <div [innerHTML]="paragraphServiceOneListener" class="info__paragraph" >
+                    </div>
+                    <img class="info__img" [src]="imgServiceOneListener" alt="image service">
+                </div>
+                <div class="service__button" >
+                    <app-button-call-to-action
+                    [routerLink]="linkPageListener"                    
+                    [widthListener]="containerButtonOne.width"
+                    [heightListener]="containerButtonOne.height"
+                    [colorBorderListener]="containerButtonOne.colorBorder"
+                    [backgroundColorListener]="containerButtonOne.backgroundColor"
+                    [textListener]="containerButtonOne.text"
+                    [spanListener]="containerButtonOne.span"    
+                    ></app-button-call-to-action>
+                </div>
+            </div>
+
+            <div class="card__info--service" *ngIf="serviceStateTwo" >
+                <div class="service__info" >                    
+                    <div [innerHTML]="paragraphServiceTwoListener" class="info__paragraph" >                      
+                    </div>
+                    <img class="info__img" [src]="imgServiceTwoListener" alt="">
+                </div>
+                <div class="service__button" >
+                    <app-button-call-to-action
+                    [routerLink]="linkPageListener"                    
+                    [widthListener]="containerButtonOne.width"
+                    [heightListener]="containerButtonOne.height"
+                    [colorBorderListener]="containerButtonOne.colorBorder"
+                    [backgroundColorListener]="containerButtonOne.backgroundColor"
+                    [textListener]="containerButtonOne.text"
+                    [spanListener]="containerButtonOne.span"    
+                    ></app-button-call-to-action>
+                </div>
+            </div>
+        </article>
+
+        <article class="container--interaction__card" *ngIf="serviceStateMobile" >
+            <div class="card__info--service" >                                  
+                <p class="info__title" >{{ titleServiceOneListener }}</p>
+                <img class="info__img" [src]="imgServiceOneListener" alt="">
+                <div [innerHTML]="paragraphServiceOneListener" class="info__paragraph" >                    
+                </div>
+                <p class="info__title two" >{{ titleServiceTwoListener }}</p>
+                <img class="info__img" [src]="imgServiceTwoListener" alt="">
+                <div [innerHTML]="paragraphServiceTwoListener" class="info__paragraph" >                       
+                </div>
+                <div class="service__button" >
+                    <app-button-call-to-action
+                    [routerLink]="linkPageListener"                    
+                    [widthListener]="containerButtonOne.width"
+                    [heightListener]="containerButtonOne.height"
+                    [colorBorderListener]="containerButtonOne.colorBorder"
+                    [backgroundColorListener]="containerButtonOne.backgroundColor"
+                    [textListener]="containerButtonOne.text"
+                    [spanListener]="containerButtonOne.span"    
+                    ></app-button-call-to-action>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>

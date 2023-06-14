@@ -1,0 +1,146 @@
+.container--footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 3rem;
+    border-bottom: 0.2rem solid var(--color-gray-3);
+    background-color: var(--color-dark);
+
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 95rem;
+        width: 100%;
+        .container--footer__social--media {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 25rem;
+            height: 35vh;
+    
+            .social--media__logo--amp {
+                display: flex;
+                justify-content: center;
+                margin: 2rem 0 0 0;
+                img {
+                    width: 18rem;
+                }
+            }
+            .social--media__networks {
+                display: flex;
+                justify-content: center;
+                margin: 1rem 0 0;
+    
+                .networks__container--logo {
+                    display: flex;
+                    align-items: center;
+                    height: 3rem;
+
+                    cursor: pointer;
+    
+                    .logo--instagram {
+                        margin: 0 2rem 0 0;
+                    }
+                    .logo--whatsapp, .logo--facebook {
+                        margin: 0 1.5rem 0 0;
+                    }
+                }
+            }
+            .social--media__contact {
+                display: flex;
+                height: 2.4rem;
+                margin: 1rem 0 1.5rem;
+    
+                .contact__email--icon {
+                    width: 2.4rem;
+                    margin: 0 1rem 0 0;
+                    background-image: url(../../../../assets/icon/icon-email.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .contact__email--address {
+                    margin: auto 0;
+                    font-size: var(--font-small);
+                    font-weight: 300;
+                    color: var(--color-gray-3);
+                }
+            }
+            .social--media__address {
+                display: flex;
+                height: 2.4rem;
+    
+                .address__icon {
+                    width: 2.4rem;
+                    margin: 0 1rem 0 0;
+                    background-image: url(../../../../assets/icon/icon-map.svg);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .address__location {
+                    margin: auto 0;
+                    font-size: var(--font-small);
+                    font-weight: 300;
+                    color: var(--color-gray-3);
+                }
+            }
+        }
+        .container--footer__hyperliks {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 42vh;
+    
+            .hyperliks__list--link {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                margin: auto 0;
+                
+                a {
+                    margin: 0 auto;
+                    text-decoration: none;
+                    font-size: var(--font-medium);
+                    font-weight: 300;
+                    color: var(--color-gray-3);
+                    cursor: pointer;
+                }
+                a:hover {
+                    color: var(--color-3);
+                }
+            }
+        }
+    }
+}
+
+.container--rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: var(--color-dark);
+
+    p {
+        font-size: var(--font-small);
+        font-weight: 300;
+        color: var(--color-gray-3);
+    }
+}
+
+// MOBILE
+@media screen and (max-width: 679px) {
+    .container--footer {
+        > div {
+            justify-content: space-around;
+            .container--footer__social--media {
+                margin: 0 0 4rem 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+<app-head-page-service
+[titleListener]="containerHeadPageService.title"
+[paragraphListener]="containerHeadPageService.paragraph"
+[imgContainerListener]="containerHeadPageService.imgContainer"
+
+[linkPageListener]="linkPage"
+></app-head-page-service>
+
+<app-section-shorts-triggers [textOneListener]="sectionShortsTriggers.triggerOne"
+    [imgOneListener]="sectionShortsTriggers.imgOne" [textTwoListener]="sectionShortsTriggers.triggerTwo"
+    [imgTwoListener]="sectionShortsTriggers.imgTwo" [textThreeListener]="sectionShortsTriggers.triggerThree"
+    [imgThreeListener]="sectionShortsTriggers.imgThree" [textFourListener]="sectionShortsTriggers.triggerFour"
+    [imgFourListener]="sectionShortsTriggers.imgFour"></app-section-shorts-triggers>
+
+<app-interaction-service-four 
+[titleServiceOneListener]="cardServices.titleServiceOne"
+[imgServiceOneListener]="cardServices.imgServiceOne"
+[paragraphServiceOneListener]="cardServices.paragraphServiceOne"
+[titleServiceTwoListener]="cardServices.titleServiceTwo" [imgServiceTwoListener]="cardServices.imgServiceTwo"
+[paragraphServiceTwoListener]="cardServices.paragraphServiceTwo"
+[titleServiceThreeListener]="cardServices.titleServiceThree"
+[imgServiceThreeListener]="cardServices.imgServiceThree"
+[paragraphServiceThreeListener]="cardServices.paragraphServiceThree"
+[titleServiceFourListener]="cardServices.titleServiceFour" [imgServiceFourListener]="cardServices.imgServiceFour"
+[paragraphServiceFourListener]="cardServices.paragraphServiceFour"
+
+[linkPageListener]="linkPage"
+></app-interaction-service-four>
+
+<section class="container--differential">
+    <div>
+        <article class="differential__card">
+            <div class="card__info">
+                <p class="info__title">Title differential</p>
+                <p class="info__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis
+                    illum ullam mollitia praesentium eos dignissimos veniam a, ipsum, corporis non qui culpa, excepturi
+                    iste error accusantium eveniet blanditiis consequuntur?</p>
+                <div class="info__container--benefits">
+                    <p class="benefit"><span></span>Benefit 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="benefit"><span></span>Benefit 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="benefit"><span></span>Benefit 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="benefit"><span></span>Benefit 4 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="card__info--images">
+                <img src="../../../../assets/img/build.jpg" alt="imagen de testimonio">
+                <img src="../../../../assets/img/build.jpg" alt="imagen de testimonio">
+                <img src="../../../../assets/img/build.jpg" alt="imagen de testimonio">
+            </div>
+        </article>
+    </div>
+</section>
+
+<app-slider-testimonial></app-slider-testimonial>
+<app-container-allies></app-container-allies>
+
+<app-section-call-to-action
+[titleListener]="sectionCallToAction.title"
+[paragraphListener]="sectionCallToAction.paragraph"
+[imgListener]="sectionCallToAction.img"
+
+[linkPageListener]="linkPage"
+></app-section-call-to-action>

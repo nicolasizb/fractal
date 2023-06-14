@@ -1,0 +1,11 @@
+<button [ngStyle]="{
+    'width.px': widthListener,
+    'height.px': heightListener,
+    'border-color': colorBorderListener,
+    'background': backgroundColorListener
+}">
+    <p [ngStyle]="{
+        'color': colorTextListener
+    }" >{{ textListener }}</p>
+    <img *ngIf="this.spanListener" src="../../../assets/icon/icon-arrow-color-dark.svg" />
+</button>

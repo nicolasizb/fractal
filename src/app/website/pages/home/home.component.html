@@ -1,0 +1,216 @@
+<section class="container-cover">
+    <div>
+        <div class="container-main-cover">
+            <div>
+                <h1>Energía limpia, económica y digital</h1>
+                <app-button-call-to-action
+                routerLink="contacto"
+                [widthListener]="containerButtonOne.width"
+                [heightListener]="containerButtonOne.height"
+                [colorBorderListener]="containerButtonOne.colorBorder"
+                [backgroundColorListener]="containerButtonOne.backgroundColor"
+                [textListener]="containerButtonOne.text"
+                ></app-button-call-to-action>
+            </div>
+            <picture>
+                <img src="../../../assets/vector/vector-cover.svg" alt="person-vector">
+            </picture>
+        </div>
+        <div class="container-triggers">
+            <div>
+                <img src="" alt="/">
+                <div class="text-trigger">
+                    <p class="title">Ecosistema de energía</p>
+                    <p class="paragraph">Impactamos la cadena completa de la energía.</p>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="/">
+                <div class="text-trigger">
+                    <p class="title">Tecnología</p>
+                    <p class="paragraph">Utilizamos tecnología para transformar la energía</p>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="/">
+                <div class="text-trigger">
+                    <p class="title">Sostenibilidad</p>
+                    <p class="paragraph">Trabajamos en pro del medio ambiente y el desarrollo económico</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-projects">
+    <div>
+        <p class="title">Nuestros servicios</p>
+        <div class="container__cards">
+            <div class="card-projects card-energy">
+                <div class="card-projects__info-left">
+                    <p class="info-left__title">Energías Renovables</p>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Análisis Eficiente energía empresarial.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Cálculo Eficiencia Energética.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Instalación de paneles
+                            fotovoltaicos e implementación.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Cálculos para paneles térmosolares
+                            ACS.</a>
+                    </div>
+                    <div class="info-left__button">
+                        <app-button-call-to-action
+                        routerLink="servicios/energias-renovables"
+                        class="button"
+                        [widthListener]="containerButtonTwo.width"
+                        [heightListener]="containerButtonTwo.height"
+                        [colorBorderListener]="containerButtonTwo.colorBorder"
+                        [backgroundColorListener]="containerButtonTwo.backgroundColor"
+                        [spanListener]="containerButtonTwo.span"
+                        [textListener]="containerButtonTwo.text"
+                        ></app-button-call-to-action>
+                    </div> 
+                </div>
+                <figure class="card-projects__info-right">
+                    <img class="info-right__img img--women" src="../../../assets/vector/vector-women-solar.svg" alt="vector-energy">
+                </figure>
+            </div>
+            <div class="card-projects card-pool">
+                <div class="card-projects__info-left">
+                    <p class="info-left__title">Piscinas</p>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Administración</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Guías y Normativas.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Tratamiento y
+                            contaminación.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Desinfección.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Balance del agua.</a>
+                    </div>
+                    <div class="info-left__container--options">
+                        <span class="options__icon-verication"></span>
+                        <a class="options__option">Dosificación y control de
+                            Químicos.</a>
+                    </div>
+                    <div class="info-left__button">
+                        <app-button-call-to-action
+                        routerLink="servicios/piscinas"
+                        class="button"
+                        [widthListener]="containerButtonTwo.width"
+                        [heightListener]="containerButtonTwo.height"
+                        [colorBorderListener]="containerButtonTwo.colorBorder"
+                        [backgroundColorListener]="containerButtonTwo.backgroundColor"
+                        [spanListener]="containerButtonTwo.span"
+                        [textListener]="containerButtonTwo.text"
+                        ></app-button-call-to-action>
+                        <span></span>
+                    </div> 
+                </div>
+                <figure class="card-projects__info-right">
+                    <img class="info-right__img img--men" src="../../../assets/vector/vector-men-water.svg" alt="vector-men">
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container--promise">
+    <div>
+        <p class="container--promise__title">En AMP, utilizamos la tecnología para <b class="title--color">transformar la energía</b></p>
+        <p class="container--promise__paragraph">¡En AMP lo hacemos diferente! Contamos con tecnología en los procesos internos y externos para que nuestros clientes y usuarios logren tener mayor eficiencia, rentabilidad y crecimiento.</p>
+    </div>
+</section>
+
+<section class="section--automation" >
+    <div>
+        <div class="card" >
+            <div class="card__info--left" >
+                <div>
+                    <p class="title" >Automatización</p>
+                    
+                    <div class="info--left__options">
+                        <a class="options__paragraph"><span class="options__icon--verication"></span>Diseños</a>
+                    </div>
+                    <div class="info--left__options">
+                        <span class="options__icon--verication"></span>
+                        <a class="options__paragraph"><span class="options__icon--verication"></span>Sistemas de Hidráulicos</a>
+                    </div>
+                    <div class="info--left__options">
+                        <span class="options__icon--verication"></span>
+                        <a class="options__paragraph"><span class="options__icon--verication"></span>Sistemas de Energía Solar</a>
+                    </div>
+                    <div class="info--left__options">
+                        <span class="options__icon--verication"></span>
+                        <a class="options__paragraph"><span class="options__icon--verication"></span>Maquinas industriales</a>
+                    </div>
+                    <div class="info--left__options">
+                        <span class="options__icon--verication"></span>
+                        <a class="options__paragraph"><span class="options__icon--verication"></span>Procesos Industriales</a>
+                    </div>
+                </div>
+            </div>
+            <img class="card__info--right" src="../../../../assets/img/solar.jpg" alt="image automation">
+        </div>
+    </div>
+</section>
+
+<app-section-shorts-triggers
+[textOneListener]="sectionShortsTriggers.triggerOne"
+[imgOneListener]="sectionShortsTriggers.imgOne"
+
+[textTwoListener]="sectionShortsTriggers.triggerTwo"
+[imgTwoListener]="sectionShortsTriggers.imgTwo"
+
+[textThreeListener]="sectionShortsTriggers.triggerThree"
+[imgThreeListener]="sectionShortsTriggers.imgThree"
+
+[textFourListener]="sectionShortsTriggers.triggerFour"
+[imgFourListener]="sectionShortsTriggers.imgFour"
+></app-section-shorts-triggers>
+
+<app-slider-testimonial></app-slider-testimonial>
+<app-container-allies></app-container-allies>
+
+<app-section-triggers
+[titleContainerTriggersListener]="sectionTriggers.titleContainer"
+[paragraphContainerTriggersListener]="sectionTriggers.paragraphContainer"
+
+[iconTriggerListenerOne]="sectionTriggers.iconTriggerOne"
+[titleTriggerListenerOne]="sectionTriggers.titleCardOne"
+[paragraphTriggerListenerOne]="sectionTriggers.paragraphCardOne"
+
+[iconTriggerListenerTwo]="sectionTriggers.iconTriggerTwo"
+[titleTriggerListenerTwo]="sectionTriggers.titleCardTwo"
+[paragraphTriggerListenerTwo]="sectionTriggers.paragraphCardTwo"
+
+[iconTriggerListenerThree]="sectionTriggers.iconTriggerThree"
+[titleTriggerListenerThree]="sectionTriggers.titleCardThree"
+[paragraphTriggerListenerThree]="sectionTriggers.paragraphCardThree"
+></app-section-triggers>
+
+<app-section-call-to-action
+[titleListener]="sectionCallToAction.title"
+[paragraphListener]="sectionCallToAction.paragraph"
+[imgListener]="sectionCallToAction.img"
+></app-section-call-to-action>

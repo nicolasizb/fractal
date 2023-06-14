@@ -1,0 +1,208 @@
+.container-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 11rem 3rem 3rem;
+    background-color: var(--color-dark);
+
+    > div {
+        max-width: 95rem;
+        width: 100%;
+        .title {
+            margin: 0 0 3rem 0;
+            text-align: center;
+            font-size: var(--font-title-medium);
+            font-weight: 500;
+            color: var(--color-gray);
+        }
+    
+        .container__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: space-around;
+            width: 100%;
+
+            .card-projects {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 41rem;
+                height: 100%;
+                padding: 3rem 1rem;
+                border-radius: 1.5rem;
+                background-color: var(--color-gray);
+    
+                .card-projects__info-left {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+    
+                    .info-left__title {
+                        margin: 0 0 2rem 0;
+                        text-align: center;
+                        font-size: var(--font-big);
+                        font-weight: 600;
+                    }
+                    .info-left__container--options {
+                        display: flex;
+                        align-items: center;
+                        margin: 0 0 1.2rem 1rem;
+    
+                        .options__icon-verication {
+                            width: 2.4rem;
+                            height: 2.4rem;
+                            min-width: 2.4rem;
+                            min-height: 2.4rem;
+                            background-image: url(../../../../assets/icon/icon-verification.svg);
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                        .options__option {
+                            width: 17rem;
+                            margin: 0 0 0 1rem;
+                            line-height: var(--line-height-2);
+                            font-size: var(--font-small);
+                            font-weight: 400;
+                        }
+                    }  
+                    .info-left__button {
+                        margin: 1.5rem auto 0 auto;
+                    }
+                }
+                .card-projects__info-right {
+                    margin: 0 auto;
+    
+                    .img--women {
+                        width: 16rem;
+                    }
+                    .img--men {
+                        width: 15.5rem;
+                    }
+                }
+            }
+            .card-energy:hover {
+                transform: scale(1.02) translateZ(0px);
+                box-shadow: var(--color-5) 0px 3px 8px;
+            }
+            .card-pool:hover {
+                transform: scale(1.01) translateZ(0px);
+                box-shadow: var(--color-2) 0px 3px 8px;
+            }
+            .card-civil-work:hover {
+                transform: scale(1.02) translateZ(0px);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            .card-asset-managment:hover {
+                transform: scale(1.02) translateZ(0px);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+    }
+}
+
+// TABLET
+@media screen and (max-width: 900px) and (min-width: 680px) {
+    .container-projects {
+        > div {
+            .title {
+                margin: 2rem 0 3rem 0;
+            }
+        
+            .container__cards {
+                flex-wrap: wrap;
+                gap: 3rem;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+                .card-projects {
+                    display: flex;
+                    max-width: 40vw;
+                    width: 100%;
+                    height: 42rem;
+                    padding: 3rem;
+
+                    .card-projects__info-left {
+                        height: 100%;
+                        justify-content: center;
+
+                        .info-left__title {
+                            width: 100%;
+                        }
+                        .info-left__container--options {
+                            justify-content: center;
+                            height: 100%;
+
+                            .options__option {
+                                width: 100%;
+                            }
+                        } 
+                    }
+        
+                    .card-projects__info-right {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .container-projects {
+        height: 100%;
+
+        > div {
+            .title {
+                margin: 2rem 0 3rem;
+            }
+        
+            .container__cards {
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 4rem;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                
+                .card-projects {
+                    display: flex;
+                    max-width: 80vw;
+                    width: 100%;
+                    height: 100%;
+                    padding: 3rem 1rem;
+
+                    .card-projects__info-left {
+                        margin: 0 auto;
+                        align-items: center;
+                        height: 100%;
+
+                        .info-left__title {
+                            margin: 0 auto 1rem auto;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .info-left__container--options {
+                            width: 80%;
+                            height: 100%;
+
+                            .options__option {
+                                width: 100%;
+                            }
+                        } 
+                    }
+        
+                    .card-projects__info-right {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

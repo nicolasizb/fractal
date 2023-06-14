@@ -1,0 +1,20 @@
+.container--frequent--questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 12rem 3rem 3rem;
+
+    > div {
+        max-width: 95rem;
+        width: 100%;
+
+        .frequent--questions__title {
+            text-align: center;
+            font-size: var(--font-title-big);
+            font-weight: 600;
+            color: var(--color-dark);
+        }
+    }
+}

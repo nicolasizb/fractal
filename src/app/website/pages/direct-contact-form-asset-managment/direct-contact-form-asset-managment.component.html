@@ -1,0 +1,22 @@
+<app-head-page
+[headTitleTextListener]="containerHead.title"
+[headParagraphTextListener]="containerHead.paragraph"
+[imgVectorListener]="containerHead.img"
+[containerButtonListener]="containerHead.containerButton"
+></app-head-page>
+
+<section class="form">
+    <div>
+        <app-form
+        [dataTfWidgetListener]="dataAttributeForm.dataTfWidget"
+        [dataTfOpacityListener]="dataAttributeForm.dataTfOpacity"
+        [dataTfHideHeadersListener]="dataAttributeForm.dataTfHideHeaders"
+        [dataTfIframePropsListener]="dataAttributeForm.dataTfIframeProps"
+        [dataTfTransitiveSearchParamsListener]="dataAttributeForm.dataTfTransitiveSearchParams"
+        [dataTfMediumListener]="dataAttributeForm.dataTfMedium"
+        [styleListener]="dataAttributeForm.style"
+        ></app-form>
+    </div>
+</section>
+
+<app-container-allies></app-container-allies>

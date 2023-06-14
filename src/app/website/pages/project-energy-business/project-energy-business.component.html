@@ -1,0 +1,93 @@
+<app-head-page-service
+[titleListener]="containerHeadPageService.title"
+[titleColorListener]="containerHeadPageService.titleColor"
+[paragraphListener]="containerHeadPageService.paragraph"
+[imgContainerListener]="containerHeadPageService.imgContainer"
+
+[linkPageListener]="linkPage"
+></app-head-page-service>
+
+<app-section-shorts-triggers
+[textOneListener]="sectionShortsTriggers.triggerOne"
+[imgOneListener]="sectionShortsTriggers.imgOne"
+
+[textTwoListener]="sectionShortsTriggers.triggerTwo"
+[imgTwoListener]="sectionShortsTriggers.imgTwo"
+
+[textThreeListener]="sectionShortsTriggers.triggerThree"
+[imgThreeListener]="sectionShortsTriggers.imgThree"
+
+[textFourListener]="sectionShortsTriggers.triggerFour"
+[imgFourListener]="sectionShortsTriggers.imgFour"
+></app-section-shorts-triggers>
+
+<app-interaction-service-two
+[titleServiceOneListener]="cardServices.titleServiceOne"
+[imgServiceOneListener]="cardServices.imgServiceOne"
+[paragraphServiceOneListener]="cardServices.paragraphServiceOne"
+
+[titleServiceTwoListener]="cardServices.titleServiceTwo"
+[imgServiceTwoListener]="cardServices.imgServiceTwo"
+[paragraphServiceTwoListener]="cardServices.paragraphServiceTwo"
+
+[linkPageListener]="linkPage"
+></app-interaction-service-two>
+
+<section class="container--differential">
+    <div>
+        <article class="differential__card">
+            <div class="card__info" >
+                <p class="info__title" >Title differential</p>
+                <p class="info__paragraph" >Lorem ipsum dolor sit amet consectetur adipisicing elit erum dolore natus sint.</p>
+                <div class="info__container--benefits" >
+                   <p class="benefit"><span></span>Benefit 1 Lorem ipsum dolor sit.</p>
+                   <p class="benefit"><span></span>Benefit 2 Lorem ipsum dolor sit.</p>
+                   <p class="benefit"><span></span>Benefit 3 Lorem ipsum dolor sit.</p>
+                   <p class="benefit"><span></span>Benefit 4 Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <img class="card__img" src="../../../../assets/vector/vector-cover.svg" alt="image mockup differential">
+        </article>
+    </div>
+</section>
+
+<section class="container--steps--to--follow">
+    <div>
+        <article class="card">
+            <div class="title">
+                <p>5 pasos para tener tu sistema de energía solar con AMP</p>
+            </div>
+            <app-accordion
+            [questionParagraphListener]="sectionStepsToFollow.questionOne"
+            [answerParagraphListener]="sectionStepsToFollow.answerOne"
+            ></app-accordion>
+            <app-accordion
+            [questionParagraphListener]="sectionStepsToFollow.questionTwo"
+            [answerParagraphListener]="sectionStepsToFollow.answerTwo"
+            ></app-accordion>
+            <app-accordion
+            [questionParagraphListener]="sectionStepsToFollow.questionThree"
+            [answerParagraphListener]="sectionStepsToFollow.answerThree"
+            ></app-accordion>
+            <app-accordion
+            [questionParagraphListener]="sectionStepsToFollow.questionFour"
+            [answerParagraphListener]="sectionStepsToFollow.answerFour"
+            ></app-accordion>
+            <app-accordion
+            [questionParagraphListener]="sectionStepsToFollow.questionFive"
+            [answerParagraphListener]="sectionStepsToFollow.answerFive"
+            ></app-accordion>
+        </article>
+    </div>
+</section>
+
+<app-slider-testimonial></app-slider-testimonial>
+<app-container-allies></app-container-allies>
+
+<app-section-call-to-action
+[titleListener]="sectionCallToAction.title"
+[paragraphListener]="sectionCallToAction.paragraph"
+[imgListener]="sectionCallToAction.img"
+
+[linkPageListener]="linkPage"
+></app-section-call-to-action>

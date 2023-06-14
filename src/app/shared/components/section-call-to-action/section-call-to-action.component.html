@@ -1,0 +1,24 @@
+<section class="container--call-to-action">
+    <div>
+        <article class="card">
+            <div class="card__text">
+                <p class="text__title">{{ titleListener }}</p>
+                <p class="text__paragraph">{{ paragraphListener }}</p>
+            </div>
+            <div class="card__figures">
+                <img class="figures__img" [src]="imgListener" alt="image-call-to-action">
+                <app-button-call-to-action
+                    class="figures__button"
+                    [routerLink]="linkPageListener"
+                    [widthListener]="containerButtonOne.width"
+                    [heightListener]="containerButtonOne.height"
+                    [colorBorderListener]="containerButtonOne.colorBorder"
+                    [backgroundColorListener]="containerButtonOne.backgroundColor"
+                    [spanListener]="containerButtonOne.span"
+                    [textListener]="containerButtonOne.text"
+                >
+                </app-button-call-to-action>
+            </div>
+        </article>
+    </div>
+</section>

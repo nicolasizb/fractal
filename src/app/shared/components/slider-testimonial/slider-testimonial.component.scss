@@ -1,0 +1,149 @@
+.container--clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 3rem 1rem;
+    background-color: white;
+
+    > div {
+        max-width: 95rem;
+        width: 100%;
+
+        .clients--title {
+            position: relative;
+            width: 100%;
+            margin: 2rem 0 2rem;
+            text-align: center;
+            font-size: var(--font-title-medium);
+            font-weight: 500;
+            color: var(--color-dark);
+        }
+
+        #radio-1:checked ~ .clients--testimonials #card-1, 
+        #radio-2:checked ~ .clients--testimonials #card-2,
+        #radio-3:checked ~ .clients--testimonials #card-3 {
+            transform: translateX(0) scale(1);
+            opacity: 1;
+            z-index: 1;
+        }
+        #radio-1:checked ~ .clients--testimonials #card-2,
+        #radio-2:checked ~ .clients--testimonials #card-3,
+        #radio-3:checked ~ .clients--testimonials #card-1 {
+          transform: translateX(17%) scale(0.8);
+          opacity: 0.5;
+          z-index: 0;
+        }
+        #radio-1:checked ~ .clients--testimonials #card-3,
+        #radio-2:checked ~ .clients--testimonials #card-1,
+        #radio-3:checked ~ .clients--testimonials #card-2 {
+          transform: translateX(-17%) scale(0.8);
+          opacity: 0.5;
+          z-index: 0;
+        }
+
+        .input {
+            display: none;
+        }
+
+        .clients--testimonials {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            transform-style: preserve-3d;
+
+            .testimonials__client-card {
+                position: absolute;
+                left: 0;
+                right: 0;
+                display: flex;
+                width: 88%;
+                height: 100%;
+                margin: 0 auto;
+                border-radius: 1.5rem;
+                background-color: var(--color-gray);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                transition: transform 0.5s ease;             
+                cursor: pointer;
+    
+                .testimonials__info--left {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 50%;
+                    height: 100%;
+                    padding: 4rem 2rem;
+    
+                    .info--left__representative--name {
+                        margin: 0 0 0.5rem 0;
+                        font-size: var(--font-medium);
+                        font-weight: 400;
+                        color: var(--color-6);
+                    }
+                    .info--left__business--name {
+                        margin: 0 0 2rem 0;
+                        font-size: var(--font-small);
+                        font-weight: 300;
+                        font-style: italic;
+                        color: var(--color-2);
+                    }
+                    .info--left__testimonial--text {
+                        text-align: justify;
+                        line-height: var(--line-height-1);
+                        margin: 0 0 1.5rem 0;
+                        font-size: var(--font-small);
+                        font-weight: 400;
+                        color: var(--color-dark);
+                    }
+                    .info--left__container--img {
+                        text-align: center;
+                        
+                        img {
+                            margin: auto 0;
+                        }
+                    }
+                    .button {
+                        margin: 0 auto;
+                    }
+                }
+
+                .testimonials__info--right {
+                    width: 100%;
+    
+                    .info--right__project-image {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 0 1.3rem 1.2rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: 679px) {
+    .container--clients {
+        > div {
+            width: 100%;
+            .clients--testimonials {
+
+                .testimonials__container--span {
+                    display: none;
+                }
+                .testimonials__client-card {
+                    .testimonials__info--left {
+                        width: 100%;
+                    }
+                    .testimonials__info--right {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

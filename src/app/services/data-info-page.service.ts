@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ProjectEnergy, ProjectSwimming } from '../models/testimonial.model';
+import { ProjectEnergy, ProjectSwimming } from '../models/project.model';
 
 @Injectable({
   providedIn: 'root'
@@ -178,7 +178,42 @@ export class DataInfoPageService {
         maintence: 'month'
       }
     },
-  ]; 
+  ];
+
+  accordionSection = [
+    {
+      question: '1. Question',
+      answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quo necessitatibus, dolorum cupiditate, voluptate deleniti earum amet voluptatum illum eveniet exercitationem rerum. Ea nobis, dolore pariatur neque totam iusto? Suscipit?'
+    },
+    {
+      question: '2. Question',
+      answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quo necessitatibus, dolorum cupiditate, voluptate deleniti earum amet voluptatum illum eveniet exercitationem rerum. Ea nobis, dolore pariatur neque totam iusto? Suscipit?'
+    },
+    {
+      question: '3. Question',
+      answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quo necessitatibus, dolorum cupiditate, voluptate deleniti earum amet voluptatum illum eveniet exercitationem rerum. Ea nobis, dolore pariatur neque totam iusto? Suscipit?'
+    },
+    {
+      question: '4. Question',
+      answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quo necessitatibus, dolorum cupiditate, voluptate deleniti earum amet voluptatum illum eveniet exercitationem rerum. Ea nobis, dolore pariatur neque totam iusto? Suscipit?'
+    },
+    {
+      question: '5. Question',
+      answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quo necessitatibus, dolorum cupiditate, voluptate deleniti earum amet voluptatum illum eveniet exercitationem rerum. Ea nobis, dolore pariatur neque totam iusto? Suscipit?'
+    },
+    {
+      question: '6. Question',
+      answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quo necessitatibus, dolorum cupiditate, voluptate deleniti earum amet voluptatum illum eveniet exercitationem rerum. Ea nobis, dolore pariatur neque totam iusto? Suscipit?'
+    },
+    {
+      question: '7. Question',
+      answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quo necessitatibus, dolorum cupiditate, voluptate deleniti earum amet voluptatum illum eveniet exercitationem rerum. Ea nobis, dolore pariatur neque totam iusto? Suscipit?'
+    },
+  ]
+
+  getFrequentQuestions() {
+    return this.accordionSection;
+  }
 
   getTestimonialsEnergy() {
     return this.testimonialsEnergy;

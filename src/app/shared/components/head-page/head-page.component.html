@@ -1,0 +1,18 @@
+<section class="container--head" >
+    <div>
+        <div class="container--head__text">
+            <p class="text__title">{{ headTitleTextListener }}</p>
+            <p class="text__paragraph">{{ headParagraphTextListener }}</p>
+            <app-button-call-to-action class="button" *ngIf="containerButtonListener"
+                [widthListener]="containerButtonOne.width"
+                [heightListener]="containerButtonOne.height"
+                [colorBorderListener]="containerButtonOne.colorBorder"
+                [backgroundColorListener]="containerButtonOne.backgroundColor"
+                [textListener]="containerButtonOne.text"
+            ></app-button-call-to-action>
+        </div>
+        <figure class="container--head__figure">
+            <img [src]="imgVectorListener" alt="vector">
+        </figure>
+    </div>
+</section>

@@ -1,0 +1,154 @@
+.container--differential {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 3rem;
+    background-color: var(--color-dark);   
+
+    > div {
+        max-width: 95rem;
+        width: 100%;
+
+        .differential__card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .card__info {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                width: 55%;
+                
+                .info__title {
+                    margin: 0 0 3rem;
+                    font-size: var(--font-title-medium);
+                    font-weight: 500;
+                    color: var(--color-5);                
+                }
+                .info__paragraph {
+                    font-size: var(--font-big);
+                    font-weight: 300;
+                    color: var(--color-gray);                
+                    word-spacing: var(--word-spacing);
+                }
+                .info__container--benefits {
+                    margin: 2rem 0 0;
+
+                    .benefit {
+                        display: flex;
+                        margin: 2rem 0 0;
+                        font-size: var(--font-big);
+                        font-weight: 300;
+                        color: var(--color-5);
+                        width: 100%;
+                        height: 100%;
+
+                        span {
+                            margin: 0 1rem 0 3rem;
+                            width: 2.4rem;
+                            height: 2.4rem;
+                            background-image: url(../../../../assets/icon/icon-verification-color-5.svg);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }              
+                    }
+                }
+            }
+            .card__img {
+                width: 35%;
+            }
+        }
+    }
+}
+
+.container--steps--to--follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 3rem;
+    
+    > div {
+        max-width: 95rem;
+        width: 100%;
+
+        .card {
+            padding: 3rem;
+            border-radius: 1.5rem;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+            .title {
+                padding: 1rem;
+                text-align: center;
+                font-size: var(--font-title-small);
+                font-weight: 500;
+                word-spacing: var(--word-spacing);
+                color: var(--color-dark);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 680px) {
+    .container--steps--to--follow {
+        padding: 0;
+        
+        > div {    
+            .card {                    
+                padding: 3rem;
+                border-radius: 0;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 100px -20px, rgba(0, 0, 0, 0.3) 0px 0px 20px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .container--differential {
+        > div {
+            .differential__card {
+                justify-content: space-around;
+                .card__info {
+                    width: 100%;
+                    align-items: center;
+                    text-align: center;
+
+                    .info__container--benefits {
+                        .benefit {
+                            span {
+                                margin: 0 1rem 0 0;
+                            }              
+                        }
+                    }
+                }
+                .card__img {
+                    width: 80%;
+                }                
+            }
+        }
+    }
+
+
+    .container--steps--to--follow {
+        padding: 0;
+        
+        > div {    
+            .card {                    
+                padding: 3rem;
+                border-radius: 0;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 100px -20px, rgba(0, 0, 0, 0.3) 0px 0px 20px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            }
+        }
+    }
+}

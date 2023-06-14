@@ -1,0 +1,11 @@
+<section class="container--frequent--questions">
+    <div>
+        <p class="frequent--questions__title">Preguntas frecuentes</p>
+        <div class="container--accordions" *ngFor="let article of accordions" >
+            <app-accordion
+            [questionParagraphListener]="article.question"
+            [answerParagraphListener]="article.answer"
+            ></app-accordion>
+        </div>
+    </div>
+</section>

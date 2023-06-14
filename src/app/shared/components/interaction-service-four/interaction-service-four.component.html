@@ -1,0 +1,123 @@
+<section class="container--interaction" >
+    <div>
+        <article class="container--interaction__card" >
+            <div class="card__titles--service" *ngIf="serviceStateOne || serviceStateTwo || serviceStateThree || serviceStateFour " >
+                <button (click)="toggleServiceState()" class="title" [class.active]="serviceStateOne" ><p>{{ titleServiceOneListener }}</p></button>
+                <button (click)="toggleServiceStateTwo()" class="title" [class.active]="serviceStateTwo" ><p>{{ titleServiceTwoListener }}</p></button>
+                <button (click)="toggleServiceStateThree()" class="title" [class.active]="serviceStateThree" ><p>{{ titleServiceThreeListener }}</p></button>
+                <button (click)="toggleServiceStateFour()" class="title" [class.active]="serviceStateFour" ><p>{{ titleServiceFourListener }}</p></button>
+            </div>
+            <div class="card__info--service" *ngIf="serviceStateOne" >
+                <div class="service__info" >                    
+                    <div [innerHTML]="paragraphServiceOneListener" class="info__paragraph" >
+                    </div>
+                    <img class="info__img" [src]="imgServiceOneListener" alt="image service">
+                </div>
+                <div class="service__button" >
+                    <app-button-call-to-action
+                    [widthListener]="containerButtonOne.width"
+                    [heightListener]="containerButtonOne.height"
+                    [colorBorderListener]="containerButtonOne.colorBorder"
+                    [backgroundColorListener]="containerButtonOne.backgroundColor"
+                    [textListener]="containerButtonOne.text"
+                    [spanListener]="containerButtonOne.span"
+
+                    [routerLink]="linkPageListener"
+                    ></app-button-call-to-action>
+                </div>
+            </div>
+
+            <div class="card__info--service" *ngIf="serviceStateTwo" >
+                <div class="service__info" >                    
+                    <div [innerHTML]="paragraphServiceTwoListener" class="info__paragraph" >                      
+                    </div>
+                    <img class="info__img" [src]="imgServiceTwoListener" alt="">
+                </div>
+                <div class="service__button" >
+                    <app-button-call-to-action
+                    [widthListener]="containerButtonOne.width"
+                    [heightListener]="containerButtonOne.height"
+                    [colorBorderListener]="containerButtonOne.colorBorder"
+                    [backgroundColorListener]="containerButtonOne.backgroundColor"
+                    [textListener]="containerButtonOne.text"
+                    [spanListener]="containerButtonOne.span"
+
+                    [routerLink]="linkPageListener"
+                    ></app-button-call-to-action>
+                </div>
+            </div>
+
+            <div class="card__info--service" *ngIf="serviceStateThree" >
+                <div class="service__info" >                    
+                    <div [innerHTML]="paragraphServiceThreeListener" class="info__paragraph" >                      
+                    </div>
+                    <img class="info__img" [src]="imgServiceThreeListener" alt="">
+                </div>
+                <div class="service__button" >
+                    <app-button-call-to-action
+                    [widthListener]="containerButtonOne.width"
+                    [heightListener]="containerButtonOne.height"
+                    [colorBorderListener]="containerButtonOne.colorBorder"
+                    [backgroundColorListener]="containerButtonOne.backgroundColor"
+                    [textListener]="containerButtonOne.text"
+                    [spanListener]="containerButtonOne.span"
+                    
+                    [routerLink]="linkPageListener"
+                    ></app-button-call-to-action>
+                </div>
+            </div>
+
+            <div class="card__info--service" *ngIf="serviceStateFour" >
+                <div class="service__info" >                    
+                    <div [innerHTML]="paragraphServiceFourListener" class="info__paragraph" >                      
+                    </div>
+                    <img class="info__img" [src]="imgServiceFourListener" alt="imagen obra civil">
+                </div>
+                <div class="service__button" >
+                    <app-button-call-to-action
+                    [widthListener]="containerButtonOne.width"
+                    [heightListener]="containerButtonOne.height"
+                    [colorBorderListener]="containerButtonOne.colorBorder"
+                    [backgroundColorListener]="containerButtonOne.backgroundColor"
+                    [textListener]="containerButtonOne.text"
+                    [spanListener]="containerButtonOne.span"
+                    
+                    [routerLink]="linkPageListener"
+                    ></app-button-call-to-action>
+                </div>
+            </div>
+        </article>
+
+        <article class="container--interaction__card" *ngIf="serviceStateMobile" >
+            <div class="card__info--service" >                                  
+                <p class="info__title" >{{ titleServiceOneListener }}</p>
+                <img class="info__img" [src]="imgServiceOneListener" alt="">
+                <div [innerHTML]="paragraphServiceOneListener" class="info__paragraph" >                    
+                </div>
+                <p class="info__title space" >{{ titleServiceTwoListener }}</p>
+                <img class="info__img" [src]="imgServiceTwoListener" alt="">
+                <div [innerHTML]="paragraphServiceTwoListener" class="info__paragraph" >                       
+                </div>
+                <p class="info__title space" >{{ titleServiceThreeListener }}</p>
+                <img class="info__img" [src]="imgServiceThreeListener" alt="">
+                <div [innerHTML]="paragraphServiceThreeListener" class="info__paragraph" >                       
+                </div>
+                <p class="info__title space" >{{ titleServiceFourListener }}</p>
+                <img class="info__img" [src]="imgServiceFourListener" alt="">
+                <div [innerHTML]="paragraphServiceFourListener" class="info__paragraph" >                       
+                </div>
+                <div class="service__button" >
+                    <app-button-call-to-action
+                    [routerLink]="linkPageListener"
+                    [widthListener]="containerButtonOne.width"
+                    [heightListener]="containerButtonOne.height"
+                    [colorBorderListener]="containerButtonOne.colorBorder"
+                    [backgroundColorListener]="containerButtonOne.backgroundColor"
+                    [textListener]="containerButtonOne.text"
+                    [spanListener]="containerButtonOne.span"    
+                    ></app-button-call-to-action>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>

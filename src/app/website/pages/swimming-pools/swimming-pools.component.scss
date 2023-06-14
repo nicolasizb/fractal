@@ -1,0 +1,253 @@
+.container--interaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+
+    > div {
+        max-width: 95rem;
+        width: 100%;
+
+        .container--interaction__card {
+            width: 100%;
+            border-radius: 1.5rem;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+            .card__titles--service {
+                display: flex;
+                width: 100%;
+                border-radius: 1.5rem 1.5rem 0 0;
+                
+                .title {
+                    width: 100%;
+                    padding: 1.5rem 1rem;
+                    text-align: center;
+                    border: none;
+                    border-radius: 1.2rem 1.2rem 0 0;
+                    background-color: var(--color-gray-3);
+                    font-family: var(--font-text);
+                    font-weight: 500;
+                    font-size: var(--font-small);
+                    color: var(--color-dark);
+                    cursor: pointer;
+                    
+                    &.active {
+                        background-color: var(--color-dark);
+                        color: var(--color-2);
+                    }
+                }
+            }
+            .card__info--service {
+                padding: 2rem;
+
+                .service__info {
+                    display: flex;
+                    flex-wrap: wrap-reverse;
+                    gap: 2rem;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    .info__paragraph {
+                        width: 40%;
+                        text-align: justify;
+                        font-size: var(--font-medium);
+                        word-spacing: var(--word-spacing);
+                        line-height: var(--line-height-2);
+                    }
+                    .info__img {
+                        width: 52%;
+                        border-radius: 1.5rem;
+                    }         
+                }
+                .service__button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2rem 0 0;
+                }
+            }
+        }
+    }
+}
+
+.container--differential {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 3rem 2rem;
+    background-color: var(--color-dark);   
+
+    > div {
+        max-width: 95rem;
+        width: 100%;
+
+        .differential__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            width: 100%;
+            height: 100%;
+
+            .card__info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                
+                .info__title {
+                    margin: 0 0 3rem;
+                    color: var(--color-2);
+                    font-size: var(--font-title-medium);
+                    font-weight: 500;
+                }
+                .info__paragraph {
+                    text-align: center;
+                    font-size: var(--font-big);
+                    font-weight: 300;
+                    color: var(--color-gray);                
+                    word-spacing: var(--word-spacing);
+                }
+                .info__container--benefits {
+                    margin: 2rem 0 0;
+
+                    .benefit {
+                        display: flex;
+                        align-items: center;
+                        margin: 2rem 0 0;
+                        font-size: var(--font-big);
+                        font-weight: 300;
+                        color: var(--color-2);
+                        width: 100%;
+                        height: 100%;
+
+                        span {
+                            margin: 0 1rem 0 0;
+                            min-width: 2.4rem;
+                            min-height: 2.4rem;
+                            width: 2.4rem;
+                            height: 2.4rem;
+                            background-image: url(../../../../assets/icon/icon-arrow-color-2.svg);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }              
+                    }
+                }
+            }
+            .card__info--images {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 3rem;
+                width: 100%;
+                margin: 1rem 0;
+
+                img {
+                    width: 30%;
+                    border-radius: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 680px) {
+    .container--interaction {        
+        > div {
+            .container--interaction__card {
+                .card__info--service {
+                    padding: 3rem;
+    
+                    .service__info {    
+                        .info__paragraph {
+                            width: 100%;
+                            text-align: center;
+                        }
+                        .info__img {
+                            width: 100%;
+                        }         
+                    }
+                }
+            }
+        }
+    }
+
+    .container--differential {
+        > div {
+            .differential__card {
+                .card__info--images {
+                    justify-content: space-around;
+                    width: 100%;
+    
+                    img {
+                        width: 45%;
+                        border-radius: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .container--differential {
+        > div {
+            .differential__card {
+                .card__info--images {
+                    justify-content: space-around;
+                    width: 100%;
+    
+                    img {
+                        width: 100%;
+                        border-radius: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .container--interaction {
+        padding: 0;    
+        
+        > div {
+            .container--interaction__card {
+                .card__info--service {
+                    padding: 3rem;
+
+                    .info__title {
+                        text-align: center;
+                        font-size: var(--font-title-small);
+                        font-weight: 600;
+                        color: var(--color-dark);
+                    }
+                    .space {
+                        margin: 5rem 0 0;
+                    }
+                    
+                    .info__img {
+                        margin: 2rem 0 2rem;
+                        width: 100%;
+                        border-radius: 1.5rem;
+                    }
+                    .info__paragraph {
+                        width: 100%;
+                        text-align: center;
+                        font-size: var(--font-medium);
+                        word-spacing: var(--word-spacing);
+                        line-height: var(--line-height-2);
+                    }
+                    .service__button {
+                        margin: 2rem 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
