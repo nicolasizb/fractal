@@ -1,0 +1,129 @@
+
+.se--au {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    background-color: var(--color-dark);
+
+    .d {
+        max-width: 95rem;
+        width: 100%;
+
+        .ca {
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+            height: 35rem;
+            border-radius: 1.5rem;
+            background-color: var(--color-gray);
+
+            .ca__il {
+                display: flex;
+                width: 40%;
+                height: 100%;
+                padding: 3rem;
+
+                .d {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+
+                    .ti {
+                        margin: 0 auto 2rem;
+                        border-bottom: 0.2rem var(--color-2) solid;
+                        text-align: center;
+                        font-size: var(--font-big);
+                        font-weight: 600;
+                    }
+    
+                    .il__op {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 0 1rem;
+                        width: 100%;
+                        height: 100%;    
+    
+                        .op__pa {
+                            display: flex;
+                            width: 80%;
+                            line-height: var(--line-height-2);
+                            text-align: start;
+                            font-size: var(--font-small);
+                            font-weight: 400;
+                            color: var(--color-dark);
+
+                            .op__iv {                                                    
+                                width: 2.4rem;
+                                height: 2.4rem;
+                                margin: 0 1rem 0 0;
+                                background-image: url(../../../../assets/icon/icon-verification.svg);
+                                background-position: center;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .op__t {
+                            margin: 0 0 0 1rem;
+                        }
+                        &:hover {
+                            transform: scale(1.05) translateY(0);
+                        }
+                    }
+                }                
+            }
+            .ca__ir {       
+                width: 60%;
+                height: 100%;         
+                object-fit: cover;
+                border-radius: 0 1.5rem 1.5rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .se--au {
+        padding: 0;
+
+        .d {  
+            .ca {
+                flex-direction: column-reverse;          
+                width: 100%;
+                height: 100%;
+                padding: 0rem 0rem;
+                border-radius: 0;
+    
+                .ca__il {
+                    width: 100%;
+                    height: 100%;
+                    padding: 3rem 3rem 2.5rem;
+    
+                    .d {
+                        .il__op {
+                            margin: 0 auto 1.2rem;
+        
+                            .op__iv {                                                    
+                                margin: 0 1rem 0 0;
+                            }
+                            .op__pa {
+                                max-width: 22rem;
+                                width: 100%;
+                            }
+                        }
+                    }                
+                }
+                .ca__ir {       
+                    width: 100%;
+                    height: 100%;         
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}

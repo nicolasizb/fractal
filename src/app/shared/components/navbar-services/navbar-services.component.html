@@ -1,0 +1,44 @@
+<div class="nv--m__ctr--dd" [class.active]="menuButtonStatusListener" >
+    <ul class="ctr--dd__li df">
+        <li class="li"><a routerLinkActive="active" routerLink="quienes-somos" (click)="clickEventRouterLink()" (click)="clickPage()" >¿Quiénes somos?</a></li>
+        <li class="li li__se" [class.active]="containerServiceText" >
+            <a class="t--se df ai" (click)="toggleContainerServices()" >Servicios<span [class.active]="containerServicesContainer" class="se--pt--i"></span></a>
+            <div class="ctr__se" [class.active]="containerServicesContainer" >
+                <div class="se__pt--ch" 
+                    (click)="toggleContainerChooseProject()" >
+                    <p class="df" [class.active]="iconActiveProjectsChoose" >Construcción de proyectos<span [class.active]="iconActiveProjectsChoose" class="se__pt--i"></span></p>        
+                </div>
+                <div class="ctr--pt" [class.active]="containerChooseProject" >
+                    <div class="d">
+                        <p class="pt__en ai df" (click)="toggleContainerProjectScaleEnergy()" [class.active]="iconActiveProjectEnergy" >Proyectos de energía solar<span [class.active]="iconActiveProjectEnergy" class="se__pt--i"></span></p>
+                        <div class="ctr__en--s" *ngIf="containerProjectScaleEnergy" >
+                            <a class="so s df" routerLink="servicios/proyectos-energia-solar/casa" (click)="clickEventRouterLink()" (click)="clickPage()" >Casa<span class="material-symbols-outlined">arrow_right_alt</span></a>
+                            <a class="st s df" routerLink="servicios/proyectos-energia-solar/empresa" (click)="clickEventRouterLink()" (click)="clickPage()" >Empresa<span class="material-symbols-outlined">arrow_right_alt</span></a>
+                        </div>
+                        <a class="pt__c" routerLink="servicios/obra-civil" (click)="clickEventRouterLink()" (click)="clickPage()" >Obra civil<span class="material-symbols-outlined">arrow_right_alt</span></a>
+                    </div>
+                </div>
+                <div class="se__op--m" >
+                    <a class="df ai" routerLink="servicios/operacion-y-mantenimiento" (click)="clickEventRouterLink()" (click)="clickPage()" >Operación o mantenimiento<span class="material-symbols-outlined">arrow_right_alt</span></a>    
+                </div>
+                <div class="se__op--m t" >
+                    <a class="df ai" routerLink="servicios/piscinas" (click)="clickEventRouterLink()" (click)="clickPage()" >Piscinas<span class="material-symbols-outlined">arrow_right_alt</span></a>    
+                </div>
+            </div>
+        </li>
+        <li class="li" ><a routerLinkActive="active" routerLink="proyectos" (click)="clickEventRouterLink()" (click)="clickPage()" >Proyectos</a></li>
+        <li class="li" ><a routerLinkActive="active" routerLink="contacto" (click)="clickEventRouterLink()" (click)="clickPage()" >Contacto</a></li>
+    </ul>
+    <div class="ctr--dd__b" >
+        <app-button-call-to-action
+        routerLink="contacto"
+        (click)="clickPage()"
+        (click)="clickEventRouterLink()"
+        [textListener]="selectTextOne"
+        [widthListener]="containerButton.width"
+        [heightListener]="containerButton.height"
+        [colorBorderListener]="containerButton.colorBorder"
+        [backgroundColorListener]="containerButton.backgroundColor"
+        ></app-button-call-to-action>
+    </div>
+</div>
