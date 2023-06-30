@@ -1,4 +1,4 @@
-.container-projects {
+.ctr--pt {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,10 +8,10 @@
     padding: 11rem 3rem 3rem;
     background-color: var(--color-dark);
 
-    > div {
+    .d {
         max-width: 95rem;
         width: 100%;
-        .title {
+        .ti {
             margin: 0 0 3rem 0;
             text-align: center;
             font-size: var(--font-title-medium);
@@ -19,14 +19,14 @@
             color: var(--color-gray);
         }
     
-        .container__cards {
+        .ctr__ca {
             display: flex;
             flex-wrap: wrap;
             gap: 3rem;
             justify-content: space-around;
             width: 100%;
 
-            .card-projects {
+            .ca--pt {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -36,23 +36,23 @@
                 border-radius: 1.5rem;
                 background-color: var(--color-gray);
     
-                .card-projects__info-left {
+                .ca--pt__il {
                     display: flex;
                     flex-direction: column;
                     margin: 0 auto;
     
-                    .info-left__title {
+                    .il__ti {
                         margin: 0 0 2rem 0;
                         text-align: center;
                         font-size: var(--font-big);
                         font-weight: 600;
                     }
-                    .info-left__container--options {
+                    .il__ctr--op {
                         display: flex;
                         align-items: center;
                         margin: 0 0 1.2rem 1rem;
     
-                        .options__icon-verication {
+                        .op__iv {
                             width: 2.4rem;
                             height: 2.4rem;
                             min-width: 2.4rem;
@@ -62,7 +62,7 @@
                             background-size: contain;
                             background-repeat: no-repeat;
                         }
-                        .options__option {
+                        .op__ot {
                             width: 17rem;
                             margin: 0 0 0 1rem;
                             line-height: var(--line-height-2);
@@ -70,11 +70,11 @@
                             font-weight: 400;
                         }
                     }  
-                    .info-left__button {
+                    .il__b {
                         margin: 1.5rem auto 0 auto;
                     }
                 }
-                .card-projects__info-right {
+                .ca--pt__ir {
                     margin: 0 auto;
     
                     .img--women {
@@ -85,19 +85,15 @@
                     }
                 }
             }
-            .card-energy:hover {
+            .ca--en:hover {
                 transform: scale(1.02) translateZ(0px);
                 box-shadow: var(--color-5) 0px 3px 8px;
             }
-            .card-pool:hover {
+            .ca--po:hover {
                 transform: scale(1.01) translateZ(0px);
                 box-shadow: var(--color-2) 0px 3px 8px;
             }
-            .card-civil-work:hover {
-                transform: scale(1.02) translateZ(0px);
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            }
-            .card-asset-managment:hover {
+            .ca--cw:hover, .ca--am:hover {
                 transform: scale(1.02) translateZ(0px);
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             }
@@ -107,13 +103,13 @@
 
 // TABLET
 @media screen and (max-width: 900px) and (min-width: 680px) {
-    .container-projects {
-        > div {
-            .title {
+    .ctr--pt {
+        .d {
+            .ti {
                 margin: 2rem 0 3rem 0;
             }
         
-            .container__cards {
+            .ctr__ca {
                 flex-wrap: wrap;
                 gap: 3rem;
                 justify-content: space-around;
@@ -121,31 +117,31 @@
                 width: 100%;
                 height: 100%;
 
-                .card-projects {
+                .ca--pt {
                     display: flex;
                     max-width: 40vw;
                     width: 100%;
                     height: 42rem;
                     padding: 3rem;
 
-                    .card-projects__info-left {
+                    .ca--pt__il {
                         height: 100%;
                         justify-content: center;
 
-                        .info-left__title {
+                        .il__ti {
                             width: 100%;
                         }
-                        .info-left__container--options {
+                        .il__ctr--op {
                             justify-content: center;
                             height: 100%;
 
-                            .options__option {
+                            .op__ot {
                                 width: 100%;
                             }
                         } 
                     }
         
-                    .card-projects__info-right {
+                    .ca--pt__ir {
                         display: none;
                     }
                 }
@@ -155,15 +151,15 @@
 }
 
 @media screen and (max-width: 679px) {
-    .container-projects {
+    .ctr--pt {
         height: 100%;
 
-        > div {
-            .title {
+        .d {
+            .ti {
                 margin: 2rem 0 3rem;
             }
         
-            .container__cards {
+            .ctr__ca {
                 flex-direction: column;
                 flex-wrap: wrap;
                 gap: 4rem;
@@ -171,34 +167,34 @@
                 align-items: center;
                 height: 100%;
                 
-                .card-projects {
+                .ca--pt {
                     display: flex;
                     max-width: 80vw;
                     width: 100%;
                     height: 100%;
                     padding: 3rem 1rem;
 
-                    .card-projects__info-left {
+                    .ca--pt__il {
                         margin: 0 auto;
                         align-items: center;
                         height: 100%;
 
-                        .info-left__title {
+                        .il__ti {
                             margin: 0 auto 1rem auto;
                             width: 100%;
                             height: 100%;
                         }
-                        .info-left__container--options {
+                        .il__ctr--op {
                             width: 80%;
                             height: 100%;
 
-                            .options__option {
+                            .op__ot {
                                 width: 100%;
                             }
                         } 
                     }
         
-                    .card-projects__info-right {
+                    .ca--pt__ir {
                         display: none;
                     }
                 }

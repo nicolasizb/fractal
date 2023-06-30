@@ -22,11 +22,14 @@ import { DirectContactFormCivilWorkComponent } from './pages/direct-contact-form
 import { DirectContactFormAssetManagmentComponent } from './pages/direct-contact-form-asset-managment/direct-contact-form-asset-managment.component';
 import { DirectContactFormSwimmingPoolsComponent } from './pages/direct-contact-form-swimming-pools/direct-contact-form-swimming-pools.component';
 import { ServicesComponent } from './pages/services/services.component';
+import { NavbarMobileComponent } from './components/navbar-mobile/navbar-mobile.component';
+
 
 @NgModule({
   declarations: [
     LayoutComponent,
     NavbarComponent,
+    NavbarMobileComponent,
     HomeComponent,
     AboutUsComponent,
     ProjectsComponent,
@@ -42,6 +45,7 @@ import { ServicesComponent } from './pages/services/services.component';
     DirectContactFormAssetManagmentComponent,
     DirectContactFormSwimmingPoolsComponent,
     ServicesComponent,
+
   ],
   imports: [
     CommonModule,

@@ -1,40 +1,40 @@
-<div class="container--nav--desktop">
-    <nav class="nav--desktop">
-        <picture>
+<div class="ctr--dk">
+    <nav class="nv--dk js wp df ai">
+        <picture class="df ai hp jc">
             <a routerlinkActive="active" routerLink="">
-               <img src="../../../../assets/img/logo-amp.png" alt="logo-amp" (click)="clickPage()" >
+               <img class="po hp" src="../../../../assets/img/logo-amp.png" alt="logo-amp" (click)="clickPage()" >
             </a>
         </picture>
-        <ul>
-            <li class="li" ><a routerLinkActive="active" routerLink="quienes-somos" (click)="clickPage()" >¿Quiénes somos?</a></li>
-            <li class="li li__services" [class.active]="containerServiceText">
-                <a (click)="toggleContainerServices()" >Servicios</a>
-                <div class="container__services" [class.active]="containerServicesContainer" >
-                    <div class="services__project--choose" 
+        <ul class="ul js wp df ai">
+            <li class="li pr wp" ><a class="cd fm" routerLinkActive="active" routerLink="quienes-somos" (click)="clickPage()" >¿Quiénes somos?</a></li>
+            <li class="li pr wp li__se hp" [class.ac]="containerServiceText">
+                <a class="po fm wp t--se cd" (click)="toggleContainerServices()" >Servicios</a>
+                <div class="ctr__se dn bd wp" [class.ac]="containerServicesContainer" >
+                    <div class="se__pt--ch fw fd fm cg jc pr wp df po" 
                         (click)="toggleContainerChooseProject()" >
-                        <p [class.active]="iconActiveProjectsChoose" >Construcción de proyectos<span [class.active]="iconActiveProjectsChoose" class="services__project--icon"></span></p>    
+                        <p class="wp df ai b" [class.ac]="iconActiveProjectsChoose" >Construcción de proyectos<span [class.ac]="iconActiveProjectsChoose" class="se__pt--i ma pr"></span></p>    
                     </div>
-                    <div class="container--projects" [class.active]="containerChooseProject" >
-                        <div class="div">
-                            <p class="projects__energy" [class.active]="iconActiveProjectEnergy" (click)="toggleContainerProjectScaleEnergy()" >Proyectos de energía solar<span [class.active]="iconActiveProjectEnergy" class="services__project--icon"></span></p>
-                            <div class="container__energy--scale" *ngIf="containerProjectScaleEnergy" >
-                                <a routerLink="servicios/proyectos-energia-solar/casa" (click)="clickPage()" >Casa<span></span></a>
-                                <a routerLink="servicios/proyectos-energia-solar/empresa" (click)="clickPage()" >Empresa<span></span></a>
+                    <div class="ctr--pt dn" [class.ac]="containerChooseProject" >
+                        <div class="d bd fw fd fs cg jc hp wp df">
+                            <p class="pt__en ai df po" [class.ac]="iconActiveProjectEnergy" (click)="toggleContainerProjectScaleEnergy()" >Proyectos de energía solar<span [class.ac]="iconActiveProjectEnergy" class="se__pt--i ma pr"></span></p>
+                            <div class="ctr__en--sc" *ngIf="containerProjectScaleEnergy" >
+                                <a class="po hp df fs cg br s ai" routerLink="servicios/proyectos-energia-solar/casa" (click)="clickPage()" >Casa<span class="material-symbols-outlined ma">arrow_right_alt</span></a>
+                                <a class="po hp df fs cg br s ai" routerLink="servicios/proyectos-energia-solar/empresa" (click)="clickPage()" >Empresa<span class="material-symbols-outlined ma">arrow_right_alt</span></a>
                             </div>
-                            <a class="projects__civil" routerLink="servicios/obra-civil" (click)="clickPage()" >Obra civil<span></span></a>
+                            <a class="pt__c fw br fs cg ai df" routerLink="servicios/obra-civil" (click)="clickPage()" >Obra civil<span class="material-symbols-outlined ma" >arrow_right_alt</span></a>
                         </div>
                     </div>
-                    <div class="services__operation--maintenence" >
-                        <a routerLink="servicios/operacion-y-mantenimiento" (click)="clickPage()" >Operación o mantenimiento<span class="services__project--icon"></span></a>    
+                    <div class="se__op--m wp" >
+                        <a class="b fw fm wp df ai" routerLink="servicios/operacion-y-mantenimiento" (click)="clickPage()" >Operación o mantenimiento<span class="material-symbols-outlined">arrow_right_alt</span></a>    
                     </div>
-                    <div class="services__operation--maintenence two" >
-                        <a routerLink="servicios/piscinas" (click)="clickPage()" >Piscinas<span class="services__project--icon"></span></a>    
+                    <div class="se__op--m wp df tw" >
+                        <a class="b fw fm wp df ai" routerLink="servicios/piscinas" (click)="clickPage()" >Piscinas<span class="material-symbols-outlined">arrow_right_alt</span></a>    
                     </div>
                 </div>
             </li>
-            <li class="li" (click)="clickPage()" ><a routerLinkActive="active" routerLink="proyectos" >Proyectos</a></li>
-            <li class="li" (click)="clickPage()" ><a routerLinkActive="active" routerLink="contacto" >Contacto</a></li>
-        </ul>
+            <li class="li wp pr" (click)="clickPage()" ><a class="cd fm" routerLinkActive="active" routerLink="proyectos" >Proyectos</a></li>
+            <li class="li wp pr" (click)="clickPage()" ><a class="cd fm" routerLinkActive="active" routerLink="contacto" >Contacto</a></li>
+        </ul>        
         <app-button-call-to-action
             routerLink="contacto"
             (click)="clickPage()"
@@ -47,63 +47,4 @@
     </nav>
 </div>
 
-<div class="container--nav--mobile">
-    <nav class="nav--mobile">
-        <picture class="nav--mobile__container--logo">
-            <a routerlinkActive="active" routerLink="" >
-                <img src="../../../../assets/img/logo-amp.png" (click)="clickEventRouterLink()" alt="logo-amp">
-            </a>
-        </picture>
-
-        <div class="nav--mobile__container--menu">
-            <button class="container--menu__icon" (click)="toggleMenu()" [class.active]="menuButtonStatus" >
-                <span class="icon--false"  src="../../../assets/icon/icon-menu.svg" alt="icon-menu"></span>
-            </button>
-        </div>
-    </nav>
-    
-    <div class="nav--mobile__container--dropdown" [class.active]="menuButtonStatus" >
-        <ul class="container--dropdown__list">
-            <li class="li"><a routerLinkActive="active" routerLink="quienes-somos" (click)="clickEventRouterLink()" (click)="clickPage()" >¿Quiénes somos?</a></li>
-            <li class="li li__services" [class.active]="containerServiceText" >
-                <a (click)="toggleContainerServices()" >Servicios<span class="container__services--icon"></span></a>
-                <div class="container__services" [class.active]="containerServicesContainer" >
-                    <div class="services__project--choose" 
-                        (click)="toggleContainerChooseProject()" >
-                        <p [class.active]="iconActiveProjectsChoose" >Construcción de proyectos<span [class.active]="iconActiveProjectsChoose" class="services__project--icon"></span></p>        
-                    </div>
-                    <div class="container--projects" [class.active]="containerChooseProject" >
-                        <div class="div">
-                            <p class="projects__energy" (click)="toggleContainerProjectScaleEnergy()" [class.active]="iconActiveProjectEnergy" >Proyectos de energía solar<span [class.active]="iconActiveProjectEnergy" class="services__project--icon"></span></p>
-                            <div class="container__energy--scale" *ngIf="containerProjectScaleEnergy" >
-                                <button class="scaleOne scale" routerLink="servicios/proyectos-energia-solar/casa" (click)="clickEventRouterLink()" (click)="clickPage()" >Casa<span class="icon"></span></button>
-                                <button class="scaleTwo scale" routerLink="servicios/proyectos-energia-solar/empresa" (click)="clickEventRouterLink()" (click)="clickPage()" >Empresa<span></span></button>
-                            </div>
-                            <a class="projects__civil" routerLink="servicios/obra-civil" (click)="clickEventRouterLink()" (click)="clickPage()" >Obra civil<span></span></a>
-                        </div>
-                    </div>
-                    <div class="services__operation--maintenence" >
-                        <a routerLink="servicios/operacion-y-mantenimiento" (click)="clickEventRouterLink()" (click)="clickPage()" >Operación o mantenimiento<span></span></a>    
-                    </div>
-                    <div class="services__operation--maintenence two" >
-                        <a routerLink="servicios/piscinas" (click)="clickEventRouterLink()" (click)="clickPage()" >Piscinas<span class="services__project--icon"></span></a>    
-                    </div>
-                </div>
-            </li>
-            <li class="li" ><a routerLinkActive="active" routerLink="proyectos" (click)="clickEventRouterLink()" (click)="clickPage()" >Proyectos</a></li>
-            <li class="li" ><a routerLinkActive="active" routerLink="contacto" (click)="clickEventRouterLink()" (click)="clickPage()" >Contacto</a></li>
-        </ul>
-        <div class="container--dropdown__button" >
-            <app-button-call-to-action
-            routerLink="contacto"
-            (click)="clickPage()"
-            (click)="clickEventRouterLink()"
-            [textListener]="selectTextOne"
-            [widthListener]="containerButton.width"
-            [heightListener]="containerButton.height"
-            [colorBorderListener]="containerButton.colorBorder"
-            [backgroundColorListener]="containerButton.backgroundColor"
-            ></app-button-call-to-action>
-        </div>
-    </div>
-</div>
+<app-navbar-mobile></app-navbar-mobile>

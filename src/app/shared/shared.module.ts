@@ -18,6 +18,9 @@ import { SectionShortsTriggersComponent } from './components/section-shorts-trig
 import { ContainerAlliesComponent } from './components/container-allies/container-allies.component';
 import { InteractionServiceTwoComponent } from './components/interaction-service-two/interaction-service-two.component';
 import { InteractionServiceFourComponent } from './components/interaction-service-four/interaction-service-four.component';
+import { NavbarServicesComponent } from './components/navbar-services/navbar-services.component';
+import { SectionTwoProjectsComponent } from './components/section-two-projects/section-two-projects.component';
+import { SectionAutomationComponent } from './components/section-automation/section-automation.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { InteractionServiceFourComponent } from './components/interaction-servic
     SectionShortsTriggersComponent,
     ContainerAlliesComponent,
     InteractionServiceTwoComponent,
-    InteractionServiceFourComponent
+    InteractionServiceFourComponent,
+    NavbarServicesComponent,
+    SectionTwoProjectsComponent,
+    SectionAutomationComponent,
   ],
   imports: [
     CommonModule,
@@ -56,7 +62,10 @@ import { InteractionServiceFourComponent } from './components/interaction-servic
     SectionShortsTriggersComponent,
     ContainerAlliesComponent,
     InteractionServiceTwoComponent,
-    InteractionServiceFourComponent
+    InteractionServiceFourComponent,
+    NavbarServicesComponent,
+    SectionTwoProjectsComponent,
+    SectionAutomationComponent
   ]
 })
 export class SharedModule { }
