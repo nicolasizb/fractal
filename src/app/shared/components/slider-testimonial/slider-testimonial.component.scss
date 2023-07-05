@@ -1,4 +1,4 @@
-.container--clients {
+.ctr--cl {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,11 +8,11 @@
     padding: 1rem 3rem 1rem;
     background-color: white;
 
-    > div {
+    .d {
         max-width: 95rem;
         width: 100%;
 
-        .clients--title {
+        .cl--ti {
             position: relative;
             width: 100%;
             margin: 2rem 0 2rem;
@@ -22,40 +22,40 @@
             color: var(--color-dark);
         }
 
-        #radio-1:checked ~ .clients--testimonials #card-1, 
-        #radio-2:checked ~ .clients--testimonials #card-2,
-        #radio-3:checked ~ .clients--testimonials #card-3 {
+        #radio-1:checked ~ .cl--te #card-1, 
+        #radio-2:checked ~ .cl--te #card-2,
+        #radio-3:checked ~ .cl--te #card-3 {
             transform: translateX(0) scale(1);
             opacity: 1;
             z-index: 1;
         }
-        #radio-1:checked ~ .clients--testimonials #card-2,
-        #radio-2:checked ~ .clients--testimonials #card-3,
-        #radio-3:checked ~ .clients--testimonials #card-1 {
+        #radio-1:checked ~ .cl--te #card-2,
+        #radio-2:checked ~ .cl--te #card-3,
+        #radio-3:checked ~ .cl--te #card-1 {
           transform: translateX(17%) scale(0.8);
           opacity: 0.5;
           z-index: 0;
         }
-        #radio-1:checked ~ .clients--testimonials #card-3,
-        #radio-2:checked ~ .clients--testimonials #card-1,
-        #radio-3:checked ~ .clients--testimonials #card-2 {
+        #radio-1:checked ~ .cl--te #card-3,
+        #radio-2:checked ~ .cl--te #card-1,
+        #radio-3:checked ~ .cl--te #card-2 {
           transform: translateX(-17%) scale(0.8);
           opacity: 0.5;
           z-index: 0;
         }
 
-        .input {
+        .in {
             display: none;
         }
 
-        .clients--testimonials {
+        .cl--te {
             position: relative;
             display: flex;
             align-items: center;
             width: 100%;
             transform-style: preserve-3d;
 
-            .testimonials__client-card {
+            .te__cl {
                 position: absolute;
                 left: 0;
                 right: 0;
@@ -69,7 +69,7 @@
                 transition: transform 0.5s ease;             
                 cursor: pointer;
     
-                .testimonials__info--left {
+                .te__if {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -77,20 +77,20 @@
                     height: 100%;
                     padding: 4rem 2rem;
     
-                    .info--left__representative--name {
+                    .if--le__ren {
                         margin: 0 0 0.5rem 0;
                         font-size: var(--font-medium);
                         font-weight: 400;
                         color: var(--color-6);
                     }
-                    .info--left__business--name {
+                    .if--le__bun {
                         margin: 0 0 2rem 0;
                         font-size: var(--font-small);
                         font-weight: 300;
                         font-style: italic;
                         color: var(--color-2);
                     }
-                    .info--left__testimonial--text {
+                    .if--le__tet {
                         text-align: justify;
                         line-height: var(--line-height-1);
                         margin: 0 0 1.5rem 0;
@@ -98,22 +98,19 @@
                         font-weight: 400;
                         color: var(--color-dark);
                     }
-                    .info--left__container--img {
+                    .if--le__cti {
                         text-align: center;
                         
                         img {
                             margin: auto 0;
                         }
                     }
-                    .button {
-                        margin: 0 auto;
-                    }
                 }
 
-                .testimonials__info--right {
+                .te__if--ri {
                     width: 100%;
     
-                    .info--right__project-image {
+                    .if--ri__pti {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
@@ -127,19 +124,15 @@
 
 // MOBILE
 @media screen and (max-width: 679px) {
-    .container--clients {
-        > div {
+    .ctr--cl {
+        .d {
             width: 100%;
-            .clients--testimonials {
-
-                .testimonials__container--span {
-                    display: none;
-                }
-                .testimonials__client-card {
-                    .testimonials__info--left {
+            .cl--te {
+                .te__cl {
+                    .te__if {
                         width: 100%;
                     }
-                    .testimonials__info--right {
+                    .te__if--ri {
                         display: none;
                     }
                 }

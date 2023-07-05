@@ -1,16 +1,16 @@
-<section class="container--cover--section" [ngStyle]="{
+<section class="ctr--cs" [ngStyle]="{
     'background': 'linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(' + imgContainerListener + ')',
     'background-repeat': 'no-repeat',
     'background-position': 'center',
     'background-size': 'cover',
     'background-attachment': 'fixed'
     }" >
-    <div>
-        <div class="container--info">
-            <p class="info__title" [ngStyle]="{
+    <div class="d">
+        <div class="cti">
+            <p class="in__ti" [ngStyle]="{
                 'color': titleColorListener
             }" >{{ titleListener }}</p>
-            <p class="info__paragraph" >{{ paragraphListener }}</p>
+            <p class="in__pa" >{{ paragraphListener }}</p>
             <app-button-call-to-action
                 [routerLink]="linkPageListener"
                 [widthListener]="containerButtonOne.width"

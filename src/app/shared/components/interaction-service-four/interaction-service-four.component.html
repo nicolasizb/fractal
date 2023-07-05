@@ -1,19 +1,19 @@
-<section class="container--interaction" >
-    <div>
-        <article class="container--interaction__card" >
-            <div class="card__titles--service" *ngIf="serviceStateOne || serviceStateTwo || serviceStateThree || serviceStateFour " >
-                <button (click)="toggleServiceState()" class="title" [class.active]="serviceStateOne" ><p>{{ titleServiceOneListener }}</p></button>
-                <button (click)="toggleServiceStateTwo()" class="title" [class.active]="serviceStateTwo" ><p>{{ titleServiceTwoListener }}</p></button>
-                <button (click)="toggleServiceStateThree()" class="title" [class.active]="serviceStateThree" ><p>{{ titleServiceThreeListener }}</p></button>
-                <button (click)="toggleServiceStateFour()" class="title" [class.active]="serviceStateFour" ><p>{{ titleServiceFourListener }}</p></button>
+<section class="ctr--in" >
+    <div class="d">
+        <article class="ctr--inc" >
+            <div class="ca__tis" *ngIf="serviceStateOne || serviceStateTwo || serviceStateThree || serviceStateFour " >
+                <button (click)="toggleServiceState()" class="ti" [class.active]="serviceStateOne" ><p>{{ titleServiceOneListener }}</p></button>
+                <button (click)="toggleServiceStateTwo()" class="ti" [class.active]="serviceStateTwo" ><p>{{ titleServiceTwoListener }}</p></button>
+                <button (click)="toggleServiceStateThree()" class="ti" [class.active]="serviceStateThree" ><p>{{ titleServiceThreeListener }}</p></button>
+                <button (click)="toggleServiceStateFour()" class="ti" [class.active]="serviceStateFour" ><p>{{ titleServiceFourListener }}</p></button>
             </div>
-            <div class="card__info--service" *ngIf="serviceStateOne" >
-                <div class="service__info" >                    
-                    <div [innerHTML]="paragraphServiceOneListener" class="info__paragraph" >
+            <div class="ca__in--se" *ngIf="serviceStateOne" >
+                <div class="se__if" >                    
+                    <div [innerHTML]="paragraphServiceOneListener" class="if__pa" >
                     </div>
-                    <img class="info__img" [src]="imgServiceOneListener" alt="image service">
+                    <img class="if__i" [src]="imgServiceOneListener" alt="image service">
                 </div>
-                <div class="service__button" >
+                <div class="se__b" >
                     <app-button-call-to-action
                     [widthListener]="containerButtonOne.width"
                     [heightListener]="containerButtonOne.height"
@@ -27,13 +27,13 @@
                 </div>
             </div>
 
-            <div class="card__info--service" *ngIf="serviceStateTwo" >
-                <div class="service__info" >                    
-                    <div [innerHTML]="paragraphServiceTwoListener" class="info__paragraph" >                      
+            <div class="ca__in--se" *ngIf="serviceStateTwo" >
+                <div class="se__if" >                    
+                    <div [innerHTML]="paragraphServiceTwoListener" class="if__pa" >                      
                     </div>
-                    <img class="info__img" [src]="imgServiceTwoListener" alt="">
+                    <img class="if__i" [src]="imgServiceTwoListener" alt="">
                 </div>
-                <div class="service__button" >
+                <div class="se__b" >
                     <app-button-call-to-action
                     [widthListener]="containerButtonOne.width"
                     [heightListener]="containerButtonOne.height"
@@ -47,13 +47,13 @@
                 </div>
             </div>
 
-            <div class="card__info--service" *ngIf="serviceStateThree" >
-                <div class="service__info" >                    
-                    <div [innerHTML]="paragraphServiceThreeListener" class="info__paragraph" >                      
+            <div class="ca__in--se" *ngIf="serviceStateThree" >
+                <div class="se__if" >                    
+                    <div [innerHTML]="paragraphServiceThreeListener" class="if__pa" >                      
                     </div>
-                    <img class="info__img" [src]="imgServiceThreeListener" alt="">
+                    <img class="if__i" [src]="imgServiceThreeListener" alt="">
                 </div>
-                <div class="service__button" >
+                <div class="se__b" >
                     <app-button-call-to-action
                     [widthListener]="containerButtonOne.width"
                     [heightListener]="containerButtonOne.height"
@@ -67,13 +67,13 @@
                 </div>
             </div>
 
-            <div class="card__info--service" *ngIf="serviceStateFour" >
-                <div class="service__info" >                    
-                    <div [innerHTML]="paragraphServiceFourListener" class="info__paragraph" >                      
+            <div class="ca__in--se" *ngIf="serviceStateFour" >
+                <div class="se__if" >                    
+                    <div [innerHTML]="paragraphServiceFourListener" class="if__pa" >                      
                     </div>
-                    <img class="info__img" [src]="imgServiceFourListener" alt="imagen obra civil">
+                    <img class="if__i" [src]="imgServiceFourListener" alt="imagen obra civil">
                 </div>
-                <div class="service__button" >
+                <div class="se__b" >
                     <app-button-call-to-action
                     [widthListener]="containerButtonOne.width"
                     [heightListener]="containerButtonOne.height"
@@ -88,25 +88,25 @@
             </div>
         </article>
 
-        <article class="container--interaction__card" *ngIf="serviceStateMobile" >
-            <div class="card__info--service" >                                  
-                <p class="info__title" >{{ titleServiceOneListener }}</p>
-                <img class="info__img" [src]="imgServiceOneListener" alt="">
-                <div [innerHTML]="paragraphServiceOneListener" class="info__paragraph" >                    
+        <article class="ctr--inc" *ngIf="serviceStateMobile" >
+            <div class="ca__in--se" >                                  
+                <p class="if__ti" >{{ titleServiceOneListener }}</p>
+                <img class="if__i" [src]="imgServiceOneListener" alt="">
+                <div [innerHTML]="paragraphServiceOneListener" class="if__pa" >                    
                 </div>
-                <p class="info__title space" >{{ titleServiceTwoListener }}</p>
-                <img class="info__img" [src]="imgServiceTwoListener" alt="">
-                <div [innerHTML]="paragraphServiceTwoListener" class="info__paragraph" >                       
+                <p class="if__ti sp" >{{ titleServiceTwoListener }}</p>
+                <img class="if__i" [src]="imgServiceTwoListener" alt="">
+                <div [innerHTML]="paragraphServiceTwoListener" class="if__pa" >                       
                 </div>
-                <p class="info__title space" >{{ titleServiceThreeListener }}</p>
-                <img class="info__img" [src]="imgServiceThreeListener" alt="">
-                <div [innerHTML]="paragraphServiceThreeListener" class="info__paragraph" >                       
+                <p class="if__ti sp" >{{ titleServiceThreeListener }}</p>
+                <img class="if__i" [src]="imgServiceThreeListener" alt="">
+                <div [innerHTML]="paragraphServiceThreeListener" class="if__pa" >                       
                 </div>
-                <p class="info__title space" >{{ titleServiceFourListener }}</p>
-                <img class="info__img" [src]="imgServiceFourListener" alt="">
-                <div [innerHTML]="paragraphServiceFourListener" class="info__paragraph" >                       
+                <p class="if__ti sp" >{{ titleServiceFourListener }}</p>
+                <img class="if__i" [src]="imgServiceFourListener" alt="">
+                <div [innerHTML]="paragraphServiceFourListener" class="if__pa" >                       
                 </div>
-                <div class="service__button" >
+                <div class="se__b" >
                     <app-button-call-to-action
                     [routerLink]="linkPageListener"
                     [widthListener]="containerButtonOne.width"

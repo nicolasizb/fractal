@@ -1,0 +1,58 @@
+.ctr__cpe {
+    padding: 10rem 3rem 3rem;
+    height: 100vh;
+
+    .d {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-around;
+        max-width: 95rem;
+
+        .cpe__ca {
+            position: relative;
+            width: 45%;
+            min-width: 30rem;
+            text-align: center;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            cursor: pointer;
+
+            img {
+                height: 30rem;
+                object-fit: cover;
+                background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75));
+            }
+            p {
+                position: absolute;
+                top: calc(0% + 1.5rem);
+                left: calc(0% + 1.5rem);
+                padding: 0.4rem 0.8rem;
+                font-size: var(--font-big);
+                font-weight: 500;
+                border-radius: 1.5rem;
+                background-color: var(--color-5);
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                color: var(--color-dark);
+            }
+            &:hover {
+                transform: scale(1.05) translateX(0);
+                background-color: var(--color-dark);
+            }
+        }
+    }
+}
+
+.df {
+    display: flex;
+}
+.jc {
+    justify-content: center;
+}
+.ac {
+    align-items: center;
+}
+.wd {
+    width: 100%;
+}
+.br {
+    border-radius: 1.5rem;
+}

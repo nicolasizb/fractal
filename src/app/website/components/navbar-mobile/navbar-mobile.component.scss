@@ -25,7 +25,6 @@
                 }
             }
             .nav--mobile__container--menu {
-    
                 .container--menu__icon {
                     border: none;
                     background-color: white;
@@ -43,8 +42,7 @@
                     &.active {
                         .icon--false {
                             width: 4rem;
-                            background-image: url(../../../../assets/icon/icon-menu-close.svg);
-                            
+                            background-image: url(../../../../assets/icon/icon-menu-close.svg);                            
                         }
                     }
                 }

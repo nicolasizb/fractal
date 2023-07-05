@@ -5,6 +5,7 @@
     align-items: center;
     width: 100%;
     height: 100vh;
+    min-height: 55rem;
     padding: 0 3rem;
     background-color: white;
 
@@ -14,8 +15,8 @@
         .ctr--mc {
             display: flex;
             align-items: center;
+            padding: 10rem 0 0;
             height: 68vh;
-            padding: 10rem 0 0 0;
 
             article {
                 margin: 0 15rem 0 0;
@@ -96,10 +97,13 @@
         .ctr--pt {
             margin: 0 0 1.5rem 0;
             font-size: var(--font-title-medium);
-            font-weight: 500;
+            font-weight: 400;
             color: var(--color-gray);
             .ti--co {
                 color: var(--color-5);
+            }
+            .ti--cb {
+                color: var(--color-2);
                 font-weight: 500;
             }
         }
@@ -113,21 +117,6 @@
         }
     }
 }
-
-.container--call-to-action {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 3rem;
-
-    .d {
-        max-width: 95rem;
-        width: 100%;
-    }
-}
-
 
 // TABLET
 @media screen and (min-width: 680px) and (max-width: 900px) {
@@ -209,17 +198,20 @@
                     display: none;
                 }
             }
+            .pd {
+                padding: 0;
+            }
         
             .ctr--tr {
                 flex-direction: column;
                 height: 100%;
-                margin: 3rem 0 3rem;
+                padding: 0 0 3rem;
     
                 article {
                     align-items: center;
                     width: 70vw;
-                    height: 10%;
-                    margin: 0.5rem 0;
+                    height: 100%;
+                    margin: 1.5rem 0;
                     
                     img {
                         display: none;

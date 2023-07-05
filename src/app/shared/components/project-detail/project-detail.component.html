@@ -1,65 +1,65 @@
-<article class="project" *ngIf="stateDetailEnergyListener" >
-    <button class="project__button--close" (click)="hideProjectEnergyDetail()" ><span></span></button>
-    <p class="project__descriptionSmall" >{{ projectEnergySelectedListener.descriptionSmall }}</p>
-    <div class="project__segmentation" >
-        <p class="segmentation energy" >{{ projectEnergySelectedListener.scale }}</p>
-        <p class="segmentation energy" >{{ projectEnergySelectedListener.category }}</p>
+<article class="pt" *ngIf="stateDetailEnergyListener" >
+    <button class="pt__bcl" (click)="hideProjectEnergyDetail()" ><span></span></button>
+    <p class="pt__de" >{{ projectEnergySelectedListener.descriptionSmall }}</p>
+    <div class="pt__se" >
+        <p class="se en" >{{ projectEnergySelectedListener.scale }}</p>
+        <p class="se en" >{{ projectEnergySelectedListener.category }}</p>
     </div>
-    <img class="project__img" [src]="projectEnergySelectedListener.img" alt="">
-    <div class="project__description" >
-        <p class="description__title energy" >Descripción</p>
-        <p class="description__paragraph" >{{ projectEnergySelectedListener.descriptionLarge }}</p>
+    <img class="pt__im" [src]="projectEnergySelectedListener.img" alt="">
+    <div class="pt__de" >
+        <p class="de__ti en" >Descripción</p>
+        <p class="de__pa" >{{ projectEnergySelectedListener.descriptionLarge }}</p>
     </div>
-    <div class="project__details">
-        <p class="details__title energy" >Detalles</p>
-        <div class="details__contain" >
-            <p class="contain__title" >Sistema:</p>
-            <p class="contain__detail energy" >{{ projectEnergySelectedListener.details.system }}</p>
+    <div class="pt__dl">
+        <p class="dl__ti en" >Detalles</p>
+        <div class="dl__ct" >
+            <p class="ct__ti" >Sistema:</p>
+            <p class="ct__dl en" >{{ projectEnergySelectedListener.details.system }}</p>
         </div>
-        <div  class="details__contain" >
-            <p class="contain__title" >Número de paneles:</p>
-            <p class="contain__detail energy" >{{ projectEnergySelectedListener.details.numberPanels }}</p> 
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Número de paneles:</p>
+            <p class="ct__dl en" >{{ projectEnergySelectedListener.details.numberPanels }}</p> 
         </div>
-        <div  class="details__contain" >
-            <p class="contain__title" >Potencia de paneles:</p>
-            <p class="contain__detail energy" >{{ projectEnergySelectedListener.details.powerPanels }}</p>
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Potencia de paneles:</p>
+            <p class="ct__dl en" >{{ projectEnergySelectedListener.details.powerPanels }}</p>
         </div>
-        <div  class="details__contain" >
-            <p class="contain__title" >Generarión anual:</p>
-            <p class="contain__detail energy" >{{ projectEnergySelectedListener.details.annualGeneration }}</p>
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Generarión anual:</p>
+            <p class="ct__dl en" >{{ projectEnergySelectedListener.details.annualGeneration }}</p>
         </div>
     </div>
 </article>
 
-<article class="project" *ngIf="stateDetailSwimmingListener" >
-    <button class="project__button--close" (click)="hideProjectSwimmingDetail()" ><span></span></button>
-    <p class="project__descriptionSmall" >{{ projectSwimmingSelectedListener.descriptionSmall }}</p>
-    <div class="project__segmentation" >
-        <p class="segmentation swimming" >{{ projectSwimmingSelectedListener.scale }}</p>
-        <p class="segmentation swimming" >{{ projectSwimmingSelectedListener.category }}</p>
+<article class="pt" *ngIf="stateDetailSwimmingListener" >
+    <button class="pt__bcl" (click)="hideProjectSwimmingDetail()" ><span></span></button>
+    <p class="pt__de" >{{ projectSwimmingSelectedListener.descriptionSmall }}</p>
+    <div class="pt__se" >
+        <p class="se sw" >{{ projectSwimmingSelectedListener.scale }}</p>
+        <p class="se sw" >{{ projectSwimmingSelectedListener.category }}</p>
     </div>
-    <img class="project__img" [src]="projectSwimmingSelectedListener.img" alt="">
-    <div class="project__description" >
-        <p class="description__title swimming" >Descripción</p>
-        <p class="description__paragraph" >{{ projectSwimmingSelectedListener.descriptionLarge }}</p>
+    <img class="pt__im" [src]="projectSwimmingSelectedListener.img" alt="">
+    <div class="pt__de" >
+        <p class="de__ti sw" >Descripción</p>
+        <p class="de__pa" >{{ projectSwimmingSelectedListener.descriptionLarge }}</p>
     </div>
-    <div class="project__details">
-        <p class="details__title swimming" >Detalles</p>
-        <div class="details__contain" >
-            <p class="contain__title" >Sistema:</p>
-            <p class="contain__detail swimming" >{{ projectSwimmingSelectedListener.details.systemWater }}</p>
+    <div class="pt__dl">
+        <p class="dl__ti sw" >Detalles</p>
+        <div class="dl__ct" >
+            <p class="ct__ti" >Sistema:</p>
+            <p class="ct__dl sw" >{{ projectSwimmingSelectedListener.details.systemWater }}</p>
         </div>
-        <div  class="details__contain" >
-            <p class="contain__title" >Número de paneles:</p>
-            <p class="contain__detail swimming" >{{ projectSwimmingSelectedListener.details.filters }}</p> 
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Número de paneles:</p>
+            <p class="ct__dl sw" >{{ projectSwimmingSelectedListener.details.filters }}</p> 
         </div>
-        <div  class="details__contain" >
-            <p class="contain__title" >Potencia de paneles:</p>
-            <p class="contain__detail swimming" >{{ projectSwimmingSelectedListener.details.space }}</p>
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Potencia de paneles:</p>
+            <p class="ct__dl sw" >{{ projectSwimmingSelectedListener.details.space }}</p>
         </div>
-        <div  class="details__contain" >
-            <p class="contain__title" >Generarión anual:</p>
-            <p class="contain__detail swimming" >{{ projectSwimmingSelectedListener.details.maintence }}</p>
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Generarión anual:</p>
+            <p class="ct__dl sw" >{{ projectSwimmingSelectedListener.details.maintence }}</p>
         </div>
     </div>
 </article>

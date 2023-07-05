@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { CoverHomeComponent } from './components/cover-home/cover-home.component';
 import { ButtonCallToActionComponent } from './components/button-call-to-action/button-call-to-action.component';
 
 import { SectionCallToActionComponent } from './components/section-call-to-action/section-call-to-action.component';
@@ -24,7 +23,6 @@ import { SectionAutomationComponent } from './components/section-automation/sect
 
 @NgModule({
   declarations: [
-    CoverHomeComponent,
     ButtonCallToActionComponent,
     SectionCallToActionComponent,
     ProjectModelComponent,
@@ -48,7 +46,6 @@ import { SectionAutomationComponent } from './components/section-automation/sect
     RouterModule
   ],
   exports: [
-    CoverHomeComponent,
     ButtonCallToActionComponent,
     SectionCallToActionComponent,
     ProjectModelComponent,

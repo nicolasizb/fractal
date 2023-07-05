@@ -1,12 +1,12 @@
-<div class="frequent--questions__articles">
-    <article class="fq--article" >
-        <div >
-            <p class="question" >{{ questionParagraphListener }}</p>
+<div class="fr--qa">
+    <article class="fa--ar" >
+        <div class="d" >
+            <p class="qu" >{{ questionParagraphListener }}</p>
             <button (click)="activeContainerAccordion()">
                 <span [class.active]="stateSpan" ></span>
             </button>
         </div>
-        <p *ngIf="stateSpan" class="answer" >{{ answerParagraphListener }}</p>
+        <p *ngIf="stateSpan" class="an" >{{ answerParagraphListener }}</p>
     </article>
 </div>
 

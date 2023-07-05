@@ -1,4 +1,4 @@
-.project {
+.pt {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
 
-    .project__button--close {
+    .pt__bcl {
         margin: 0 auto 0 0;
         width: 2.4rem;
         height: 2.4rem;
@@ -30,39 +30,39 @@
             background-repeat: no-repeat;
         }
     }
-    .project__descriptionSmall {
+    .pt__de {
         width: 100%;
         font-size: var(--font-title-medium);
         color: var(--color-gray);
     }
-    .project__segmentation {
+    .pt__se {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
         padding: 1.5rem 0;
 
-        .segmentation {
+        .se {
             margin: 0.5rem 1.2rem;
             padding: 0.5rem 1.5rem;
             font-size: var(--font-small);
             font-weight: 600;
             border-radius: 0.5rem;
         }
-        .energy {
+        .en {
             background-color: var(--color-5);
             color: var(--color-dark);
         }
-        .swimming {
+        .sw {
             background-color: var(--color-2);
             color: var(--color-dark);   
         }
     }
-    .project__img {
+    .pt__im {
         width: 90%;
         border-radius: 1.5rem;
     }
-    .project__description {
+    .pt__de {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -70,24 +70,24 @@
         width: 90%;
         padding: 2rem 0;
 
-        .description__title {
+        .de__ti {
             margin: 1rem 0;
             font-size: var(--font-big);
             font-weight: 600;
         }
-        .description__paragraph {
+        .de__pa {
             text-align: justify;
             font-size: var(--font-medium);
             font-weight: 300;
         }
-        .energy {
+        .en {
             color: var(--color-5);
         }
-        .swimming {
+        .sw {
             color: var(--color-2);
         }
     }
-    .project__details {
+    .pt__dl {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -95,13 +95,13 @@
         width: 90%;
         padding: 1rem 0;
 
-        .details__title {
+        .dl__ti {
             margin: 0.5rem 0;
             font-size: var(--font-big);
             font-weight: 600;
             color: var(--color-5);
         }
-        .details__contain {
+        .dl__ct {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
@@ -113,17 +113,17 @@
             font-size: var(--font-medium);
             font-weight: 400;
 
-            .contain__title {
+            .ct__ti {
                 padding: 0 0.2rem 0 0;
             }
-            .energy {
+            .en {
                 color: var(--color-5);
             }
-            .swimming {
+            .sw {
                 color: var(--color-2);
             }
         }
-        .details__contain:nth-child(5) {
+        .dl__ct:nth-child(5) {
             border-bottom: dashed 0.2rem var(--color-gray);
         }
         .energy {

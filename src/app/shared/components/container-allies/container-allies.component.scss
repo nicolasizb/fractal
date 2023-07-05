@@ -1,4 +1,4 @@
-.container--allies {
+.ctr--al {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   height: 100%;
   padding: 0 3rem 2rem;
 
-  > div {
+  .d {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;

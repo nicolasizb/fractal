@@ -1,4 +1,4 @@
-.container--call-to-action {
+.ctr--cta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,40 +6,40 @@
     height: 100%;
     padding: 5rem 3rem;
 
-    > div {
+    .d {
         max-width: 95rem;
         width: 100%;
 
-        .card {
+        .ca {
             display: flex;
             flex-wrap: wrap;
             gap: 3rem;
             justify-content: space-between;
             align-items: center;
 
-            .card__text {
+            .ca__tx {
                 width: 38rem;
-                .text__title {
+                .tx__ti {
                     margin: 0 0 3rem 0;
                     font-size: var(--font-title-medium);
                     font-weight: 600;
                     color: var(--color-dark);
                 }
-                .text__paragraph {
+                .tx__pa {
                     line-height: var(--line-height-1);
                     font-size: var(--font-big);
                     color: var(--color-dark);
                 }
             }
-            .card__figures {
+            .ca__fi {
                 position: relative;
                 width: 42rem;
-                .figures__img {
+                .fi__im {
                     width: 100%;
                     border-radius: 8rem 0;
                     box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
                 }
-                .figures__button {
+                .fi__bu {
                     position: absolute;
                     bottom: calc(0% - 2.5rem);
                     left: calc(0% - 6rem);
@@ -51,24 +51,24 @@
 
 // TABLET AND MOBILE
 @media screen and (max-width: 900px) {
-    .container--call-to-action {        
-        > div {
-            .card {
+    .ctr--cta {        
+        .d {
+            .ca {
                 flex-direction: column;   
                 justify-content: space-around;
 
-                .card__text {
+                .ca__tx {
                     max-width: 80vw;
                     width: 100%;
                     text-align: center;
         
-                    .text__paragraph {
+                    .tx__pa {
                         margin: 0 0 2rem 0; 
                     }
                 }
-                .card__figures {
+                .ca__fi {
                     width: 80vw;
-                    .figures__button {
+                    .fi__bu {
                         left: calc(50% - 10.7rem);
                     }
                 }

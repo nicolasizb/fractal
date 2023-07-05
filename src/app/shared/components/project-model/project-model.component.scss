@@ -1,4 +1,4 @@
-.card {
+.ca {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,37 +16,37 @@
         object-fit: cover;
         border-radius: 1.5rem 1.5rem 0 0;
     }
-    .card__segmentation {
+    .ca__se {
         display: flex;
         padding: 1rem 0;
         font-family: var(--font-text);
 
-        .segmentation {
+        .se {
             margin: 0 1rem;
             padding: 0.5rem 1.5rem;
             background-color: var(--color-dark);
             font-size: var(--font-small);
             border-radius: 0.5rem;
         }
-        .energyText {
+        .etx {
             color: var(--color-5);
         }
-        .swimmingText {
+        .swtx {
             color: var(--color-3);
         }
     }
-    .card__description {
+    .ca__de {
         padding: 1rem 1.5rem 1.5rem;
         font-size: var(--font-small);
         font-family: var(--font-text);
     }
 }
-.energy:hover {
+.en:hover {
     box-shadow: var(--color-5) 0px 0px 6px;
     transform: scale(1.02) translateZ(0px);
     cursor: pointer;
 }
-.swimming:hover {
+.sw:hover {
     box-shadow: var(--color-3) 0px 0px 6px;
     transform: scale(1.02) translateZ(0px);
     cursor: pointer;
@@ -55,11 +55,11 @@
 
 // TABLET
 @media screen and (min-width: 680px) and (max-width: 900px) {
-    .card {
-        .card__segmentation {
+    .ca {
+        .ca__se {
             flex-direction: column;
     
-            .segmentation {
+            .se {
                 margin: 0.5rem 0;
                 padding: 0.5rem 6rem;
             }
@@ -69,14 +69,14 @@
 
 // MOBILE
 @media screen and (max-width: 679px) {
-    .card {
+    .ca {
         width: 90vw;
 
-        .card__segmentation {
+        .ca__se {
             flex-direction: column;
             padding: 0.5rem 0 0;
     
-            .segmentation {
+            .se {
                 margin: 0.5rem 0;
                 padding: 0.5rem 4rem;
             }

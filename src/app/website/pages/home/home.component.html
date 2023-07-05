@@ -1,8 +1,8 @@
-<section class="ctr--c" >
+<section class="ctr--c" role="region" aria-label="Revitalización sostenible, eficaz y rentable." aria-labelledby="caracteristicas-titulo" aria-labelledby="caracteristicas-titulo">
     <div class="d" >
-        <section class="ctr--mc">
+        <section class="ctr--mc pd">
             <article>
-                <h1>Revitalización sostenible, rentable y digital.</h1>
+                <h1 id="caracteristicas-titulo" >Revitalización sostenible, eficaz y rentable.</h1>
                 <app-button-call-to-action
                     routerLink="contacto"
                     [widthListener]="containerButtonOne.width"
@@ -10,13 +10,15 @@
                     [colorBorderListener]="containerButtonOne.colorBorder"
                     [backgroundColorListener]="containerButtonOne.backgroundColor"
                     [textListener]="containerButtonOne.text"
+                    role="button"
+                    aria-label="Botón de llamada a la acción"
                 ></app-button-call-to-action>
             </article>
             <picture>
                 <img src="../../../assets/vector/vector-cover.svg" alt="Vector Página de Inicio">
             </picture>
         </section>
-        <section class="ctr--tr">
+        <section class="ctr--tr"  role="region" aria-label="Características principales" >
             <article>
                 <img src="../../../../assets/icon/icon-verification-color-2.svg" alt="Icono de Sostenibilidad">
                 <div class="te--tr">
@@ -44,9 +46,9 @@
 
 <app-section-two-projects></app-section-two-projects>
 
-<section class="ctr--p">
+<section class="ctr--p" role="region" aria-label="Información sobre AMP" >
     <div class="d" >
-        <h3 class="ctr--pt">En AMP, utilizamos la tecnología para <b class="ti--co">transformar la energía</b></h3>
+        <h3 class="ctr--pt">En <span class="ti--cb">AMP</span> somos <span class="ti--co">Eficientes</span> en cada pulso, <span class="ti--co">Rápidos</span> en cada avance.</h3>
         <p class="ctr--pp"> 
             Nos destacamos por nuestras soluciones vanguardistas que optimizan tus recursos y elevan el rendimiento de tus espacios. Nuestro enfoque innovador te garantiza una mayor eficiencia y comodidad.
         </p>
@@ -72,22 +74,7 @@
 <app-slider-testimonial></app-slider-testimonial>
 <app-container-allies></app-container-allies>
 
-<app-section-triggers
-    [titleContainerTriggersListener]="sectionTriggers.titleContainer"
-    [paragraphContainerTriggersListener]="sectionTriggers.paragraphContainer"
-
-    [iconTriggerListenerOne]="sectionTriggers.iconTriggerOne"
-    [titleTriggerListenerOne]="sectionTriggers.titleCardOne"
-    [paragraphTriggerListenerOne]="sectionTriggers.paragraphCardOne"
-
-    [iconTriggerListenerTwo]="sectionTriggers.iconTriggerTwo"
-    [titleTriggerListenerTwo]="sectionTriggers.titleCardTwo"
-    [paragraphTriggerListenerTwo]="sectionTriggers.paragraphCardTwo"
-
-    [iconTriggerListenerThree]="sectionTriggers.iconTriggerThree"
-    [titleTriggerListenerThree]="sectionTriggers.titleCardThree"
-    [paragraphTriggerListenerThree]="sectionTriggers.paragraphCardThree"
-></app-section-triggers>
+<app-section-triggers></app-section-triggers>
 
 <app-section-call-to-action
     [titleListener]="sectionCallToAction.title"

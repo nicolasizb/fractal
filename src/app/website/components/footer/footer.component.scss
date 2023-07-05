@@ -1,4 +1,4 @@
-.container--footer {
+.ctr--fo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,73 +14,75 @@
         justify-content: space-between;
         max-width: 95rem;
         width: 100%;
-        .container--footer__social--media {
+        height: 100%;
+
+        .ctr--fo__sm {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             width: 25rem;
-            height: 35vh;
+            height: 100%;
     
-            .social--media__logo--amp {
+            .sm__la {
                 display: flex;
                 justify-content: center;
-                margin: 2rem 0 0 0;
                 img {
                     width: 18rem;
                 }
             }
-            .social--media__networks {
+            .sm__ne {
                 display: flex;
                 justify-content: center;
                 margin: 1rem 0 0;
     
-                .networks__container--logo {
+                .ne__cti {
                     display: flex;
                     align-items: center;
                     height: 3rem;
 
                     cursor: pointer;
     
-                    .logo--instagram {
+                    .lg--i {
                         margin: 0 2rem 0 0;
                     }
-                    .logo--whatsapp, .logo--facebook {
+                    .lg--w, .lg--f {
                         margin: 0 1.5rem 0 0;
                     }
                 }
             }
-            .social--media__contact {
+            .sm__co {
                 display: flex;
                 height: 2.4rem;
-                margin: 1rem 0 1.5rem;
+                margin: 3rem 0 1.5rem;
     
-                .contact__email--icon {
+                .co__emi {
                     width: 2.4rem;
                     margin: 0 1rem 0 0;
-                    background-image: url(../../../../assets/icon/icon-email.png);
+                    background-image: url(../../../../assets/icon/icon-mail.svg);
                     background-size: cover;
                     background-position: center;
                 }
-                .contact__email--address {
+                .co__ema {
                     margin: auto 0;
                     font-size: var(--font-small);
                     font-weight: 300;
                     color: var(--color-gray-3);
                 }
             }
-            .social--media__address {
+            .sm__ad {
                 display: flex;
                 height: 2.4rem;
     
-                .address__icon {
-                    width: 2.4rem;
+                .ad__i {
+                    width: 2rem;
+                    height: 2rem;
                     margin: 0 1rem 0 0;
                     background-image: url(../../../../assets/icon/icon-map.svg);
                     background-size: cover;
                     background-position: center;
                 }
-                .address__location {
+                .ad__l {
                     margin: auto 0;
                     font-size: var(--font-small);
                     font-weight: 300;
@@ -88,17 +90,18 @@
                 }
             }
         }
-        .container--footer__hyperliks {
+        .ctr--fo__hy {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            height: 42vh;
+            justify-content: space-around;
+            height: 100%;
+            margin: auto 0;
     
-            .hyperliks__list--link {
+            .hy__lik {
                 display: flex;
                 align-items: center;
                 list-style: none;
-                margin: auto 0;
+                margin: 2rem 0;
                 
                 a {
                     margin: 0 auto;
@@ -116,7 +119,7 @@
     }
 }
 
-.container--rights {
+.ctr--ri {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,10 +138,10 @@
 
 // MOBILE
 @media screen and (max-width: 679px) {
-    .container--footer {
+    .ctr--fo {
         > div {
             justify-content: space-around;
-            .container--footer__social--media {
+            .ctr--fo__sm {
                 margin: 0 0 4rem 0;
             }
         }

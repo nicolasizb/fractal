@@ -1,4 +1,4 @@
-.container--cover--section {
+.ctr--cs {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,26 +8,26 @@
     padding: 3rem;
     background-size: cover;
 
-    > div {
+    .d {
         max-width: 95rem;
         width: 100%;
 
-        .container--info {
+        .cti {
             display: flex;
             flex-direction: column;
-            align-items: start;
+            align-items: flex-start;
             width: 60%;
             height: 100%;
             margin: 5rem 0 0;
 
             color: var(--color-gray);
 
-            .info__title {
+            .in__ti {
                 margin: 4rem 0;
                 font-weight: 600;
                 font-size: var(--font-title-big);
             }
-            .info__paragraph {
+            .in__pa {
                 margin: 0 0 4rem;
                 font-weight: 300;
                 font-size: var(--font-big);
@@ -38,9 +38,9 @@
 }
 
 @media screen and (max-width: 679px) {
-    .container--cover--section {
-        > div {
-            .container--info {
+    .ctr--cs {
+        .d {
+            .cti {
                 text-align: center;
                 align-items: center;
                 width: 100%;

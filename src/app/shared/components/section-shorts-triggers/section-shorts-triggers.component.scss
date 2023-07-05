@@ -1,4 +1,4 @@
-.container--data {
+.ctr--da {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
     padding: 2rem 3rem;
     background-color: var(--color-dark);
 
-    > div {
+    .d {
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;
@@ -16,17 +16,17 @@
         max-width: 95rem;
         width: 100%;
 
-        .data--relative {
+        .da--re {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             
-            .data--relative__container--icon {
+            .da--re__cti {
                 width: 3rem;
                 height: 3rem;
             }
-            .data--relative__text {
+            .da--re__t {
                 width: 10rem;
                 font-size: var(--font-medium);
                 text-align: center;
@@ -37,9 +37,9 @@
 }
 
 @media screen and (max-width: 679px) {
-    .container--data {
-        > div {
-            .data--relative {
+    .ctr--da {
+        .d {
+            .da--re {
                 margin: 0 auto;
             }
         }

@@ -1,39 +1,39 @@
-<div class="ctr--dk">
-    <nav class="nv--dk js wp df ai">
+<div class="ctk">
+    <nav class="nk js wp df ai">
         <picture class="df ai hp jc">
             <a routerlinkActive="active" routerLink="">
                <img class="po hp" src="../../../../assets/img/logo-amp.png" alt="logo-amp" (click)="clickPage()" >
             </a>
         </picture>
         <ul class="ul js wp df ai">
-            <li class="li pr wp" ><a class="cd fm" routerLinkActive="active" routerLink="quienes-somos" (click)="clickPage()" >¿Quiénes somos?</a></li>
-            <li class="li pr wp li__se hp" [class.ac]="containerServiceText">
+            <li class="l pr wp" ><a class="cd fm" routerLinkActive="active" routerLink="quienes-somos" (click)="clickPage()" >¿Quiénes somos?</a></li>
+            <li class="l pr wp ls hp" [class.a]="containerServiceText">
                 <a class="po fm wp t--se cd" (click)="toggleContainerServices()" >Servicios</a>
-                <div class="ctr__se dn bd wp" [class.ac]="containerServicesContainer" >
-                    <div class="se__pt--ch fw fd fm cg jc pr wp df po" 
+                <div class="cts dn bd wp" [class.a]="containerServicesContainer" >
+                    <div class="se--c fw fd fm cg jc pr wp df po" 
                         (click)="toggleContainerChooseProject()" >
-                        <p class="wp df ai b" [class.ac]="iconActiveProjectsChoose" >Construcción de proyectos<span [class.ac]="iconActiveProjectsChoose" class="se__pt--i ma pr"></span></p>    
+                        <p class="wp df ai b" [class.a]="iconActiveProjectsChoose" >Construcción de proyectos<span [class.a]="iconActiveProjectsChoose" class="si bc ma pr"></span></p>    
                     </div>
-                    <div class="ctr--pt dn" [class.ac]="containerChooseProject" >
+                    <div class="ctr--pt dn" [class.a]="containerChooseProject" >
                         <div class="d bd fw fd fs cg jc hp wp df">
-                            <p class="pt__en ai df po" [class.ac]="iconActiveProjectEnergy" (click)="toggleContainerProjectScaleEnergy()" >Proyectos de energía solar<span [class.ac]="iconActiveProjectEnergy" class="se__pt--i ma pr"></span></p>
+                            <p class="pt__en fs cg ai df po" [class.a]="iconActiveProjectEnergy" (click)="toggleContainerProjectScaleEnergy()" >Proyectos de energía solar<span [class.a]="iconActiveProjectEnergy" class="si bc ma pr"></span></p>
                             <div class="ctr__en--sc" *ngIf="containerProjectScaleEnergy" >
-                                <a class="po hp df fs cg br s ai" routerLink="servicios/proyectos-energia-solar/casa" (click)="clickPage()" >Casa<span class="material-symbols-outlined ma">arrow_right_alt</span></a>
-                                <a class="po hp df fs cg br s ai" routerLink="servicios/proyectos-energia-solar/empresa" (click)="clickPage()" >Empresa<span class="material-symbols-outlined ma">arrow_right_alt</span></a>
+                                <a class="po hp df fs cg br s ai" routerLink="servicios/proyectos-energia-solar/casa" (click)="clickPage()" >Casa<span class="ia bc  ma"></span></a>
+                                <a class="po hp df fs cg br s ai" routerLink="servicios/proyectos-energia-solar/empresa" (click)="clickPage()" >Empresa<span class="ia bc ma"></span></a>
                             </div>
-                            <a class="pt__c fw br fs cg ai df" routerLink="servicios/obra-civil" (click)="clickPage()" >Obra civil<span class="material-symbols-outlined ma" >arrow_right_alt</span></a>
+                            <a class="pt__c br fs cg ai df" routerLink="servicios/obra-civil" (click)="clickPage()" >Obra civil<span class="ia bc ma" ></span></a>
                         </div>
                     </div>
                     <div class="se__op--m wp" >
-                        <a class="b fw fm wp df ai" routerLink="servicios/operacion-y-mantenimiento" (click)="clickPage()" >Operación o mantenimiento<span class="material-symbols-outlined">arrow_right_alt</span></a>    
+                        <a class="b fm wp df ai s" routerLink="servicios/operacion-y-mantenimiento" (click)="clickPage()" >Operación o mantenimiento<span class="ia bc"></span></a>    
                     </div>
                     <div class="se__op--m wp df tw" >
-                        <a class="b fw fm wp df ai" routerLink="servicios/piscinas" (click)="clickPage()" >Piscinas<span class="material-symbols-outlined">arrow_right_alt</span></a>    
+                        <a class="b fm wp df ai s" routerLink="servicios/piscinas" (click)="clickPage()" >Piscinas<span class="ia bc"></span></a>    
                     </div>
                 </div>
             </li>
-            <li class="li wp pr" (click)="clickPage()" ><a class="cd fm" routerLinkActive="active" routerLink="proyectos" >Proyectos</a></li>
-            <li class="li wp pr" (click)="clickPage()" ><a class="cd fm" routerLinkActive="active" routerLink="contacto" >Contacto</a></li>
+            <li class="l wp pr" (click)="clickPage()" ><a class="cd fm" routerLinkActive="active" routerLink="proyectos" >Proyectos</a></li>
+            <li class="l wp pr" (click)="clickPage()" ><a class="cd fm" routerLinkActive="active" routerLink="contacto" >Contacto</a></li>
         </ul>        
         <app-button-call-to-action
             routerLink="contacto"

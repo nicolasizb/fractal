@@ -1,14 +1,14 @@
-<section class="container--call-to-action">
-    <div>
-        <article class="card">
-            <div class="card__text">
-                <p class="text__title">{{ titleListener }}</p>
-                <p class="text__paragraph">{{ paragraphListener }}</p>
+<section class="ctr--cta">
+    <div class="d">
+        <article class="ca">
+            <div class="ca__tx">
+                <p class="tx__ti">{{ titleListener }}</p>
+                <p class="tx__pa">{{ paragraphListener }}</p>
             </div>
-            <div class="card__figures">
-                <img class="figures__img" [src]="imgListener" alt="image-call-to-action">
+            <div class="ca__fi">
+                <img class="fi__im" [src]="imgListener" alt="Imagen del equipo">
                 <app-button-call-to-action
-                    class="figures__button"
+                    class="fi__bu"
                     [routerLink]="linkPageListener"
                     [widthListener]="containerButtonOne.width"
                     [heightListener]="containerButtonOne.height"

@@ -20,7 +20,7 @@ export class FormComponent {
   ) {}
 
   activeForm() {
-    const containerForm = this.elementRef.nativeElement.querySelector('.container--form');
+    const containerForm = this.elementRef.nativeElement.querySelector('.ctf');
     const form = document.createElement('div');
     form.setAttribute("data-tf-widget", `${this.dataTfWidgetListener}`); // ccWKh9jv
     form.setAttribute("data-tf-opacity", `${this.dataTfOpacityListener}`); // 100 

@@ -1,5 +1,5 @@
-.ctr--dk {
-    .nv--dk {
+.ctk {
+    .nk {
         position: fixed;
         height: 8rem;
         padding: 1rem 3rem;
@@ -17,13 +17,13 @@
         .ul {
             max-width: 70rem;
             list-style: none;      
-            .li {
+            .l {
                 margin: 0 0.8rem;
                 text-align: center;    
                 a {
                     text-decoration: none;
                     font-weight: 400;
-                    &.ac {
+                    &.a {
                         color: var(--color-2);
                     }
                     &:hover {
@@ -34,10 +34,10 @@
                     transform: scale(1.1) translateZ(0px);
                 }
             }       
-            .li__se {
+            .ls {
                 padding: 1.5rem;
                 border-radius: 1.5rem 1.5rem 0 0;    
-                .ctr__se {
+                .cts {
                     position: absolute;
                     top: 99%;
                     left: 0;
@@ -45,13 +45,13 @@
                     padding: 1rem 2rem;
                     border-radius: 0 1.5rem 1.5rem 1.5rem;
                     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;       
-                    .se__pt--ch {
+                    .se--c {
                         align-items: flex-start;
                         padding: 0 1rem;
                         p {
                             margin: 0 0 0.6rem;
                             padding: 1rem 0 1rem 2.5rem;
-                            &.ac {
+                            &.a {
                                 background-color: var(--color-gray);
                                 font-weight: 500;
                                 color: var(--color-dark);
@@ -74,13 +74,12 @@
                         .d {
                             .pt__en {                        
                                 padding: 1.5rem 0 1rem 6rem;
-                                color: var(--color-gray-3);        
-                                .se__pt--i {
-                                    &.ac {
+                                .si {
+                                    &.a {
                                         background-image: url(../../../../assets/icon/icon-arrow-color-5.svg);
                                     }
                                 }
-                                &.ac {
+                                &.a {
                                     color: var(--color-5);
                                 }
                                 &:hover {
@@ -105,18 +104,20 @@
                                 margin: 0 0 0 4.6rem;
                                 padding: 0.5rem 1.5rem;
                                 width: 22.5rem;
+                                font-weight: 300;
                                 &:hover {
                                     transform: scale(1.05) translateY(0);
                                 }
                             }
                         }
-                        &.ac {
+                        &.a {
                             display: block;
                         }
                     }
                     .se__op--m {                                                 
                         a {
                             padding: 1rem 2rem 1rem 3.5rem;
+                            font-weight: 300;
                         }
                         &:hover {
                             transform: scale(1.05) translateY(0);
@@ -130,11 +131,11 @@
                     .tw {
                         margin: 0.5rem 0 0;
                     }
-                    &.ac {
+                    &.a {
                         display: block;
                     }
                 }
-                &.ac {
+                &.a {
                     background-color: var(--color-dark);
                     transform: scale(1) translateZ(0px);
                     a {
@@ -145,17 +146,29 @@
         }
     }
 }
-.se__pt--i {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image: url(../../../../assets/icon/icon-arrow-color-gray.svg);
+.bc {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+.si {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../../../../assets/icon/icon-arrow-color-gray.svg);
     transition: all ease 0.2s;
-    &.ac {
+    &.a {
         transform: rotate(90deg);
         background-image: url(../../../../assets/icon/icon-arrow-color-dark.svg);
+    }
+}
+.ia {
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../../../../assets/icon/icon-arrow-alt-color-gray.svg');
+}
+.s:hover {
+    span {
+        background-image: url('../../../../assets/icon/icon-arrow-alt-color-dark.svg');
     }
 }
 .po {
@@ -218,7 +231,7 @@
 
 // MOBILE
 @media screen and (max-width: 980px) {
-    .ctr--dk {
+    .ctk {
         display: none;
     }
 }

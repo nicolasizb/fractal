@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router, Event, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -16,6 +16,7 @@ export class NavbarServicesComponent {
   selectTextOne = "¡Cotizar ahora!";
   
   @Input() menuButtonStatusListener: boolean = false;
+  @Output() menuButtonStatus = new EventEmitter<boolean>();
 
   containerServiceText: boolean = false;
   containerServicesContainer: boolean = false;
@@ -34,6 +35,7 @@ export class NavbarServicesComponent {
 
   clickEventRouterLink() {
     this.menuButtonStatusListener = false;
+    this.menuButtonStatus.emit(this.menuButtonStatusListener);
   }
 
   toggleContainerServices() {

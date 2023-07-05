@@ -1,5 +1,5 @@
 @media screen and (max-width: 979px) {
-    .nv--m__ctr--dd {
+    .nv__ctd {
         position: fixed;
         top: calc(0% + 7rem);
         left: 0;
@@ -11,10 +11,10 @@
         transition: all ease-out .5s;
         z-index: 10;
         
-        &.active {
+        &.a {
             transform: translateX(0);
         }
-        .ctr--dd__li {
+        .ctd__li {
             flex-direction: column;
             justify-content: space-around;
             align-items: flex-start;
@@ -42,7 +42,7 @@
                         width: 1.5rem;
                         height: 1.5rem;
                         background-image: url(../../../../assets/icon/icon-arrow-color-dark.svg);              
-                        &.active {
+                        &.a {
                             transform: rotate(90deg);
                         }
                     }
@@ -51,7 +51,6 @@
                 .ctr__se {
                     position: relative;
                     display: none;
-                    padding: 0 1.5rem 0;
                     border-radius: 0 1.5rem 1.5rem 1.5rem;
                     background-color: var(--color-gray);
     
@@ -69,11 +68,11 @@
     
                             .se__pt--i {
                                 background-image: url(../../../../assets/icon/icon-arrow-color-dark.svg);
-                                &.active {
+                                &.a {
                                     background-image: url(../../../../assets/icon/icon-arrow-color-gray.svg);
                                 }
                             }
-                            &.active {
+                            &.a {
                                 background-color: var(--color-dark);
                                 color: var(--color-gray);
                             }
@@ -91,11 +90,11 @@
     
                                 .se__pt--i {
                                     background-image: url(../../../../assets/icon/icon-arrow-color-dark.svg);
-                                    &.active {
+                                    &.a {
                                         background-image: url(../../../../assets/icon/icon-arrow-color-5.svg);
                                     }
                                 }
-                                &.active {
+                                &.a {
                                     font-weight: 500;
                                     color: var(--color-5);
                                 }
@@ -129,11 +128,11 @@
                                 font-size: var(--font-small);
                             }                        
                         }
-                        &.active {
+                        &.a {
                             display: block;
                         }
                     }                   
-                    &.active {
+                    &.a {
                         display: block;
                     }
                     .se__op--m {
@@ -144,7 +143,7 @@
                         margin: 0;                        
                     }
                 }
-                &.active {
+                &.a {
                     a {
                         .ctr__se--i {
                             transform: rotate(90deg);
@@ -153,7 +152,7 @@
                 }
             }   
         }
-        .ctr--dd__b {
+        .ctd__b {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -171,7 +170,7 @@
         background-size: contain;
         transition: all ease 0.2s;
 
-        &.active {
+        &.a {
             transform: rotate(90deg);
             background-image: url(../../../../assets/icon/icon-arrow-color-dark.svg);
         }
@@ -181,5 +180,15 @@
     }
     .ai {
         align-items: center;
+    }
+    .ia {
+        width: 2rem;
+        min-width: 2rem;
+        height: 2rem;
+        margin: 0 0 0 0.5rem;
+        background-image: url('../../../../assets/icon/icon-arrow-alt-color-dark.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }

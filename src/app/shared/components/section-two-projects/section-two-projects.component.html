@@ -1,4 +1,4 @@
-<section class="ctr--pt">
+<section class="ctr--pt" role="region" aria-label="Nuestros servicios">
     <div class="d" >
         <h2 class="ti">Nuestros servicios</h2>
         <div class="ctr__c">
@@ -23,18 +23,20 @@
                     </div>
                     <div class="il__bu">
                         <app-button-call-to-action
-                            routerLink="servicios/energias-renovables"
+                            routerLink="servicios/proyectos-energia-solar"
                             [widthListener]="containerButtonTwo.width"
                             [heightListener]="containerButtonTwo.height"
                             [colorBorderListener]="containerButtonTwo.colorBorder"
                             [backgroundColorListener]="containerButtonTwo.backgroundColor"
                             [spanListener]="containerButtonTwo.span"
                             [textListener]="containerButtonTwo.text"
+                            role="button"
+                            aria-label="Botón de llamada a la acción para Proyectos de Energía Solar"
                         ></app-button-call-to-action>
                     </div> 
                 </div>
                 <figure class="cp__ir">
-                    <img class="ir__im im--w" src="../../../assets/vector/vector-women-solar.svg" alt="Vector Servicio De Energías Renovables">
+                    <img class="ir__im im--w" src="../../../assets/vector/vector-women-solar.svg" alt="Vector Servicio De Energías Renovables" role="img" aria-label="Imagen Servicio de Energías Renovables">
                 </figure>
             </article>
 
@@ -74,12 +76,14 @@
                             [backgroundColorListener]="containerButtonTwo.backgroundColor"
                             [spanListener]="containerButtonTwo.span"
                             [textListener]="containerButtonTwo.text"
+                            role="button"
+                            aria-label="Botón de llamada a la acción para Servicios de Piscinas"
                         ></app-button-call-to-action>
                         <span></span>
                     </div> 
                 </div>
                 <figure class="cp__ir">
-                    <img class="ir__im im--m" src="../../../assets/vector/vector-men-water.svg" alt="Vector Servicio De Piscinas">
+                    <img class="ir__im im--m" src="../../../assets/vector/vector-men-water.svg" alt="Vector Servicio De Piscinas" role="img" aria-label="Imagen Servicio de Piscinas">
                 </figure>
             </article>
         </div>

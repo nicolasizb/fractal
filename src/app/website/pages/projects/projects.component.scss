@@ -1,48 +1,4 @@
-.container--projects {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 12rem 3rem 4rem;
-    background-color: white;
-
-    > div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        max-width: 95rem;
-        margin: 0 auto;
-
-        .container--projects__text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            max-width: 55%;
-            .text__title {
-                margin: 0 0 2.5rem 0;
-                font-size: var(--font-title-big);
-                font-weight: 600;
-                color: var(--color-dark);
-            }
-            .text__paragraph {
-                margin: 0 0 2.5rem 0;
-                font-size: var(--font-big);
-                font-weight: 400;
-                line-height: var(--line-height-1);
-                color: var(--color-dark);
-            }
-        }
-        .container--projects__figure {
-            img {
-                width: 18rem;
-            }
-        }
-    }
-}
-
-.container--navegation {
+.ctr--na {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,16 +6,15 @@
     height: 100%;
     padding: 3rem;
 
-    > div {
+    .d {
         max-width: 95rem;
         width: 100%;
-        .navegation {
-            .navegation__service {
+        .na {
+            .na__se {
                 display: flex;
                 background-color: var(--color-gray-2);
                 border-radius: 1.5rem 1.5rem 0 0;
-
-                .service__title {
+                .se__ti {
                     width: 100%;
                     padding: 1.5rem 5rem;
                     border: none;
@@ -69,30 +24,29 @@
                     font-size: var(--font-small);
                     cursor: pointer;
                 }
-                .service--energy {
+                .se--en {
                     transition: all ease 0.2s;
 
                     &.active {
                         background-color: var(--color-dark);
                         color: var(--color-5);
                     }
+                    &:hover {
+                        color: var(--color-5);
+                    }
                 }
-                .service--energy:hover {
-                    color: var(--color-5);
-                }
-                .service--swimming {
+                .se--sw {
                     transition: all ease 0.2s;
-
                     &.active {
                         background-color: var(--color-dark);
                         color: var(--color-3);
                     }
-                }
-                .service--swimming:hover {
-                    color: var(--color-3);
+                    &:hover {
+                        color: var(--color-3);
+                    }
                 }
             }
-            .navegation__card {
+            .na__ca {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 3rem;
@@ -102,7 +56,7 @@
                 border-radius: 0 0 1.5rem 1.5rem;
                 background-color: var(--color-dark);
             }
-            .navegation__product--detail {
+            .na__ptd {
                 width: 100%;
                 height: 100%;
                 padding: 3rem;
@@ -114,22 +68,6 @@
     }
 }
 
-.container--call-to-action {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 3rem;
-
-    > div {
-        max-width: 95rem;
-        width: 100%;
-    }
-}
-
-
-
 // TABLET
 @media screen and (min-width: 680px) and (max-width: 900px) {
 
@@ -137,23 +75,22 @@
 
 // MOBILE
 @media screen and (max-width: 679px) {
-    .container--navegation {
+    .ctr--na {
         padding: 3rem 0;
-
-        > div {
-            .navegation {
-                .navegation__service {
+        .d {
+            .na {
+                .na__se {
                     display: flex;
                     justify-content: space-between;
                     border-radius: 0;
 
-                    .service__title {
+                    .se__ti {
                         width: 100%;
                         padding: 1.5rem 0;
                         border-radius: 0;
                     }
                 }
-                .navegation__card {
+                .na__ca {
                     border-radius: 0;
                 }
             }

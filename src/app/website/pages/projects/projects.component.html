@@ -4,21 +4,21 @@
 [imgVectorListener]="containerHead.img"
 ></app-head-page>
 
-<section class="container--navegation">
-    <div>
-        <div class="navegation">
-            <div class="navegation__service">
-                <button class="service__title service--energy" 
+<section class="ctr--na">
+    <div class="d">
+        <div class="na">
+            <div class="na__se">
+                <button class="se__ti se--en" 
                 (click)="activeEnergyService(true)" 
                 [class.active]="navegationContainEnergy"
                 >Energía Solar</button>
-                <button class="service__title service--swimming"
+                <button class="se__ti se--sw"
                 (click)="activeSwimmingService(true)" 
                 [class.active]="navegationContainSwimming"
                 >Piscinas</button>
             </div>
 
-            <div class="navegation__card" *ngIf="containerServiceEnergy">
+            <div class="na__ca" *ngIf="containerServiceEnergy">
                 <app-project-model
                 *ngFor="let card of testimonialsEnergy"
                 [projectEnergy]="card"
@@ -27,7 +27,7 @@
                 (projectEnergySelected)="sendProjectEnergyDetail($event)"
                 ></app-project-model>
             </div>
-            <div class="navegation__card" *ngIf="containerServiceSwimming">
+            <div class="na__ca" *ngIf="containerServiceSwimming">
                 <app-project-model
                 *ngFor="let card of testimonialsSwimming"
                 [projectSwimming]="card"
@@ -37,7 +37,7 @@
                 ></app-project-model>
             </div>
 
-            <div class="navegation__product--detail" *ngIf="containerProductDetail" #detalleProducto >
+            <div class="na__ptd" *ngIf="containerProductDetail" #detalleProducto >
                 <app-project-detail
                 [projectEnergySelectedListener]="projectEnergySelected"
                 [projectSwimmingSelectedListener]="projectSwimmingSelected"
@@ -56,12 +56,8 @@
     </div>
 </section>
 
-<section class="container--call-to-action">
-    <div>
-        <app-section-call-to-action
-        [titleListener]="sectionCallToAction.title"
-        [paragraphListener]="sectionCallToAction.paragraph"
-        [imgListener]="sectionCallToAction.img">
-        </app-section-call-to-action>
-    </div>
-</section>
+<app-section-call-to-action
+[titleListener]="sectionCallToAction.title"
+[paragraphListener]="sectionCallToAction.paragraph"
+[imgListener]="sectionCallToAction.img">
+</app-section-call-to-action>

@@ -1,4 +1,4 @@
-.container--interaction {
+.ctr--in {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,21 +6,21 @@
     height: 100%;
     padding: 3rem;
 
-    > div {
+    .d {
         max-width: 95rem;
         width: 100%;
 
-        .container--interaction__card {
+        .ctr--inc {
             width: 100%;
             border-radius: 1.5rem;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
-            .card__titles--service {
+            .ca__tis {
                 display: flex;
                 width: 100%;
                 border-radius: 1.5rem 1.5rem 0 0;
                 
-                .title {
+                .ti {
                     width: 100%;
                     padding: 1.5rem 1rem;
                     text-align: center;
@@ -40,29 +40,29 @@
                     }
                 }
             }
-            .card__info--service {
+            .ca__in--se {
                 padding: 2rem;
 
-                .service__info {
+                .se__if {
                     display: flex;
                     flex-wrap: wrap-reverse;
                     gap: 2rem;
                     align-items: center;
                     justify-content: space-around;
 
-                    .info__paragraph {
+                    .if__pa {
                         width: 40%;
                         text-align: justify;
                         font-size: var(--font-medium);
                         word-spacing: var(--word-spacing);
                         line-height: var(--line-height-2);
                     }
-                    .info__img {
+                    .if__i {
                         width: 52%;
                         border-radius: 1.5rem;
                     }         
                 }
-                .service__button {
+                .se__b {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -74,18 +74,18 @@
 }
 
 @media screen and (max-width: 900px) and (min-width: 680px) {
-    .container--interaction {        
-        > div {
-            .container--interaction__card {
-                .card__info--service {
+    .ctr--in {        
+        .d {
+            .ctr--inc {
+                .ca__in--se {
                     padding: 3rem;
     
-                    .service__info {    
-                        .info__paragraph {
+                    .se__if {    
+                        .if__pa {
                             width: 100%;
                             text-align: center;
                         }
-                        .info__img {
+                        .if__i {
                             width: 100%;
                         }         
                     }
@@ -96,37 +96,37 @@
 }
 
 @media screen and (max-width: 679px) {
-    .container--interaction {
+    .ctr--in {
         padding: 0;    
         
-        > div {
-            .container--interaction__card {
-                .card__info--service {
+        .d {
+            .ctr--inc {
+                .ca__in--se {
                     padding: 3rem;
 
-                    .info__title {
+                    .if__ti {
                         text-align: center;
                         font-size: var(--font-title-small);
                         font-weight: 600;
                         color: var(--color-dark);
                     }
-                    .space {
+                    .sp {
                         margin: 5rem 0 0;
                     }
                     
-                    .info__img {
+                    .if__i {
                         margin: 2rem 0 2rem;
                         width: 100%;
                         border-radius: 1.5rem;
                     }
-                    .info__paragraph {
+                    .if__pa {
                         width: 100%;
                         text-align: center;
                         font-size: var(--font-medium);
                         word-spacing: var(--word-spacing);
                         line-height: var(--line-height-2);
                     }
-                    .service__button {
+                    .se__b {
                         margin: 2rem 0 0;
                     }
                 }

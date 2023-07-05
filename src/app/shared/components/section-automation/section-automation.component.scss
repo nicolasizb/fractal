@@ -60,6 +60,7 @@
 
                             .op__iv {                                                    
                                 width: 2.4rem;
+                                min-width: 2.4rem;
                                 height: 2.4rem;
                                 margin: 0 1rem 0 0;
                                 background-image: url(../../../../assets/icon/icon-verification.svg);
@@ -67,9 +68,6 @@
                                 background-size: contain;
                                 background-repeat: no-repeat;
                             }
-                        }
-                        .op__t {
-                            margin: 0 0 0 1rem;
                         }
                         &:hover {
                             transform: scale(1.05) translateY(0);
