@@ -18,7 +18,7 @@ export class HeadPageComponent {
     colorBorder: '#212129',
     backgroundColor: '#F0AE20',
     span: false,
-    text: 'Quiero cotizar'
+    text: 'Cotizar ahora'
   }
 
 }

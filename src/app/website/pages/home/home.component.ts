@@ -24,7 +24,7 @@ export class HomeComponent {
     colorBorder: '#212129',
     backgroundColor: '#F0AE20',
     span: false,
-    text: 'Recibir cotización'
+    text: 'Cotizar ahora'
   } 
 
   containerButtonTwo = {
@@ -52,7 +52,7 @@ export class HomeComponent {
 
   sectionCallToAction = {
     title: 'Acelera tus logros con eficiencia imparable.',
-    paragraph: 'Haz clic en ¡Empecemos! Y Transforma tus espacios con soluciones vanguardistas que maximizan tus recursos y potencian tu rendimiento.',
+    paragraph: 'Haz clic en ¡Empecemos! para transformar tus espacios con soluciones vanguardistas que maximizan tus recursos y potencian tu rendimiento.',
     img: 'https://images.pexels.com/photos/3862614/pexels-photo-3862614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   }
 }

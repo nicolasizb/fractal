@@ -29,13 +29,13 @@ export class ProjectsComponent {
 
   containerHead = {
     title: 'Conoce nuestros proyectos',
-    paragraph: 'Somos más que proveedores de tecnología, somos aliados estratégicos en transformación digital.',
+    paragraph: 'Somos más que proveedores de tecnología, somos aliados estratégicos en la transformación y optimización de tus espacios.',
     img: '../../../assets/vector/vector-men-water.svg'
   }
 
   sectionCallToAction = {
-    title: 'Quiero energía limpia económica y digital',
-    paragraph: 'Haz clic en ¡Sí quiero! para unirte al ecosistema de energía de AMP o en conversemos para que un experto resuelva tus dudas.',
+    title: 'Potenciando el crecimiento con soluciones personalizadas.',
+    paragraph: 'Haz clic en ¡Empecemos! Y conoce al equipo de especialistas que estará a tu disposición.',
     img: 'https://images.pexels.com/photos/3862614/pexels-photo-3862614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   }
 

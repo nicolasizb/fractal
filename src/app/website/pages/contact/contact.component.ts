@@ -24,8 +24,8 @@ export class ContactComponent {
   }
 
   containerHead = {
-    title: 'Nos encanta convertir ideas en realidad',
-    paragraph: 'Trabajamos codo a codo con nuestros clientes en los proyectos más desafiantes.',
+    title: 'Nos apasiona convertir ideas en realidades',
+    paragraph: 'Trabajamos estrechamente con nuestros clientes en los proyectos más desafiantes.',
     img: '../../../assets/vector/vector-men-water.svg',
     containerButton: false
   }

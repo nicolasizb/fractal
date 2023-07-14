@@ -31,7 +31,10 @@ const routes: Routes = [
       },
       {
         path:'servicios/proyectos-energia-solar',
-        loadChildren: () => import('./pages/choose-project-energy/choose-project-energy.module').then(m => m.ChooseProjectEnergyModule)
+        loadChildren: () => import('./pages/choose-project-energy/choose-project-energy.module').then(m => m.ChooseProjectEnergyModule),
+        data: {
+          title: 'Proyectos Solares - AMP Integral Solutions'
+        }
       },
       {
         path: 'servicios/proyectos-energia-solar/casa',

@@ -54,8 +54,8 @@ export class ProjectEnergyHouseComponent {
   }
 
   sectionCallToAction = {
-    title: 'Quiero energía limpia económica y digital',
-    paragraph: 'Haz clic en ¡Sí quiero! para unirte al ecosistema de energía de ERCO o en conversemos para que un experto resuelva tus dudas.',
+    title: 'Toma el control y hazlo realidad.',
+    paragraph: 'Haz clic en ¡Empecemos! Y comienza a experimentar los beneficios tangibles de la energía solar en tu hogar.',
     img: 'https://images.pexels.com/photos/3862614/pexels-photo-3862614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   }
 
