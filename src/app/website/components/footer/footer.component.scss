@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 2rem 3rem;
+    padding: 2rem;
     border-bottom: 0.2rem solid var(--color-gray-3);
     background-color: var(--color-dark);
 
@@ -28,7 +28,7 @@
                 display: flex;
                 justify-content: center;
                 img {
-                    width: 18rem;
+                    width: 26rem;
                 }
             }
             .sm__ne {
@@ -110,9 +110,13 @@
                     font-weight: 300;
                     color: var(--color-gray-3);
                     cursor: pointer;
-                }
-                a:hover {
-                    color: var(--color-3);
+
+                    &.ac {
+                        color: var(--color-4);
+                    }
+                    &:hover {
+                        color: var(--color-4);
+                    }
                 }
             }
         }

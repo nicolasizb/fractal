@@ -11,7 +11,6 @@ import { ProjectDetailComponent } from './components/project-detail/project-deta
 import { HeadPageComponent } from './components/head-page/head-page.component';
 import { SectionTriggersComponent } from './components/section-triggers/section-triggers.component';
 import { FormComponent } from './components/form/form.component';
-import { SliderTestimonialComponent } from './components/slider-testimonial/slider-testimonial.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { SectionShortsTriggersComponent } from './components/section-shorts-triggers/section-shorts-triggers.component';
 import { ContainerAlliesComponent } from './components/container-allies/container-allies.component';
@@ -20,6 +19,7 @@ import { InteractionServiceFourComponent } from './components/interaction-servic
 import { NavbarServicesComponent } from './components/navbar-services/navbar-services.component';
 import { SectionTwoProjectsComponent } from './components/section-two-projects/section-two-projects.component';
 import { SectionAutomationComponent } from './components/section-automation/section-automation.component';
+import { SliderTransitionComponent } from './components/slider-transition/slider-transition.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,6 @@ import { SectionAutomationComponent } from './components/section-automation/sect
     HeadPageComponent,
     SectionTriggersComponent,
     FormComponent,
-    SliderTestimonialComponent,
     AccordionComponent,
     HeadPageServiceComponent,
     SectionShortsTriggersComponent,
@@ -40,6 +39,7 @@ import { SectionAutomationComponent } from './components/section-automation/sect
     NavbarServicesComponent,
     SectionTwoProjectsComponent,
     SectionAutomationComponent,
+    SliderTransitionComponent,
   ],
   imports: [
     CommonModule,
@@ -53,7 +53,6 @@ import { SectionAutomationComponent } from './components/section-automation/sect
     HeadPageComponent,
     SectionTriggersComponent,
     FormComponent,
-    SliderTestimonialComponent,
     AccordionComponent,
     HeadPageServiceComponent,
     SectionShortsTriggersComponent,
@@ -62,7 +61,8 @@ import { SectionAutomationComponent } from './components/section-automation/sect
     InteractionServiceFourComponent,
     NavbarServicesComponent,
     SectionTwoProjectsComponent,
-    SectionAutomationComponent
+    SectionAutomationComponent,
+    SliderTransitionComponent,
   ]
 })
 export class SharedModule { }

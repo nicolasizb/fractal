@@ -11,7 +11,6 @@ export class HeadPageServiceComponent {
   @Input() titleListener = '';
   @Input() paragraphListener = '';
   @Input() imgContainerListener = '';
-  @Input() titleColorListener = '';
 
   @Input() backgroundColorButtonListener = '';
   @Input() textColorButtonListener = '';
@@ -23,8 +22,8 @@ export class HeadPageServiceComponent {
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: '#212129',
-    backgroundColor: '#F0AE20',
+    colorBorder: 'var(--color-dark)',
+    background: 'var(--color-4)',
     span: true,
     text: 'Quiero cotizar'
   }

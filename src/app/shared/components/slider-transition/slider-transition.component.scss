@@ -1,0 +1,107 @@
+.ctr--te {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2rem 2rem 0;
+
+    .te--ti {
+        padding: 1rem 0;
+        text-align: center;
+        font-size: var(--font-title-medium);
+        font-weight: 500;
+        color: var(--color-dark);
+    }
+
+    > div {
+        max-width: 85rem;
+        width: 100%;
+        overflow: hidden;
+        ul {
+            display: flex;
+            width: 400%;
+            animation: slide 20s infinite alternate ease-in-out;
+
+            .te__ca {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: auto;
+                max-height: 40rem;
+                margin: 2rem;
+                border-radius: 1.5rem;
+                background-color: var(--color-gray);
+                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    
+                .ca__if {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 35%;
+                    height: 100%;
+                    padding: 4rem 2rem;
+    
+                    .if--le__ren {
+                        margin: 0 0 0.5rem 0;
+                        font-size: var(--font-medium);
+                        font-weight: 500;
+                        color: var(--color-dark);
+                    }
+                    .if--le__bun {
+                        margin: 0 0 2rem 0;
+                        font-size: var(--font-small);
+                        font-weight: 300;
+                        font-style: italic;
+                        color: var(--color-4);
+                    }
+                    .if--le__tex {
+                        text-align: justify;
+                        line-height: var(--line-height-1);
+                        font-size: var(--font-small);
+                        font-weight: 400;
+                        color: var(--color-dark);
+                    }
+                }
+                .ca__if--ri {
+                    width: 65%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 0 1.3rem 1.2rem 0;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    0% { margin-left: 0%; }
+    20% { margin-left: 0%; }
+
+    26% { margin-left: -100%; }
+    46% { margin-left: -100%; }
+
+    52% { margin-left: -200%; }
+    72% { margin-left: -200%; }
+
+    78% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+@media screen and (max-width: 680px) {
+    .ctr--te {
+        > div {
+            ul {
+                .te__ca {
+                    .ca__if {
+                        width: 100%;
+                    }
+                    .ca__if--ri {
+                        display: none;
+                    }
+                }
+            }
+        }   
+    }
+}

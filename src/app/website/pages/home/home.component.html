@@ -15,7 +15,7 @@
                 ></app-button-call-to-action>
             </article>
             <picture>
-                <img src="../../../assets/vector/vector-cover.svg" alt="Vector Página de Inicio">
+                <img src="../../../../assets/vector/vector-cover.svg" alt="Vector Página de Inicio">
             </picture>
         </section>
         <section class="ctr--tr"  role="region" aria-label="Características principales" >
@@ -48,7 +48,7 @@
 
 <section class="ctr--p" role="region" aria-label="Información sobre AMP" >
     <div class="d" >
-        <h3 class="ctr--pt">En <span class="ti--cb">AMP</span> somos <span class="ti--co">Eficientes</span> en cada pulso, <span class="ti--co">Rápidos</span> en cada avance.</h3>
+        <h3 class="ctr--pt">En <span class="ti--cb">AMP</span> somos <span class="ti--cb">Eficientes</span> en cada pulso, <span class="ti--cb">Rápidos</span> en cada avance.</h3>
         <p class="ctr--pp"> 
             Nos destacamos por nuestras soluciones vanguardistas que optimizan tus recursos y elevan el rendimiento de tus espacios. Nuestro enfoque innovador te garantiza una mayor eficiencia y comodidad.
         </p>
@@ -71,7 +71,28 @@
     [imgFourListener]="sectionShortsTriggers.imgFour"
 ></app-section-shorts-triggers>
 
-<app-slider-testimonial></app-slider-testimonial>
+<app-slider-transition
+[personNameOneListener]="sectionSliderTransition.personNameOne" 
+[businessNameOneListener]="sectionSliderTransition.businessNameOne" 
+[paragraphOneListener]="sectionSliderTransition.paragraphOne"
+[imageOneListener]="sectionSliderTransition.imageOne"
+
+[personNameTwoListener]="sectionSliderTransition.personNameTwo" 
+[businessNameTwoListener]="sectionSliderTransition.businessNameTwo"
+[paragraphTwoListener]="sectionSliderTransition.paragraphTwo"
+[imageTwoListener]="sectionSliderTransition.imageTwo"
+
+[personNameThreeListener]="sectionSliderTransition.personNameThree"
+[businessNameThreeListener]="sectionSliderTransition.businessNameThree"
+[paragraphThreeListener]="sectionSliderTransition.paragraphThree"
+[imageThreeListener]="sectionSliderTransition.imageThree"
+
+[personNameFourListener]="sectionSliderTransition.personNameFour"
+[businessNameFourListener]="sectionSliderTransition.businessNameFour"
+[paragraphFourListener]="sectionSliderTransition.paragraphFour"
+[imageFourListener]="sectionSliderTransition.imageFour"
+></app-slider-transition>
+
 <app-container-allies></app-container-allies>
 
 <app-section-triggers></app-section-triggers>

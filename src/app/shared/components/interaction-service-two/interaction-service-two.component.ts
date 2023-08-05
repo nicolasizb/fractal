@@ -15,7 +15,7 @@ export class InteractionServiceTwoComponent {
   @Input() imgServiceTwoListener = '';
   @Input() paragraphServiceTwoListener = '';
 
-  @Input() titleColorServiceListener = '#efad1f';
+  @Input() titleColorServiceListener = 'var(--color-4)';
 
   @Input() linkPageListener = '';
 
@@ -23,8 +23,8 @@ export class InteractionServiceTwoComponent {
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: '#212129',
-    backgroundColor: '#F0AE20',
+    colorBorder: 'var(--color-dark)',
+    backgroundColor: 'var(--color-4)',
     span: true,
     text: 'Empecemos'
   }

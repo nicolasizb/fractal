@@ -7,16 +7,14 @@
     }" >
     <div class="d">
         <div class="cti">
-            <p class="in__ti" [ngStyle]="{
-                'color': titleColorListener
-            }" >{{ titleListener }}</p>
+            <p class="in__ti" >{{ titleListener }}</p>
             <p class="in__pa" >{{ paragraphListener }}</p>
             <app-button-call-to-action
                 [routerLink]="linkPageListener"
                 [widthListener]="containerButtonOne.width"
                 [heightListener]="containerButtonOne.height"
                 [colorBorderListener]="borderColorButtonListener"
-                [backgroundColorListener]="backgroundColorButtonListener"
+                [backgroundColorListener]="containerButtonOne.background"
                 [colorTextListener]="textColorButtonListener"
                 [textListener]="containerButtonOne.text"
                 [spanListener]="containerButtonOne.span"

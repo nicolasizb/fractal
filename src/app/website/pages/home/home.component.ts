@@ -11,18 +11,11 @@ export class HomeComponent {
 
   constructor(private titleService: Title, private route: ActivatedRoute) { }
 
-  ngOnInit() {
-    this.route.data.subscribe(data => {
-      const pageTitle = data['title'];
-      this.titleService.setTitle(pageTitle);
-    });
-  }
-
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: '#212129',
-    backgroundColor: '#F0AE20',
+    colorBorder: 'var(--color-dark)',
+    backgroundColor: 'var(--color-4)',
     span: false,
     text: 'Cotizar ahora'
   } 
@@ -30,8 +23,8 @@ export class HomeComponent {
   containerButtonTwo = {
     width: 160,
     height: 40,
-    colorBorder: '#212129',
-    backgroundColor: '#F0AE20',
+    colorBorder: 'var(--color-dark)',
+    backgroundColor: 'var(--color-4)',
     span: true,
     text: 'Explorar'
   }
@@ -53,6 +46,35 @@ export class HomeComponent {
   sectionCallToAction = {
     title: 'Acelera tus logros con eficiencia imparable.',
     paragraph: 'Haz clic en ¡Empecemos! para transformar tus espacios con soluciones vanguardistas que maximizan tus recursos y potencian tu rendimiento.',
-    img: 'https://images.pexels.com/photos/3862614/pexels-photo-3862614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    img: '../../../../assets/img/amp-cover-women.jpg'
+  }
+
+  sectionSliderTransition = {
+    personNameOne: "Name",
+    businessNameOne: "Centro de Salvamento Acuático Cruz Roja", 
+    paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageOne: "../../../../assets/img/tes-curz-roja-three.jpg",
+
+    personNameTwo: "Name",
+    businessNameTwo: "SIESSA", 
+    paragraphTwo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageTwo: "../../../../assets/img/tes-siessa-one-small.jpg",
+
+    personNameThree: "Name",
+    businessNameThree: "Business", 
+    paragraphThree: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageThree: "../../../../assets/img/tes-swimming-pool-small.jpg",
+
+    personNameFour: "Name",
+    businessNameFour: "GAIAG", 
+    paragraphFour: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageFour: "../../../../assets/img/tes-gaiga-small.jpg",
+  }
+
+  ngOnInit() {
+    this.route.data.subscribe(data => {
+      const pageTitle = data['title'];
+      this.titleService.setTitle(pageTitle);
+    });
   }
 }

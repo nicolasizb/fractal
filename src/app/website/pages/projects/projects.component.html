@@ -7,7 +7,7 @@
 <section class="ctr--na">
     <div class="d">
         <div class="na">
-            <div class="na__se">
+            <div class="na__se" id="type-project" >
                 <button class="se__ti se--en" 
                 (click)="activeEnergyService(true)" 
                 [class.active]="navegationContainEnergy"
@@ -26,6 +26,9 @@
                 (activeProjectDetail)="activeProjectEnergyDetail($event)"
                 (projectEnergySelected)="sendProjectEnergyDetail($event)"
                 ></app-project-model>
+                <div class="ctr-bt">
+                    <button class="ca__bt" (click)="backSelectProjects()" >Volver al comienzo <span></span></button> 
+                </div>
             </div>
             <div class="na__ca" *ngIf="containerServiceSwimming">
                 <app-project-model
@@ -35,6 +38,9 @@
                 (activeProjectDetail)="activeProjectSwimmingDetail($event)"
                 (projectSwimmingSelected)="sendProjectSwimmingDetail($event)"
                 ></app-project-model>
+                <div class="ctr-bt">
+                    <button class="ca__bt" (click)="backSelectProjects()" >Volver al comienzo <span></span></button> 
+                </div>
             </div>
 
             <div class="na__ptd" *ngIf="containerProductDetail" #detalleProducto >

@@ -9,8 +9,8 @@ export class SectionTwoProjectsComponent {
   containerButtonTwo = {
     width: 160,
     height: 40,
-    colorBorder: '#212129',
-    backgroundColor: '#F0AE20',
+    colorBorder: '#11111F',
+    backgroundColor: '#84BC26',
     span: true,
     text: 'Explorar'
   }

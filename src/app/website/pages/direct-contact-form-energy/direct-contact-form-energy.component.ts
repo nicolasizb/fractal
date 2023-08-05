@@ -24,7 +24,7 @@ export class DirectContactFormEnergyComponent {
   containerHead = {
     title: 'Nos encanta convertir ideas en realidad',
     paragraph: 'Trabajamos codo a codo con nuestros clientes en los proyectos más desafiantes.',
-    img: '../../../assets/vector/vector-men-water.svg',
+    img: '../../../../assets/vector/vector-women-lightbulb-eco.svg',
     containerButton: false
   }
 

@@ -24,7 +24,7 @@ export class ServicesComponent {
   containerButtonTwo = {
     width: 160,
     height: 40,
-    colorBorder: '#212129',
+    colorBorder: '#11111F',
     backgroundColor: '#F0AE20',
     span: true,
     text: 'Explorar'

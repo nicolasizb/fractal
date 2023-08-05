@@ -22,7 +22,7 @@ export class NavbarMobileComponent {
   containerButton = {
     width: 210,
     height: 48,
-    colorBorder: '#212129',
+    colorBorder: '#11111F',
     backgroundColor: '#F0AE20'
   }
   selectTextOne = "¡Cotizar ahora!";

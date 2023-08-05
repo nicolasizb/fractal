@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, Event, NavigationEnd } from '@angular/router';
 
 import { DataInfoPageService } from 'src/app/services/data-info-page.service';
 import { ProjectEnergy, ProjectSwimming } from 'src/app/models/project.model';
@@ -15,13 +15,14 @@ export class ProjectsComponent {
   constructor(
     private dataInfoPageService: DataInfoPageService,
     private titleService: Title,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {}
 
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: '#212129',
+    colorBorder: '#11111F',
     backgroundColor: '#F0AE20',
     span: false,
     text: 'Quiero cotizar'
@@ -30,13 +31,13 @@ export class ProjectsComponent {
   containerHead = {
     title: 'Conoce nuestros proyectos',
     paragraph: 'Somos más que proveedores de tecnología, somos aliados estratégicos en la transformación y optimización de tus espacios.',
-    img: '../../../assets/vector/vector-men-water.svg'
+    img: '../../../../assets/vector/vector-men-think-all.svg'
   }
 
   sectionCallToAction = {
     title: 'Potenciando el crecimiento con soluciones personalizadas.',
     paragraph: 'Haz clic en ¡Empecemos! Y conoce al equipo de especialistas que estará a tu disposición.',
-    img: 'https://images.pexels.com/photos/3862614/pexels-photo-3862614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    img: '../../../../assets/img/amp-cover-women.jpg'
   }
 
   containerServiceEnergy: boolean = true;
@@ -144,12 +145,16 @@ export class ProjectsComponent {
   testimonialsEnergy: ProjectEnergy[] = [];
   testimonialsSwimming: ProjectSwimming[] = [];
 
+  backSelectProjects() {
+    window.scrollTo(0, 380);
+  }
+
   ngOnInit(): void {
     this.testimonialsEnergy = this.dataInfoPageService.getTestimonialsEnergy();
     this.testimonialsSwimming = this.dataInfoPageService.getTestimonialsSwimming();
     this.route.data.subscribe(data => {
       const pageTitle = data['title'];
       this.titleService.setTitle(pageTitle);
-    }); 
+    });
   }
 }

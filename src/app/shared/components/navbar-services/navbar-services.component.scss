@@ -28,6 +28,10 @@
                     text-decoration: none;
                     font-size: var(--font-medium);
                     color: var(--color-dark);
+
+                    &.ac {
+                        color: var(--color-4);
+                    }
                 }
             }
             .li__se {
@@ -91,12 +95,12 @@
                                 .se__pt--i {
                                     background-image: url(../../../../assets/icon/icon-arrow-color-dark.svg);
                                     &.a {
-                                        background-image: url(../../../../assets/icon/icon-arrow-color-5.svg);
+                                        background-image: url(../../../../assets/icon/icon-arrow-color-4.svg);
                                     }
                                 }
                                 &.a {
                                     font-weight: 500;
-                                    color: var(--color-5);
+                                    color: var(--color-4);
                                 }
                             }
                             .ctr__en--s {
@@ -138,6 +142,10 @@
                     .se__op--m {
                         margin: 1rem 0 1.5rem 0;
                         padding: 1rem 2rem;
+
+                        &.ac {
+                            color: var(--color-4);
+                        }
                     }
                     .t {
                         margin: 0;                        

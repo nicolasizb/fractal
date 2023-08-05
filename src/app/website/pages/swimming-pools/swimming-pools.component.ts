@@ -24,7 +24,7 @@ export class SwimmingPoolsComponent {
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: '#212129',
+    colorBorder: '#11111F',
     backgroundColor: '#3B9D81',
     span: true,
     text: 'Cotizar'
@@ -58,7 +58,7 @@ export class SwimmingPoolsComponent {
   sectionCallToAction = {
     title: 'Quiero energía limpia económica y digital',
     paragraph: 'Haz clic en ¡Sí quiero! para unirte al ecosistema de energía de ERCO o en conversemos para que un experto resuelva tus dudas.',
-    img: 'https://images.pexels.com/photos/3862614/pexels-photo-3862614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    img: '../../../../assets/img/amp-cover-women.jpg'
   };
 
   cardServices = {
@@ -96,12 +96,32 @@ export class SwimmingPoolsComponent {
     <p>4 Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
   }
 
+  sectionSliderTransition = {
+    personNameOne: "Name",
+    businessNameOne: "Centro de Salvamento Acuático Cruz Roja", 
+    paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageOne: "../../../../assets/img/tes-curz-roja-three.jpg",
+
+    personNameTwo: "Name",
+    businessNameTwo: "SIESSA", 
+    paragraphTwo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageTwo: "../../../../assets/img/tes-siessa-one-small.jpg",
+
+    personNameThree: "Name",
+    businessNameThree: "Business", 
+    paragraphThree: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageThree: "../../../../assets/img/tes-swimming-pool-small.jpg",
+
+    personNameFour: "Name",
+    businessNameFour: "GAIAG", 
+    paragraphFour: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageFour: "../../../../assets/img/tes-gaiga-small.jpg",
+  }
+
   serviceStateOne: boolean = true;
   serviceStateTwo: boolean = false;
   serviceStateThree: boolean = false;
   serviceStateFour: boolean = false;
-
-  serviceStateMobile: boolean = false;
 
   toggleServiceState() {
     this.serviceStateOne = true;
@@ -129,48 +149,5 @@ export class SwimmingPoolsComponent {
     this.serviceStateTwo = false;
     this.serviceStateThree = false;
     this.serviceStateFour = true;
-  }
-
-  ngAfterViewInit() {
-    this.stateWidthPage();
-  }
-
-  @HostListener('window:resize')
-  onWindowResize() {
-    this.stateWidthPage();
-  }
-
-  stateWidthPage() {
-    if(window.innerWidth < 680) {
-      this.serviceStateMobile = true;
-      this.serviceStateOne = false;
-      this.serviceStateTwo = false;
-      this.serviceStateThree = false;
-      this.serviceStateFour = false;
-    } else if (this.serviceStateOne) {
-      this.serviceStateMobile = false;
-      this.serviceStateOne = true;
-      this.serviceStateTwo = false;
-      this.serviceStateThree = false;
-      this.serviceStateFour = false;
-    } else if (this.serviceStateTwo) {
-      this.serviceStateMobile = false;
-      this.serviceStateOne = false;
-      this.serviceStateTwo = true;
-      this.serviceStateThree = false;
-      this.serviceStateFour = false;
-    } else if (this.serviceStateThree) {
-      this.serviceStateMobile = false;
-      this.serviceStateOne = false;
-      this.serviceStateTwo = false;
-      this.serviceStateThree = true;
-      this.serviceStateFour = false;
-    } else {
-      this.serviceStateMobile = false;
-      this.serviceStateOne = false;
-      this.serviceStateTwo = false;
-      this.serviceStateThree = false;
-      this.serviceStateFour = true;
-    }
   }
 }

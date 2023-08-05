@@ -24,8 +24,8 @@ export class ProjectEnergyHouseComponent {
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: '#212129',
-    backgroundColor: '#F0AE20',
+    colorBorder: '#11111F',
+    backgroundColor: 'var(--color-4)',
     span: true,
     text: 'Empecemos'
   }
@@ -34,7 +34,6 @@ export class ProjectEnergyHouseComponent {
 
   containerHeadPageService = {
     title: 'Energía solar para tu hogar',
-    titleColor: '#F0AE20',
     paragraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, tempora facilis cupiditate vel atque repellat.',
     imgContainer: '../../../../assets/img/solar.jpg',
   }
@@ -56,7 +55,7 @@ export class ProjectEnergyHouseComponent {
   sectionCallToAction = {
     title: 'Toma el control y hazlo realidad.',
     paragraph: 'Haz clic en ¡Empecemos! Y comienza a experimentar los beneficios tangibles de la energía solar en tu hogar.',
-    img: 'https://images.pexels.com/photos/3862614/pexels-photo-3862614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    img: '../../../../assets/img/amp-cover-women.jpg'
   }
 
   sectionStepsToFollow = {
@@ -93,6 +92,28 @@ export class ProjectEnergyHouseComponent {
     <p>2 Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
     <br>
     <p>2 Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+  }
+
+  sectionSliderTransition = {
+    personNameOne: "Name",
+    businessNameOne: "Centro de Salvamento Acuático Cruz Roja", 
+    paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageOne: "../../../../assets/img/tes-curz-roja-three.jpg",
+
+    personNameTwo: "Name",
+    businessNameTwo: "SIESSA", 
+    paragraphTwo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageTwo: "../../../../assets/img/tes-siessa-one-small.jpg",
+
+    personNameThree: "Name",
+    businessNameThree: "Business", 
+    paragraphThree: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageThree: "../../../../assets/img/tes-swimming-pool-small.jpg",
+
+    personNameFour: "Name",
+    businessNameFour: "GAIAG", 
+    paragraphFour: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageFour: "../../../../assets/img/tes-gaiga-small.jpg",
   }
 
 }

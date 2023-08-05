@@ -1,6 +1,5 @@
 <app-head-page-service
 [titleListener]="containerHeadPageService.title"
-[titleColorListener]="containerHeadPageService.titleColor"
 [paragraphListener]="containerHeadPageService.paragraph"
 [imgContainerListener]="containerHeadPageService.imgContainer"
 
@@ -46,7 +45,7 @@
                    <p class="benefit"><span></span>Benefit 4 Lorem ipsum dolor sit.</p>
                 </div>
             </div>
-            <img class="card__img" src="../../../../assets/vector/vector-cover.svg" alt="image mockup differential">
+            <img class="card__img" src="../../../../assets/vector/vector-men-solar-panel-renewable.svg" alt="image mockup differential">
         </article>
     </div>
 </section>
@@ -81,7 +80,27 @@
     </div>
 </section>
 
-<app-slider-testimonial></app-slider-testimonial>
+<app-slider-transition
+[personNameOneListener]="sectionSliderTransition.personNameOne" 
+[businessNameOneListener]="sectionSliderTransition.businessNameOne" 
+[paragraphOneListener]="sectionSliderTransition.paragraphOne"
+[imageOneListener]="sectionSliderTransition.imageOne"
+
+[personNameTwoListener]="sectionSliderTransition.personNameTwo" 
+[businessNameTwoListener]="sectionSliderTransition.businessNameTwo"
+[paragraphTwoListener]="sectionSliderTransition.paragraphTwo"
+[imageTwoListener]="sectionSliderTransition.imageTwo"
+
+[personNameThreeListener]="sectionSliderTransition.personNameThree"
+[businessNameThreeListener]="sectionSliderTransition.businessNameThree"
+[paragraphThreeListener]="sectionSliderTransition.paragraphThree"
+[imageThreeListener]="sectionSliderTransition.imageThree"
+
+[personNameFourListener]="sectionSliderTransition.personNameFour"
+[businessNameFourListener]="sectionSliderTransition.businessNameFour"
+[paragraphFourListener]="sectionSliderTransition.paragraphFour"
+[imageFourListener]="sectionSliderTransition.imageFour"
+></app-slider-transition>
 <app-container-allies></app-container-allies>
 
 <app-section-call-to-action

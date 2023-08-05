@@ -1,6 +1,6 @@
 <div class="nv__ctd" [class.a]="menuButtonStatusListener" >
     <ul class="ctd__li df">
-        <li class="li"><a routerLinkActive="active" routerLink="quienes-somos" (click)="clickEventRouterLink()" (click)="clickPage()" >¿Quiénes somos?</a></li>
+        <li class="li"><a routerLinkActive="ac" routerLink="quienes-somos" (click)="clickEventRouterLink()" (click)="clickPage()" >¿Quiénes somos?</a></li>
         <li class="li li__se" [class.a]="containerServiceText" >
             <a class="t--se df ai" (click)="toggleContainerServices()" >Servicios<span [class.a]="containerServicesContainer" class="se--pt--i"></span></a>
             <div class="ctr__se" [class.a]="containerServicesContainer" >
@@ -15,19 +15,19 @@
                             <a class="so s df" routerLink="servicios/proyectos-energia-solar/casa" (click)="clickEventRouterLink()" (click)="clickPage()" >Casa<span class="ia"></span></a>
                             <a class="st s df" routerLink="servicios/proyectos-energia-solar/empresa" (click)="clickEventRouterLink()" (click)="clickPage()" >Empresa<span class="ia"></span></a>
                         </div>
-                        <a class="pt__c" routerLink="servicios/obra-civil" (click)="clickEventRouterLink()" (click)="clickPage()" >Obra civil<span class="ia"></span></a>
+                        <a class="pt__c" routerLinkActive="ac" routerLink="servicios/obra-civil" (click)="clickEventRouterLink()" (click)="clickPage()" >Obra civil<span class="ia"></span></a>
                     </div>
                 </div>
                 <div class="se__op--m" >
-                    <a class="df ai" routerLink="servicios/operacion-y-mantenimiento" (click)="clickEventRouterLink()" (click)="clickPage()" >Operación o mantenimiento<span class="ia"></span></a>    
+                    <a class="df ai" routerLinkActive="ac" routerLink="servicios/operacion-y-mantenimiento" (click)="clickEventRouterLink()" (click)="clickPage()" >Operación o mantenimiento<span class="ia"></span></a>    
                 </div>
                 <div class="se__op--m t" >
-                    <a class="df ai" routerLink="servicios/piscinas" (click)="clickEventRouterLink()" (click)="clickPage()" >Piscinas<span class="ia"></span></a>    
+                    <a class="df ai" routerLinkActive="ac" routerLink="servicios/piscinas" (click)="clickEventRouterLink()" (click)="clickPage()" >Piscinas<span class="ia"></span></a>    
                 </div>
             </div>
         </li>
-        <li class="li" ><a routerLinkActive="active" routerLink="proyectos" (click)="clickEventRouterLink()" (click)="clickPage()" >Proyectos</a></li>
-        <li class="li" ><a routerLinkActive="active" routerLink="contacto" (click)="clickEventRouterLink()" (click)="clickPage()" >Contacto</a></li>
+        <li class="li" ><a routerLinkActive="ac" routerLink="proyectos" (click)="clickEventRouterLink()" (click)="clickPage()" >Proyectos</a></li>
+        <li class="li" ><a routerLinkActive="ac" routerLink="contacto" (click)="clickEventRouterLink()" (click)="clickPage()" >Contacto</a></li>
     </ul>
     <div class="ctd__b" >
         <app-button-call-to-action

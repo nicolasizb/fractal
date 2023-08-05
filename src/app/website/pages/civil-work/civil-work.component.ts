@@ -24,23 +24,21 @@ export class CivilWorkComponent {
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: '#212129',
-    backgroundColor: '#F0AE20',
+    colorBorder: 'var(--color-dark)',
+    backgroundColor: 'var(--color-5)',
     span: true,
     text: 'Empecemos'
   }
   containerButtonTwo = {
     width: 210,
     height: 48,
-    colorBorder: '#F0AE20',
-    backgroundColor: '#F7F7F5',
+    colorBorder: 'var(--color-5)',
+    backgroundColor: 'var(--color-gray)',
     span: true,
     text: 'Cotizar'
   }
 
   linkPage = '/servicios/obra-civil/contacto';
-
-  colorLayout = '#F7F7F5';
 
   containerHeadPageService = {
     title: 'Obra civil',
@@ -65,7 +63,7 @@ export class CivilWorkComponent {
   sectionCallToAction = {
     title: 'Quiero energía limpia económica y digital',
     paragraph: 'Haz clic en ¡Sí quiero! para unirte al ecosistema de energía de ERCO o en conversemos para que un experto resuelva tus dudas.',
-    img: 'https://images.pexels.com/photos/3862614/pexels-photo-3862614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    img: '../../../../assets/img/amp-cover-women.jpg'
   }
 
   cardServices = {
@@ -76,7 +74,6 @@ export class CivilWorkComponent {
     <p>Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
     <br>
     <p>Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
-    
 
     titleServiceTwo: 'Elaboración Obra in Situ',
     imgServiceTwo: '../../../../assets/img/build.jpg',
@@ -102,4 +99,27 @@ export class CivilWorkComponent {
     <br>
     <p>4 Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
   }
+
+  sectionSliderTransition = {
+    personNameOne: "Name",
+    businessNameOne: "Centro de Salvamento Acuático Cruz Roja", 
+    paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageOne: "../../../../assets/img/tes-curz-roja-three.jpg",
+
+    personNameTwo: "Name",
+    businessNameTwo: "SIESSA", 
+    paragraphTwo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageTwo: "../../../../assets/img/tes-siessa-one-small.jpg",
+
+    personNameThree: "Name",
+    businessNameThree: "Business", 
+    paragraphThree: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageThree: "../../../../assets/img/tes-swimming-pool-small.jpg",
+
+    personNameFour: "Name",
+    businessNameFour: "GAIAG", 
+    paragraphFour: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    imageFour: "../../../../assets/img/tes-gaiga-small.jpg",
+  }
+
 }

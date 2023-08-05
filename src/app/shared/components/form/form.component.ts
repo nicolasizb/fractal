@@ -1,5 +1,4 @@
-import { Component, AfterViewInit, Input } from '@angular/core';
-import { ElementRef } from '@angular/core';
+import { Component, AfterViewInit, Input, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-form',

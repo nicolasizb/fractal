@@ -9,9 +9,9 @@ export class DataInfoPageService {
   testimonialsEnergy: ProjectEnergy[] = [
     {
       id: 1,
-      img: '../../assets/img/solar.jpg',
+      img: '../../assets/img/tes-siessa-one-small.jpg',
       category: 'Energía Solar',
-      scale: 'Empresa',
+      scale: 'Hogar',
       descriptionSmall: '1 Sistema de energía solar Virel de 13.64 kWp',
       descriptionLarge: '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
@@ -23,7 +23,7 @@ export class DataInfoPageService {
     },
     {
       id: 2,
-      img: '../../assets/img/solar.jpg',
+      img: '../../assets/img/tes-gaiga-small.jpg',
       category: 'Energía Solar',
       scale: 'Empresa',
       descriptionSmall: '2 Sistema de energía solar Virel de 13.64 kWp',
@@ -37,9 +37,9 @@ export class DataInfoPageService {
     },
     {
       id: 3,
-      img: '../../assets/img/solar.jpg',
+      img: '../../assets/img/tes-solar-three-re.jpg',
       category: 'Energía Solar',
-      scale: 'Empresa',
+      scale: 'Hogar',
       descriptionSmall: '3 Sistema de energía solar Virel de 13.64 kWp',
       descriptionLarge: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
@@ -51,7 +51,7 @@ export class DataInfoPageService {
     },
     {
       id: 4,
-      img: '../../assets/img/solar.jpg',
+      img: '../../assets/img/tes-solar-four.jpg',
       category: 'Energía Solar',
       scale: 'Empresa',
       descriptionSmall: '4 Sistema de energía solar Virel de 13.64 kWp',
@@ -65,7 +65,7 @@ export class DataInfoPageService {
     },
     {
       id: 5,
-      img: '../../assets/img/solar.jpg',
+      img: '../../assets/img/tes-solar-five.jpg',
       category: 'Energía Solar',
       scale: 'Empresa',
       descriptionSmall: '5 Sistema de energía solar Virel de 13.64 kWp',
@@ -79,9 +79,9 @@ export class DataInfoPageService {
     },
     {
       id: 6,
-      img: '../../assets/img/solar.jpg',
+      img: '../../assets/img/tes-solar-six.jpg',
       category: 'Energía Solar',
-      scale: 'Empresa',
+      scale: 'Hogar',
       descriptionSmall: '6 Sistema de energía solar Virel de 13.64 kWp',
       descriptionLarge: '6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
@@ -96,11 +96,11 @@ export class DataInfoPageService {
   testimonialsSwimming: ProjectSwimming[] = [
     {
       id: 7,
-      img: '../../assets/img/swimming-pool.jpg',
+      img: '../../assets/img/tes-curz-roja-three.jpg',
       category: 'Piscinas',
-      scale: 'Hogar',
-      descriptionSmall: '1 Sistema de mantenimiento piscinas',
-      descriptionLarge: '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      scale: 'Empresa',
+      descriptionSmall: 'Piscina semi olímpica',
+      descriptionLarge: 'Mantenimiento piscina semi olímpica. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
         systemWater: 'Water',
         filters: 30,
@@ -110,9 +110,9 @@ export class DataInfoPageService {
     },
     {
       id: 8,
-      img: '../../assets/img/swimming-pool.jpg',
+      img: '../../assets/img/tes-swimming-pool-small.jpg',
       category: 'Piscinas',
-      scale: 'Hogar',
+      scale: 'Empresa',
       descriptionSmall: '2 Sistema de mantenimiento piscinas',
       descriptionLarge: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
@@ -124,9 +124,9 @@ export class DataInfoPageService {
     },
     {
       id: 9,
-      img: '../../assets/img/swimming-pool.jpg',
+      img: '../../assets/img/tes-swimming-tool-three.jpg',
       category: 'Piscinas',
-      scale: 'Hogar',
+      scale: 'Empresa',
       descriptionSmall: '3 Sistema de mantenimiento piscinas',
       descriptionLarge: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
@@ -138,9 +138,9 @@ export class DataInfoPageService {
     },
     {
       id: 10,
-      img: '../../assets/img/swimming-pool.jpg',
+      img: '../../assets/img/tes-swimming-pool-four.jpg',
       category: 'Piscinas',
-      scale: 'Hogar',
+      scale: 'Empresa',
       descriptionSmall: '4 Sistema de mantenimiento piscinas',
       descriptionLarge: '4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
@@ -152,9 +152,9 @@ export class DataInfoPageService {
     },
     {
       id: 11,
-      img: '../../assets/img/swimming-pool.jpg',
+      img: '../../assets/img/tes-swimming-pool-five.jpg',
       category: 'Piscinas',
-      scale: 'Hogar',
+      scale: 'Empresa',
       descriptionSmall: '5 Sistema de mantenimiento piscinas',
       descriptionLarge: '5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
@@ -166,8 +166,8 @@ export class DataInfoPageService {
     },
     {
       id: 12,
-      img: '../../assets/img/swimming-pool.jpg',
-      category: 'Piscinas',
+      img: '../../assets/img/tes-swimming-pool-six.jpg',
+      category: 'Empresa',
       scale: 'Hogar',
       descriptionSmall: '6 Sistema de mantenimiento piscinas',
       descriptionLarge: '6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',

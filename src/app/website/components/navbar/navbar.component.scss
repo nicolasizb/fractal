@@ -2,13 +2,15 @@
     .nk {
         position: fixed;
         height: 8rem;
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         z-index: 10; 
         picture {
+            margin: 0 1.5rem 0 0;
+
             a {
-                height: 70%;
+                height: 95%;
                 img {
                     margin: 0 auto;
                 }
@@ -23,11 +25,11 @@
                 a {
                     text-decoration: none;
                     font-weight: 400;
-                    &.a {
-                        color: var(--color-2);
+                    &.ac {
+                        color: var(--color-4);
                     }
                     &:hover {
-                        color: var(--color-2);
+                        color: var(--color-4);
                     }
                 }
                 &:hover {
@@ -52,13 +54,13 @@
                             margin: 0 0 0.6rem;
                             padding: 1rem 0 1rem 2.5rem;
                             &.a {
-                                background-color: var(--color-gray);
+                                background-color: var(--color-4);
                                 font-weight: 500;
                                 color: var(--color-dark);
                             }
                             &:hover {
                                 transform: scale(1.05) translateY(0);
-                                background-color: var(--color-gray);
+                                background-color: var(--color-4);
                                 font-weight: 500;
                                 color: var(--color-dark);
                                 span {
@@ -76,11 +78,11 @@
                                 padding: 1.5rem 0 1rem 6rem;
                                 .si {
                                     &.a {
-                                        background-image: url(../../../../assets/icon/icon-arrow-color-5.svg);
+                                        background-image: url(../../../../assets/icon/icon-arrow-color-4.svg);
                                     }
                                 }
                                 &.a {
-                                    color: var(--color-5);
+                                    color: var(--color-4);
                                 }
                                 &:hover {
                                     transform: scale(1.05) translateY(0);                      
@@ -91,11 +93,11 @@
                                 a {
                                     width: 50%;
                                     margin: 0 0 1rem 7.5rem;
-                                    padding: 0.3rem 1rem 0.3rem 3rem;
+                                    padding: 0.5rem 1rem 0.5rem 3rem;
                                     &:hover {
                                         transform: scale(1.05) translateY(0);
                                         background-color: var(--color-gray);
-                                        font-weight: 400;
+                                        font-weight: 500;
                                         color: var(--color-dark);
                                     }                                 
                                 }
@@ -122,7 +124,7 @@
                         &:hover {
                             transform: scale(1.05) translateY(0);
                             a {
-                                background-color: var(--color-gray);
+                                background-color: var(--color-4);
                                 font-weight: 500;
                                 color: var(--color-dark);
                             }

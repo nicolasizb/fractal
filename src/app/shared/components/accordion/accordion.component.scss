@@ -10,21 +10,22 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
             padding: 2rem 0;
+            border: none;
+            background-color: transparent;
+            font-family: var(--font-text);
+            cursor: pointer;
 
             .qu {
-                width: 100%;
                 font-size: var(--font-big);
                 font-weight: 500;
                 line-height: var(--line-height-1);
                 color: var(--color-dark);
             }
 
-            button {
+            div {
                 display: flex;
-                border: none;
-                background-color: white;
-                cursor: pointer;
 
                 span {
                     width: 2.4rem;
