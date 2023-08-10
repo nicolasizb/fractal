@@ -42,8 +42,8 @@ export class CivilWorkComponent {
 
   containerHeadPageService = {
     title: 'Obra civil',
-    paragraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, tempora facilis cupiditate vel atque repellat.',
-    imgContainer: '../../../../assets/img/build.jpg'
+    paragraph:'Colaboramos contigo para transformar visiones en realidades construidas.',
+    imgContainer: '../../../../assets/img/cover-civil-work.jpg'
   }
 
   sectionShortsTriggers = {
@@ -61,65 +61,59 @@ export class CivilWorkComponent {
   }
 
   sectionCallToAction = {
-    title: 'Quiero energía limpia económica y digital',
-    paragraph: 'Haz clic en ¡Sí quiero! para unirte al ecosistema de energía de ERCO o en conversemos para que un experto resuelva tus dudas.',
-    img: '../../../../assets/img/amp-cover-women.jpg'
+    title: 'Abordamos tus Preocupaciones de Manera Concreta',
+    paragraph: 'Haz clic en ¡Empecemos! Nuestra experiencia y soluciones técnicas se adaptan a tus objetivos.',
+    img: '../../../../assets/vector/vector-women-solar-planet-drop.svg'
   }
 
   cardServices = {
     titleServiceOne: 'Diseños y cálculos',
-    imgServiceOne: '../../../../assets/img/build.jpg',
-    paragraphServiceOne: `<p>Si tu propósito es lograr ahorros en la factura de energía, un sistema interconectado es el ideal para ti, podrás generar hasta el 100% de tus consumos energéticos mientras disminuyes tus emisiones de CO2.</p>
+    imgServiceOne: '../../../../assets/img/tes-civil-work-one.jpg',
+    paragraphServiceOne: `<p>Planificación y construcción de infraestructuras de pequeña escala.</p>
     <br>
-    <p>Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
+    <p>Los diseños detallados consideran aspectos funcionales, estéticos y de seguridad, estableciendo planos y especificaciones.</p>
     <br>
-    <p>Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+    <p>Estos procesos son esenciales para una construcción exitosa y duradera.</p>`,
 
     titleServiceTwo: 'Elaboración Obra in Situ',
-    imgServiceTwo: '../../../../assets/img/build.jpg',
-    paragraphServiceTwo: `<p>2 Si tu propósito es lograr ahorros en la factura de energía, un sistema interconectado es el ideal para ti, podrás generar hasta el 100% de tus consumos energéticos mientras disminuyes tus emisiones de CO2.</p>
+    imgServiceTwo: '../../../../assets/img/tes-civil-work-two.jpg',
+    paragraphServiceTwo: `<p>Abarca trabajos realizados directamente en el lugar donde se está construyendo la infraestructura, en contraste con la fabricación externa y montaje posterior.</p>
     <br>
-    <p>2 Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
-    <br>
-    <p>2 Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+    <p>Esto asegura adaptación precisa a las condiciones del terreno y lograr una integración precisa en el entorno.</p>`,
 
     titleServiceThree: 'Interventoría de obra',
-    imgServiceThree: '../../../../assets/img/build.jpg',
-    paragraphServiceThree: `<p>3 Si tu propósito es lograr ahorros en la factura de energía, un sistema interconectado es el ideal para ti, podrás generar hasta el 100% de tus consumos energéticos mientras disminuyes tus emisiones de CO2.</p>
+    imgServiceThree: '../../../../assets/img/tes-civil-work-three.jpg',
+    paragraphServiceThree: `<p>Supervisión y control de un proyecto de construcción para asegurar que se cumplan diseños, plazos y estándares establecidos.</p>
     <br>
-    <p>3 Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
-    <br>
-    <p>3 Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+    <p>Garantiza calidad y cumplimiento contractual.</p>`,
 
     titleServiceFour: 'Consultoría',
-    imgServiceFour: '../../../../assets/img/build.jpg',
-    paragraphServiceFour: `<p>4 Si tu propósito es lograr ahorros en la factura de energía, un sistema interconectado es el ideal para ti, podrás generar hasta el 100% de tus consumos energéticos mientras disminuyes tus emisiones de CO2.</p>
+    imgServiceFour: '../../../../assets/img/tes-civil-work-four.jpg',
+    paragraphServiceFour: `<p>Asesoramiento y supervisión técnica en proyectos de construcción, asegurando calidad y éxito en la ejecución.</p>
     <br>
-    <p>4 Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
-    <br>
-    <p>4 Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+    <p>Garantizando el cumplimiento de estándares y cumplimiento de estándares técnicos y de seguridad.</p>`,
   }
 
   sectionSliderTransition = {
     personNameOne: "Name",
-    businessNameOne: "Centro de Salvamento Acuático Cruz Roja", 
-    paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
-    imageOne: "../../../../assets/img/tes-curz-roja-three.jpg",
+    businessNameOne: "Vigilancia Acosta", 
+    paragraphOne: "Decidimos hacer nuestra propia remodelación del garaje, pero los problemas de calidad nos superaron. Luego contratamos a AMP, quienes utilizaron su experiencia técnica para corregir los problemas.",
+    imageOne: "../../../../assets/img/tes-civil-work-six.jpg",
 
     personNameTwo: "Name",
-    businessNameTwo: "SIESSA", 
-    paragraphTwo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
-    imageTwo: "../../../../assets/img/tes-siessa-one-small.jpg",
+    businessNameTwo: "Fiscalía General de la Nación", 
+    paragraphTwo: "Teníamos expectativas específicas para nuestro proyecto de renovación. Trabajaron en estrecha colaboración con nosotros, ajustaron el diseño según nuestras preferencias y se comunicaron constantemente para asegurarse de que el resultado final fuera justo como lo habíamos imaginado.",
+    imageTwo: "../../../../assets/img/tes-civil-work-five.jpg",
 
     personNameThree: "Name",
     businessNameThree: "Business", 
     paragraphThree: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
-    imageThree: "../../../../assets/img/tes-swimming-pool-small.jpg",
+    imageThree: "",
 
     personNameFour: "Name",
-    businessNameFour: "GAIAG", 
-    paragraphFour: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
-    imageFour: "../../../../assets/img/tes-gaiga-small.jpg",
+    businessNameFour: "Vigilancia Acosta", 
+    paragraphFour: "Decidimos hacer nuestra propia remodelación del garaje, pero los problemas de calidad nos superaron. Luego contratamos a AMP, quienes utilizaron su experiencia técnica para corregir los problemas.",
+    imageFour: "../../../../assets/img/tes-civil-work-six.jpg",
   }
 
 }

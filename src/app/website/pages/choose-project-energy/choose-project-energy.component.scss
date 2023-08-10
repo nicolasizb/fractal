@@ -56,3 +56,9 @@
 .br {
     border-radius: 1.5rem;
 }
+
+@media screen and (max-width: 680px) {
+    .ctr__cpe {
+        height: 100%;
+    }
+}

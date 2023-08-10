@@ -24,21 +24,21 @@ export class SwimmingPoolsComponent {
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: '#11111F',
-    backgroundColor: '#3B9D81',
+    colorBorder: 'var(--color-dark)',
+    backgroundColor: 'var(--color-2)',
     span: true,
     text: 'Cotizar'
   };
 
-  colorLayout = '#3B9D81';
+  colorLayout = 'var(--color-2)';
 
   linkPage = '/servicios/piscinas/contacto';
 
   containerHeadPageService = {
     title: 'Piscinas',
-    titleColor: '#3B9D81',
-    paragraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, tempora facilis cupiditate vel atque repellat.',
-    imgContainer: '../../../../assets/img/swimming-pool.jpg'
+    titleColor: 'var(--color-2)',
+    paragraph:'Sumérgete en la Excelencia; cada detalle, cada onda, pensados para ti.',
+    imgContainer: '../../../../assets/img/cover-swimming-pool.jpg'
   };
 
   sectionShortsTriggers = {
@@ -56,66 +56,58 @@ export class SwimmingPoolsComponent {
   }
 
   sectionCallToAction = {
-    title: 'Quiero energía limpia económica y digital',
-    paragraph: 'Haz clic en ¡Sí quiero! para unirte al ecosistema de energía de ERCO o en conversemos para que un experto resuelva tus dudas.',
-    img: '../../../../assets/img/amp-cover-women.jpg'
+    title: ' Donde cada chapuzón es una experiencia única',
+    paragraph: 'Haz clic en ¡Empecemos! Y sumérgete en un mundo de posibilidades acuáticas.',
+    img: '../../../../assets/vector/vector-women-solar-planet-drop.svg'
   };
 
   cardServices = {
     titleServiceOne: 'Administración',
-    imgServiceOne: '../../../../assets/img/swimming-pool.jpg',
-    paragraphServiceOne: `<p>Si tu propósito es lograr ahorros en la factura de energía, un sistema interconectado es el ideal para ti, podrás generar hasta el 100% de tus consumos energéticos mientras disminuyes tus emisiones de CO2.</p>
+    imgServiceOne: '../../../../assets/img/tes-swimming-pool-nine.jpg',
+    paragraphServiceOne: `<p>Gestionamos limpieza, seguridad, personal, horarios, finanzas y cumplimiento normativo.</p>
     <br>
-    <p>Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
-    <br>
-    <p>Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+    <p>Nos aseguramos que la piscina sea segura, funcional y atractiva para los usuarios, mientras se gestionan eficientemente los recursos y se cumplen las regulaciones.</p>`,
     
 
     titleServiceTwo: 'Asesoría',
-    imgServiceTwo: '../../../../assets/img/swimming-pool.jpg',
-    paragraphServiceTwo: `<p>2 Si tu propósito es lograr ahorros en la factura de energía, un sistema interconectado es el ideal para ti, podrás generar hasta el 100% de tus consumos energéticos mientras disminuyes tus emisiones de CO2.</p>
+    imgServiceTwo: '../../../../assets/img/tes-swimming-pool-eleven.jpg',
+    paragraphServiceTwo: `<p>Brindamos un equipo de expertos en gestión acuática para optimizar el mantenimiento, seguridad, eficiencia y cumplimiento normativo de las instalaciones.</p>
     <br>
-    <p>2 Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
-    <br>
-    <p>2 Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+    <p>Proporcionamos orientación sobre tratamiento del agua, seguridad, diseño y más, asegurando un funcionamiento exitoso y funcional de la piscina.</p>`,
 
     titleServiceThree: 'Control y dosificación',
-    imgServiceThree: '../../../../assets/img/swimming-pool.jpg',
-    paragraphServiceThree: `<p>3 Si tu propósito es lograr ahorros en la factura de energía, un sistema interconectado es el ideal para ti, podrás generar hasta el 100% de tus consumos energéticos mientras disminuyes tus emisiones de CO2.</p>
+    imgServiceThree: '../../../../assets/img/tes-swimming-pool-ten.jpg',
+    paragraphServiceThree: `<p>Monitorearamos y ajustamos con precisión los niveles químicos del agua, como el pH y el cloro, para mantenerla segura y cómoda.</p>
     <br>
-    <p>3 Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
-    <br>
-    <p>3 Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+    <p>Esto asegura la salud de los nadadores y la integridad de la piscina a largo plazo.</p>`,
 
     titleServiceFour: 'Desinfección',
-    imgServiceFour: '../../../../assets/img/swimming-pool.jpg',
-    paragraphServiceFour: `<p>4 Si tu propósito es lograr ahorros en la factura de energía, un sistema interconectado es el ideal para ti, podrás generar hasta el 100% de tus consumos energéticos mientras disminuyes tus emisiones de CO2.</p>
+    imgServiceFour: '../../../../assets/img/tes-swimming-pool-twelve.jpg',
+    paragraphServiceFour: `<p>Eliminación de microorganismos y patógenos del agua mediante el uso de productos químicos como el cloro.</p>
     <br>
-    <p>4 Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
-    <br>
-    <p>4 Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+    <p>Esto garantiza un entorno seguro y saludable para los nadadores, previniendo enfermedades y asegurando la limpieza de la piscina.</p>`,
   }
 
   sectionSliderTransition = {
     personNameOne: "Name",
     businessNameOne: "Centro de Salvamento Acuático Cruz Roja", 
-    paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    paragraphOne: "Elegir a AMP para el mantenimiento de nuestra piscina fue una decisión que transformó la experiencia de nuestros usuarios. Su enfoque meticuloso en la limpieza y el mantenimiento constante nos brinda una piscina siempre impecable.!",
     imageOne: "../../../../assets/img/tes-curz-roja-three.jpg",
 
     personNameTwo: "Name",
-    businessNameTwo: "SIESSA", 
-    paragraphTwo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
-    imageTwo: "../../../../assets/img/tes-siessa-one-small.jpg",
+    businessNameTwo: "Business", 
+    paragraphTwo: "Su conocimiento sobre regulaciones y normativas nos ha mantenido en buen camino. Gracias a su guía, siempre cumplimos con todos los requisitos legales y regulatorios.",
+    imageTwo: "../../../../assets/img/tes-swimming-pool-five.jpg",
 
     personNameThree: "Name",
     businessNameThree: "Business", 
-    paragraphThree: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    paragraphThree: "AMP ha demostrado ser el experto en mantener el equilibrio químico perfecto en nuestra piscina. Su conocimiento de productos químicos y su enfoque en el pH y el cloro aseguran que el agua sea segura y agradable.",
     imageThree: "../../../../assets/img/tes-swimming-pool-small.jpg",
 
     personNameFour: "Name",
-    businessNameFour: "GAIAG", 
-    paragraphFour: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
-    imageFour: "../../../../assets/img/tes-gaiga-small.jpg",
+    businessNameFour: "Business", 
+    paragraphFour: "Desde que comenzamos a trabajar juntos, la limpieza y la higiene de nuestra piscina se han convertido en una ventaja competitiva. Los comentarios positivos de nuestros clientes hablan por sí mismos.",
+    imageFour: "../../../../assets/img/tes-swimming-pool-three.jpg",
   }
 
   serviceStateOne: boolean = true;

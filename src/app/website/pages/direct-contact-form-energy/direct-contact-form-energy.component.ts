@@ -29,7 +29,7 @@ export class DirectContactFormEnergyComponent {
   }
 
   dataAttributeForm = {
-    dataTfWidget: 'If26cGNI',
+    dataTfWidget: 'eUVKmlcg',
     dataTfOpacity: '100',
     dataTfHideHeaders: '',
     dataTfIframeProps: 'title=Energía solar',

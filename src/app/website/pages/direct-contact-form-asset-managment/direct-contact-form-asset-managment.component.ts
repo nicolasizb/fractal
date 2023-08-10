@@ -28,7 +28,7 @@ export class DirectContactFormAssetManagmentComponent {
   }
 
   dataAttributeForm = {
-    dataTfWidget: 'G4Q0QK0h',
+    dataTfWidget: 'CE4joZcr',
     dataTfOpacity: '100',
     dataTfHideHeaders: '',
     dataTfIframeProps: 'title=Energía solar',

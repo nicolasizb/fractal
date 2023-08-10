@@ -30,9 +30,10 @@
             .in__pa {
                 margin: 0 0 4rem;
                 font-weight: 300;
-                font-size: var(--font-big);
+                font-size: var(--font-title-small);
                 color: var(--color-gray);
                 word-spacing: var(--word-spacing);
+                line-height: var(--line-height-1);
             }
         }
     }

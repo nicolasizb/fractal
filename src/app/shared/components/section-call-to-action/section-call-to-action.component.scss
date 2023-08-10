@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 5rem 2rem;
+    padding: 2rem 2rem 5rem;
 
     .d {
         max-width: 95rem;
@@ -33,8 +33,6 @@
             }
             .ca__fi {
                 position: relative;
-                width: 40rem;
-                max-width: 50rem;
                 height: 30rem;
                 
                 .fi__im {
@@ -72,9 +70,8 @@
                     }
                 }
                 .ca__fi {
-                    width: 80vw;
                     .fi__bu {
-                        left: calc(50% - 10.7rem);
+                        left: calc(16%);
                     }
                 }
             }

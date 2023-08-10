@@ -37,7 +37,7 @@ export class ProjectsComponent {
   sectionCallToAction = {
     title: 'Potenciando el crecimiento con soluciones personalizadas.',
     paragraph: 'Haz clic en ¡Empecemos! Y conoce al equipo de especialistas que estará a tu disposición.',
-    img: '../../../../assets/img/amp-cover-women.jpg'
+    img: '../../../../assets/vector/vector-women-solar-planet-drop.svg'
   }
 
   containerServiceEnergy: boolean = true;

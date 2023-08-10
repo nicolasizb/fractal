@@ -29,7 +29,7 @@ export class DirectContactFormSwimmingPoolsComponent {
   }
 
   dataAttributeForm = {
-    dataTfWidget: 'Nq1Ai97W',
+    dataTfWidget: 'zKcuNjp5',
     dataTfOpacity: '100',
     dataTfHideHeaders: '',
     dataTfIframeProps: 'title=Energía solar',

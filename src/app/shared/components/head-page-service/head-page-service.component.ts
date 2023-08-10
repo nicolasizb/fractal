@@ -29,8 +29,4 @@ export class HeadPageServiceComponent {
   }
 
   constructor(private router: Router) {}
-
-  // redirectTo() {
-  //   this.router.navigate([this.linkPageListener]);
-  // }
 }

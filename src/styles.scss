@@ -34,13 +34,16 @@
     --color-gray-2: #f1f1f1;
     --color-gray-3: #ebebeb;
     --color-dark: #11111F;
-    --color-dark-2: #212129;
 }
 
 html {
     font-family: var(--font-text);
     font-size: 62.5%;
 }
+
+// body {
+//     user-select: none;
+// }
 
 // RULES SCSS
 

@@ -24,7 +24,7 @@ export class ProjectEnergyHouseComponent {
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: '#11111F',
+    colorBorder: 'var(--color-dark)',
     backgroundColor: 'var(--color-4)',
     span: true,
     text: 'Empecemos'
@@ -33,9 +33,9 @@ export class ProjectEnergyHouseComponent {
   linkPage = '/servicios/proyectos-energia-solar/contacto';
 
   containerHeadPageService = {
-    title: 'Energía solar para tu hogar',
-    paragraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, tempora facilis cupiditate vel atque repellat.',
-    imgContainer: '../../../../assets/img/solar.jpg',
+    title: 'Energía solar para hogares',
+    paragraph:'Creamos soluciones personalizadas y completas que se ajustan a tus requerimientos.',
+    imgContainer: '../../../../assets/img/cover-house-amp.jpg',
   }
 
   sectionShortsTriggers = {
@@ -55,65 +55,67 @@ export class ProjectEnergyHouseComponent {
   sectionCallToAction = {
     title: 'Toma el control y hazlo realidad.',
     paragraph: 'Haz clic en ¡Empecemos! Y comienza a experimentar los beneficios tangibles de la energía solar en tu hogar.',
-    img: '../../../../assets/img/amp-cover-women.jpg'
+    img: '../../../../assets/vector/vector-women-solar-planet-drop.svg'
   }
 
   sectionStepsToFollow = {
-    questionOne: '1. Firma del contrato',
-    answerOne: 'Te entregamos los documentos, apruebas el contrato y te hacemos la introducción a ErcoApp.',
+    questionOne: '1. Contrato',
+    answerOne: 'Te proporcionamos la documentación, validas el acuerdo y te brindamos una introducción al programa Amp Integral Solution.',
 
-    questionTwo: '2. Diseñamos tu propuesta',
-    answerTwo: 'Programamos una visita de ingeniería de detalle y realizamos la compra de tus equipos.',
+    questionTwo: '2. Diseño',
+    answerTwo: 'Agendamos una cita para una evaluación detallada con nuestros ingenieros y gestionamos la adquisición de tus dispositivos.',
 
-    questionThree: '3. Instalamos tu proyecto',
-    answerThree: 'Construimos tu proyecto siguiendo los cronogramas con personal propio y calificado.',
+    questionThree: '3. Instalación',
+    answerThree: 'Desarrollamos tu proyecto conforme a los plazos establecidos, empleando nuestro propio y capacitado equipo.',
 
-    questionFour: '4. Gestionamos la certificación',
-    answerFour: 'Enviamos documentación y programamos visita para la legalización y la certificación RETIE.',
+    questionFour: '4. Certificación',
+    answerFour: 'Proporcionamos la documentación necesaria y coordinamos una visita para llevar a cabo la legalización y obtener la certificación RETIE.',
 
-    questionFive: '5. Tu primer kilovatio',
-    answerFive: 'Te entregamos tu sistema solar y te capacitamos en nuestra aplicación de monitoreo.',
+    questionFive: '5. Entrega',
+    answerFive: 'Entregamos tu sistema de energía solar y te proporcionamos capacitación para que puedas llevar a cabo su monitoreo de manera efectiva.',
   }
 
   cardServices = {
-    titleServiceOne: 'Interconectados',
-    imgServiceOne: '../../../../assets/img/solar.jpg',
-    paragraphServiceOne: `<p>Si tu propósito es lograr ahorros en la factura de energía, un sistema interconectado es el ideal para ti, podrás generar hasta el 100% de tus consumos energéticos mientras disminuyes tus emisiones de CO2.</p>
+    titleServiceOne: 'Sistema Solar On-Grid (Conectado a la Red)',
+    imgServiceOne: '../../../../assets/img/tes-solar-nine.jpg',
+    paragraphServiceOne: `<p>Si buscas reducir costos de energía, el sistema solar conectado a la red es ideal. Genera electricidad solar y úsala en casa o envíala a la red eléctrica convencional.</p>
     <br>
-    <p>Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
+    <p>Ahorra y reduce emisiones de CO2 mientras tienes acceso constante a energía sin necesidad de baterías.</p>
     <br>
-    <p>Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+    <p>Dependencia continua de la red eléctrica convencional.`,
     
 
-    titleServiceTwo: 'Híbridos',
-    imgServiceTwo: '../../../../assets/img/solar.jpg',
-    paragraphServiceTwo: `<p>2 Si tu propósito es lograr ahorros en la factura de energía, un sistema interconectado es el ideal para ti, podrás generar hasta el 100% de tus consumos energéticos mientras disminuyes tus emisiones de CO2.</p>
+    titleServiceTwo: 'Sistema Solar Off-Grid (Desconectado de la Red)',
+    imgServiceTwo: '../../../../assets/img/tes-solar-six.jpg',
+    paragraphServiceTwo: `<p>Si estás pensando en independencia energética, un sistema solar off-grid es tu elección. Funciona sin conectarse a la red eléctrica convencional. La electricidad solar se almacena en baterías y se usa donde se genera.</p>
     <br>
-    <p>2 Estos sistemas funcionan en paralelo con la red eléctrica convencional y te permiten un flujo constante de energía.</p>
+    <p>Combinan conexión a la red con baterías para respaldo en momentos de inestabilidad. En AMP, ofrecemos dos kits:</p>
     <br>
-    <p>2 Los sistemas interconectados no generan un respaldo de energía ya que no cuentan con baterías.</p>`,
+    <p>EXAMPLE:Kit 3,68 kWh - 5 kWh: 3,68 kWp, 5 kWh almacenamiento, genera 397 kWh/mes. Requiere 21 m2.</p>
+    <br>
+    <p>EXAMPLE:Kit 5,52 kWh - 10 kWh: 5,52 kWp, 10 kWh almacenamiento, genera 600 kWh/mes. Requiere 37 m2.</p>`,
   }
 
   sectionSliderTransition = {
     personNameOne: "Name",
-    businessNameOne: "Centro de Salvamento Acuático Cruz Roja", 
-    paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
-    imageOne: "../../../../assets/img/tes-curz-roja-three.jpg",
+    businessNameOne: "Hogar", 
+    paragraphOne: "Sabía que la energía solar podía ser intermitente, pero AMP nos ofreció soluciones de almacenamiento que nos permiten aprovechar al máximo la energía que generamos, incluso cuando el sol se pone",
+    imageOne: "../../../../assets/img/tes-solar-six.jpg", 
 
     personNameTwo: "Name",
-    businessNameTwo: "SIESSA", 
-    paragraphTwo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
+    businessNameTwo: "Hogar", 
+    paragraphTwo: "Confiar en AMP para nuestra solución de energía solar ha significado que incluso en días nublados seguimos viendo los beneficios. Aunque la dependencia de la luz solar puede ser un desafío, hemos aprendido que nuestra producción de energía es resiliente.",
     imageTwo: "../../../../assets/img/tes-siessa-one-small.jpg",
 
     personNameThree: "Name",
-    businessNameThree: "Business", 
-    paragraphThree: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
-    imageThree: "../../../../assets/img/tes-swimming-pool-small.jpg",
+    businessNameThree: "Hogar", 
+    paragraphThree: "Con AMP, la dependencia de la luz solar es menos preocupante. Aunque reconocemos que la producción puede variar, su enfoque técnico en la maximización de la eficiencia nos ha asegurado un suministro constante de energía.",
+    imageThree: "../../../../assets/img/tes-solar-three-re.jpg",
 
     personNameFour: "Name",
-    businessNameFour: "GAIAG", 
-    paragraphFour: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, sit quisquam provident vero omnis repellat aliquam! At ut voluptate, debitis porro quod iure accusantium et sed beatae provident numquam!",
-    imageFour: "../../../../assets/img/tes-gaiga-small.jpg",
+    businessNameFour: "Hogar", 
+    paragraphFour: "Sé que la tecnología avanza rápidamente, pero AMP me proporcionó información detallada sobre cómo los paneles solares que elijo tienen un historial de rendimiento y durabilidad excepcionales.",
+    imageFour: "../../../../assets/img/tes-solar-ten.jpg",
   }
 
 }

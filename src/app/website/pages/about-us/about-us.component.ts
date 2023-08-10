@@ -27,6 +27,6 @@ export class AboutUsComponent {
   sectionCallToAction = {
     title: 'Optimiza tus recursos, maximiza el rendimiento.',
     paragraph: 'Haz clic en ¡Empecemos! Y descubre cómo nuestras soluciones personalizadas están diseñadas para satisfacer tus necesidades específicas.',
-    img: '../../../../assets/img/amp-cover-women.jpg'
+    img: '../../../../assets/vector/vector-women-solar-planet-drop.svg'
   }
 }

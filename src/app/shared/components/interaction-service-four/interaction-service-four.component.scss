@@ -57,10 +57,18 @@
                         word-spacing: var(--word-spacing);
                         line-height: var(--line-height-2);
                     }
-                    .if__i {
+                    picture {
+                        display: flex;
+                        justify-content: center;
                         width: 52%;
-                        border-radius: 1.5rem;
-                    }         
+                        height: 25rem;
+
+                        .if__i {
+                            height: 100%;
+                            border-radius: 1.5rem;
+                            object-fit: cover;
+                        }         
+                    }
                 }
                 .se__b {
                     display: flex;
@@ -85,9 +93,9 @@
                             width: 100%;
                             text-align: center;
                         }
-                        .if__i {
+                        picture {
                             width: 100%;
-                        }         
+                        }
                     }
                 }
             }

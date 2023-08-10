@@ -35,6 +35,7 @@
                 padding: 3rem 1rem;
                 border-radius: 1.5rem;
                 background-color: var(--color-gray);
+                box-shadow: rgba(139, 139, 139, 0.35) 0px 5px 15px;
     
                 .ca--pt__il {
                     display: flex;
@@ -84,18 +85,6 @@
                         width: 15.5rem;
                     }
                 }
-            }
-            .ca--en:hover {
-                transform: scale(1.02) translateZ(0px);
-                box-shadow: var(--color-5) 0px 3px 8px;
-            }
-            .ca--po:hover {
-                transform: scale(1.01) translateZ(0px);
-                box-shadow: var(--color-2) 0px 3px 8px;
-            }
-            .ca--cw:hover, .ca--am:hover {
-                transform: scale(1.02) translateZ(0px);
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             }
         }
     }
