@@ -12,12 +12,12 @@ export class HomeComponent {
   constructor(private titleService: Title, private route: ActivatedRoute) { }
 
   containerButtonOne = {
-    width: 210,
+    width: 270,
     height: 48,
-    colorBorder: 'var(--color-dark)',
-    backgroundColor: 'var(--color-4)',
-    span: false,
-    text: 'Cotizar ahora'
+    colorBorder: 'var(--color-3)',
+    backgroundColor: 'var(--color-gray)',
+    span: true,
+    text: 'Conoce lo que hacemos'
   } 
 
   containerButtonTwo = {
@@ -30,16 +30,16 @@ export class HomeComponent {
   }
 
   sectionShortsTriggers = {
-    triggerOne: 'Trigger 1',
+    triggerOne: 'Número de producciones',
     imgOne: '../../../../assets/icon/icon-verification-color-4.svg',
 
-    triggerTwo: 'Trigger 2',
+    triggerTwo: 'Facturación de nuestro clientes',
     imgTwo: '../../../../assets/icon/icon-verification-color-4.svg',
 
-    triggerThree: 'Trigger 3',
+    triggerThree: 'Número de producciones',
     imgThree: '../../../../assets/icon/icon-verification-color-4.svg',
 
-    triggerFour: 'Trigger 4',
+    triggerFour: 'Horas de contenido grabadas',
     imgFour: '../../../../assets/icon/icon-verification-color-4.svg',
   }
 

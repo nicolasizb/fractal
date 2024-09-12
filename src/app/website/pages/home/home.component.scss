@@ -7,7 +7,7 @@
     height: 100vh;
     min-height: 55rem;
     padding: 0 2rem;
-    background-color: white;
+    background-color: var(--color-black);
 
     .d {
         max-width: 95rem;
@@ -23,8 +23,8 @@
                 h1 {
                     margin: 0 0 2.5rem 0;
                     font-size: var(--font-title-big);
-                    font-weight: 600;
-                    color: var(--color-dark);
+                    font-weight: 400;
+                    color: var(--color-gray);
                 }
             }
             picture {
@@ -64,12 +64,13 @@
                         margin: 0 0 0.5rem 0;
                         font-size: var(--font-big);
                         font-weight: 500;
-                        color: var(--color-2);
+                        color: var(--color-4);
                     }
                     .pa {
                         font-size: var(--font-small);
                         line-height: 2.2rem;
                         word-spacing: var(--word-spacing);
+                        color: var(--color-gray);
                     }
                     .po {
                         width: 98%;
@@ -89,7 +90,7 @@
     height: 100%;
     padding: 4rem 2rem;
     text-align: center;
-    background-color: var(--color-dark);
+    background-color: var(--color-black);
 
     .d {
         max-width: 95rem;
@@ -100,7 +101,7 @@
             font-weight: 400;
             color: var(--color-gray);
             .ti--cb {
-                color: var(--color-4);
+                color: var(--color-3);
                 font-weight: 500;
             }
         }

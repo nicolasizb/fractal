@@ -1,0 +1,208 @@
+.ctr--pt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 4rem 2rem 3rem;
+    background-color: var(--color-gray);
+
+    .d {
+        max-width: 95rem;
+        width: 100%;
+        .ti {
+            margin: 0 0 3rem 0;
+            text-align: center;
+            font-size: var(--font-title-medium);
+            font-weight: 500;
+            color: var(--color-black);
+        }
+    
+        .ctr__ca {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+            width: 100%;
+
+            .ca--pt {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 28rem;
+                min-height: 60rem;
+                height: 100%;
+                padding: 3rem 1.2rem;
+                border-radius: 1.5rem;
+                background-color: var(--color-black);
+                box-shadow: rgba(139, 139, 139, 0.35) 0px 5px 15px;
+    
+                .ca--pt__il {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    margin: 0 auto;
+
+                    .il__ti {
+                        margin: 0 0 2rem 0;
+                        text-align: center;
+                        color: var(--color-4);
+                        font-size: var(--font-big);
+                        font-weight: 600;
+                    }
+                    .dd {
+                        min-height: 45rem;
+
+                        .il__ctr--op {
+                            display: flex;
+                            align-items: center;
+                            margin: 0 0 1.2rem 1rem;
+        
+                            .op__iv {                    
+                                width: 2.4rem;
+                                height: 2.4rem;
+                                min-width: 2.4rem;
+                                min-height: 2.4rem;
+                                background-image: url(../../../../assets/icon/icon-verification.svg);
+                                background-position: center;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                            }
+                            .op__ot {
+                                width: 100%;
+                                margin: 0 0 0 1rem;
+                                line-height: var(--line-height-2);
+                                color: var(--color-gray);
+                                font-size: var(--font-small);
+                                font-weight: 400;
+                            }
+                        }  
+                    }
+                    .il__b {
+                        margin: 1.5rem auto 0 auto;
+                    }
+                }
+                .ca--pt__ir {
+                    margin: 0 auto;
+    
+                    .img--women {
+                        width: 16rem;
+                    }
+                    .img--men {
+                        width: 15.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// TABLET
+@media screen and (max-width: 900px) and (min-width: 680px) {
+    .ctr--pt {
+        .d {
+            .ti {
+                margin: 2rem 0 3rem 0;
+            }
+        
+            .ctr__ca {
+                flex-wrap: wrap;
+                gap: 3rem;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+                .ca--pt {
+                    display: flex;
+                    min-width: 32rem;
+                    min-height: 100%;
+                    padding: 3rem;
+
+                    .ca--pt__il {
+                        height: 100%;
+                        justify-content: space-between;                        
+
+                        .il__ti {
+                            width: 100%;
+                        }
+                        .dd {
+                            min-height: 100%;
+                            padding: 0rem 1rem;
+
+                            .il__ctr--op {
+                                justify-content: center;
+    
+                                .op__ot {
+                                    width: 100%;
+                                }
+                            } 
+                        }
+                    }
+        
+                    .ca--pt__ir {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .ctr--pt {
+        height: 100%;
+
+        .d {
+            .ti {
+                margin: 2rem 0 3rem;
+            }
+            .ctr__ca {
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 4rem;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                
+                .ca--pt {
+                    display: flex;
+                    min-height: 100%;
+                    max-width: 50rem;
+                    width: 100%;
+                    padding: 3rem 2rem;
+
+                    .ca--pt__il {
+                        margin: 0 auto;
+                        align-items: center;
+                        height: 100%;
+
+                        .il__ti {
+                            margin: 0 auto 1rem auto;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .dd {
+                            min-height: 100%;
+                            padding: 0rem 1rem;
+
+                            .il__ctr--op {
+                                width: 100%;
+                                height: 100%;
+    
+                                .op__ot {
+                                    width: 100%;
+                                }
+                            } 
+                        }
+                    }
+        
+                    .ca--pt__ir {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

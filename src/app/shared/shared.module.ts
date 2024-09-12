@@ -20,6 +20,7 @@ import { NavbarServicesComponent } from './components/navbar-services/navbar-ser
 import { SectionTwoProjectsComponent } from './components/section-two-projects/section-two-projects.component';
 import { SectionAutomationComponent } from './components/section-automation/section-automation.component';
 import { SliderTransitionComponent } from './components/slider-transition/slider-transition.component';
+import { SecServicesComponent } from './components/sec-services/sec-services.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { SliderTransitionComponent } from './components/slider-transition/slider
     SectionTwoProjectsComponent,
     SectionAutomationComponent,
     SliderTransitionComponent,
+    SecServicesComponent,
   ],
   imports: [
     CommonModule,
@@ -63,6 +65,7 @@ import { SliderTransitionComponent } from './components/slider-transition/slider
     SectionTwoProjectsComponent,
     SectionAutomationComponent,
     SliderTransitionComponent,
+    SecServicesComponent
   ]
 })
 export class SharedModule { }

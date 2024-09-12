@@ -13,8 +13,9 @@ export class NavbarComponent {
   containerButton = {
     width: 210,
     height: 48,
-    colorBorder: 'var(--color-dark)',
-    backgroundColor: 'var(--color-4)'
+    color: 'var(--color-4)',
+    colorBorder: 'var(--color-3)',
+    backgroundColor: 'var(--color-black)'
   }
 
   menuButtonStatus: boolean = false;

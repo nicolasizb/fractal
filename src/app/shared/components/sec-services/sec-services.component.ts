@@ -3,12 +3,11 @@ import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  selector: 'app-sec-services',
+  templateUrl: './sec-services.component.html',
+  styleUrls: ['./sec-services.component.scss']
 })
-export class ServicesComponent {
-
+export class SecServicesComponent {
   constructor(
     private titleService: Title,
     private route: ActivatedRoute
@@ -17,7 +16,7 @@ export class ServicesComponent {
   containerButtonTwo = {
     width: 160,
     height: 40,
-    colorBorder: 'var(--color-dark)',
+    colorBorder: 'var(--color-3)',
     backgroundColor: 'var(--color-4)',
     span: true,
     text: 'Explorar'

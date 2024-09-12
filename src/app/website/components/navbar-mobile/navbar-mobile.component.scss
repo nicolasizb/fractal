@@ -13,7 +13,7 @@
             width: 100%;
             height: 7rem;
             padding: 1rem 2rem;
-            background-color: white;
+            background-color: var(--color-black);
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             z-index: 10;
     
@@ -27,13 +27,13 @@
             .nav--mobile__container--menu {
                 .container--menu__icon {
                     border: none;
-                    background-color: white;
+                    background-color: transparent;
     
                     .icon--false {
                         display: flex;
                         width: 4rem;
                         height: 4rem;
-                        background-image: url(../../../../assets/icon/icon-menu.svg);
+                        background-image: url(../../../../assets/icon/fr/icon-menu.svg);
                         background-repeat: no-repeat;
                         background-size: contain;
                         background-position: center;
@@ -42,7 +42,7 @@
                     &.active {
                         .icon--false {
                             width: 4rem;
-                            background-image: url(../../../../assets/icon/icon-menu-close.svg);                            
+                            background-image: url(../../../../assets/icon/fr/icon-menu-close.svg);                            
                         }
                     }
                 }
