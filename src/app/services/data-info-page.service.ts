@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
-import { ProjectEnergy, ProjectSwimming } from '../models/project.model';
+import { ProjectPhoto, ProjectDesign, ProjectSocialMedia, ProjectVideo } from 'src/app/models/project.model';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataInfoPageService {
 
-  testimonialsEnergy: ProjectEnergy[] = [
+  testimonialsEnergy: ProjectVideo[] = [
     {
       id: 1,
       img: '../../assets/img/tes-siessa-one-small.jpg',
@@ -93,7 +94,7 @@ export class DataInfoPageService {
     },
   ];
 
-  testimonialsSwimming: ProjectSwimming[] = [
+  testimonialsSwimming: ProjectPhoto[] = [
     {
       id: 7,
       img: '../../assets/img/tes-curz-roja-three.jpg',
@@ -102,10 +103,10 @@ export class DataInfoPageService {
       descriptionSmall: 'Piscina semi olímpica',
       descriptionLarge: 'Mantenimiento piscina semi olímpica. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
-        systemWater: 'Water',
-        filters: 30,
-        space: '50 mts',
-        maintence: 'month'
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
       }
     },
     {
@@ -116,10 +117,10 @@ export class DataInfoPageService {
       descriptionSmall: '2 Sistema de mantenimiento piscinas',
       descriptionLarge: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
-        systemWater: 'Water',
-        filters: 30,
-        space: '50 mts',
-        maintence: 'month'
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
       }
     },
     {
@@ -130,10 +131,10 @@ export class DataInfoPageService {
       descriptionSmall: '3 Sistema de mantenimiento piscinas',
       descriptionLarge: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
-        systemWater: 'Water',
-        filters: 30,
-        space: '50 mts',
-        maintence: 'month'
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
       }
     },
     {
@@ -144,10 +145,10 @@ export class DataInfoPageService {
       descriptionSmall: '4 Sistema de mantenimiento piscinas',
       descriptionLarge: '4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
-        systemWater: 'Water',
-        filters: 30,
-        space: '50 mts',
-        maintence: 'month'
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
       }
     },
     {
@@ -158,10 +159,10 @@ export class DataInfoPageService {
       descriptionSmall: '5 Sistema de mantenimiento piscinas',
       descriptionLarge: '5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
-        systemWater: 'Water',
-        filters: 30,
-        space: '50 mts',
-        maintence: 'month'
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
       }
     },
     {
@@ -172,10 +173,10 @@ export class DataInfoPageService {
       descriptionSmall: '6 Sistema de mantenimiento piscinas',
       descriptionLarge: '6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
-        systemWater: 'Water',
-        filters: 30,
-        space: '50 mts',
-        maintence: 'month'
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
       }
     },
   ];
@@ -259,7 +260,7 @@ export class DataInfoPageService {
     return this.testimonialsSwimming;
   }
 
-  getProjectId(projectEnergy: ProjectEnergy) {
+  getProjectId(projectEnergy: ProjectVideo) {
     return this.testimonialsEnergy.forEach(project => project === projectEnergy);
   }
 }

@@ -20,13 +20,13 @@ export class AboutUsComponent {
 
   containerHead = {
     title: 'Sobre nosotros',
-    paragraph: 'Fundamos esta empresa en 2018 con el propósito de brindar un servicio eficiente a hogares o empresas de todos los tamaños.',
-    img: '../../../../assets/vector/vector-women-amp-contact.png',
+    paragraph: 'Fundamos esta empresa con el propósito de brindar un servicio eficiente a pymes o empresas medianas.',
+    img: '../../../../assets/vector/fr/identidad-marca.png',
   }
   
   sectionCallToAction = {
     title: 'Optimiza tus recursos, maximiza el rendimiento.',
     paragraph: 'Haz clic en ¡Empecemos! Y descubre cómo nuestras soluciones personalizadas están diseñadas para satisfacer tus necesidades específicas.',
-    img: '../../../../assets/vector/vector-women-solar-planet-drop.svg'
+    img: '../../../../assets/vector/fr/call-to-action.png'
   }
 }

@@ -1,65 +1,65 @@
-<article class="pt" *ngIf="stateDetailEnergyListener" >
-    <button class="pt__bcl" (click)="hideProjectEnergyDetail()" ><span></span></button>
-    <p class="pt__de" >{{ projectEnergySelectedListener.descriptionSmall }}</p>
+<article class="pt" *ngIf="stateDetailVideoListener" >
+    <button class="pt__bcl" (click)="hideProjectVideoDetail()" ><span></span></button>
+    <p class="pt__de" >{{ projectVideoSelectedListener.descriptionSmall }}</p>
     <div class="pt__se" >
-        <p class="se en" >{{ projectEnergySelectedListener.scale }}</p>
-        <p class="se en" >{{ projectEnergySelectedListener.category }}</p>
+        <p class="se en" >{{ projectVideoSelectedListener.scale }}</p>
+        <p class="se en" >{{ projectVideoSelectedListener.category }}</p>
     </div>
-    <img class="pt__im" [src]="projectEnergySelectedListener.img" alt="">
+    <img class="pt__im" [src]="projectVideoSelectedListener.img" alt="">
     <div class="pt__de" >
         <p class="de__ti en" >Descripción</p>
-        <p class="de__pa" >{{ projectEnergySelectedListener.descriptionLarge }}</p>
+        <p class="de__pa" >{{ projectVideoSelectedListener.descriptionLarge }}</p>
     </div>
     <div class="pt__dl">
         <p class="dl__ti en" >Detalles</p>
         <div class="dl__ct" >
             <p class="ct__ti" >Sistema:</p>
-            <p class="ct__dl en" >{{ projectEnergySelectedListener.details.system }}</p>
+            <p class="ct__dl en" >{{ projectVideoSelectedListener.details.system }}</p>
         </div>
         <div  class="dl__ct" >
             <p class="ct__ti" >Número de paneles:</p>
-            <p class="ct__dl en" >{{ projectEnergySelectedListener.details.numberPanels }}</p> 
+            <p class="ct__dl en" >{{ projectVideoSelectedListener.details.numberPanels }}</p> 
         </div>
         <div  class="dl__ct" >
             <p class="ct__ti" >Potencia de paneles:</p>
-            <p class="ct__dl en" >{{ projectEnergySelectedListener.details.powerPanels }}</p>
+            <p class="ct__dl en" >{{ projectVideoSelectedListener.details.powerPanels }}</p>
         </div>
         <div  class="dl__ct" >
             <p class="ct__ti" >Generarión anual:</p>
-            <p class="ct__dl en" >{{ projectEnergySelectedListener.details.annualGeneration }}</p>
+            <p class="ct__dl en" >{{ projectVideoSelectedListener.details.annualGeneration }}</p>
         </div>
     </div>
 </article>
 
-<article class="pt" *ngIf="stateDetailSwimmingListener" >
-    <button class="pt__bcl" (click)="hideProjectSwimmingDetail()" ><span></span></button>
-    <p class="pt__de" >{{ projectSwimmingSelectedListener.descriptionSmall }}</p>
+<article class="pt" *ngIf="stateDetailVideoListener" >
+    <button class="pt__bcl" (click)="hideProjectPhotoDetail()" ><span></span></button>
+    <p class="pt__de" >{{ projectPhotoSelectedListener.descriptionSmall }}</p>
     <div class="pt__se" >
-        <p class="se sw" >{{ projectSwimmingSelectedListener.scale }}</p>
-        <p class="se sw" >{{ projectSwimmingSelectedListener.category }}</p>
+        <p class="se sw" >{{ projectPhotoSelectedListener.scale }}</p>
+        <p class="se sw" >{{ projectPhotoSelectedListener.category }}</p>
     </div>
-    <img class="pt__im" [src]="projectSwimmingSelectedListener.img" alt="">
+    <img class="pt__im" [src]="projectPhotoSelectedListener.img" alt="">
     <div class="pt__de" >
         <p class="de__ti sw" >Descripción</p>
-        <p class="de__pa" >{{ projectSwimmingSelectedListener.descriptionLarge }}</p>
+        <p class="de__pa" >{{ projectPhotoSelectedListener.descriptionLarge }}</p>
     </div>
     <div class="pt__dl">
-        <p class="dl__ti sw" >Detalles</p>
+        <p class="dl__ti en" >Detalles</p>
         <div class="dl__ct" >
             <p class="ct__ti" >Sistema:</p>
-            <p class="ct__dl sw" >{{ projectSwimmingSelectedListener.details.systemWater }}</p>
+            <p class="ct__dl en" >{{ projectPhotoSelectedListener.details.system }}</p>
         </div>
         <div  class="dl__ct" >
             <p class="ct__ti" >Número de paneles:</p>
-            <p class="ct__dl sw" >{{ projectSwimmingSelectedListener.details.filters }}</p> 
+            <p class="ct__dl en" >{{ projectPhotoSelectedListener.details.numberPanels }}</p> 
         </div>
         <div  class="dl__ct" >
             <p class="ct__ti" >Potencia de paneles:</p>
-            <p class="ct__dl sw" >{{ projectSwimmingSelectedListener.details.space }}</p>
+            <p class="ct__dl en" >{{ projectPhotoSelectedListener.details.powerPanels }}</p>
         </div>
         <div  class="dl__ct" >
             <p class="ct__ti" >Generarión anual:</p>
-            <p class="ct__dl sw" >{{ projectSwimmingSelectedListener.details.maintence }}</p>
+            <p class="ct__dl en" >{{ projectPhotoSelectedListener.details.annualGeneration }}</p>
         </div>
     </div>
 </article>

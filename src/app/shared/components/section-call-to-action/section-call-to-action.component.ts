@@ -15,7 +15,7 @@ export class SectionCallToActionComponent {
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: 'var(--color-dark)',
+    colorBorder: 'var(--color-black)',
     backgroundColor: 'var(--color-4)',
     span: true,
     text: 'Empecemos'

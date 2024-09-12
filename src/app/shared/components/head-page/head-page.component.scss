@@ -4,7 +4,7 @@
     width: 100%;
     height: 100%;
     padding: 12rem 2rem 4rem;
-    background-color: white;
+    background-color: var(--color-black);
 
     .d {
         display: flex;
@@ -23,14 +23,14 @@
             .tx__ti {
                 margin: 0 0 2.5rem 0;
                 font-size: var(--font-title-big);
-                font-weight: 600;
-                color: var(--color-dark);
+                font-weight: 400;
+                color: var(--color-gray);
             }
             .tx__pa {
                 font-size: var(--font-big);
                 font-weight: 400;
                 line-height: var(--line-height-1);
-                color: var(--color-dark);
+                color: var(--color-gray);
             }
             .bu {
                 margin: 2.5rem 0 0;
@@ -38,6 +38,7 @@
         }
         .cth__fi {
             display: block;
+
             img {
                 height: 26rem;
             }

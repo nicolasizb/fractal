@@ -3,7 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router, Event, NavigationEnd } from '@angular/router';
 
 import { DataInfoPageService } from 'src/app/services/data-info-page.service';
-import { ProjectEnergy, ProjectSwimming } from 'src/app/models/project.model';
+import { ProjectPhoto, ProjectDesign, ProjectSocialMedia, ProjectVideo } from 'src/app/models/project.model';
 
 @Component({
   selector: 'app-projects',
@@ -31,7 +31,7 @@ export class ProjectsComponent {
   containerHead = {
     title: 'Conoce nuestros proyectos',
     paragraph: 'Somos más que proveedores de tecnología, somos aliados estratégicos en la transformación y optimización de tus espacios.',
-    img: '../../../../assets/vector/vector-men-think-all.svg'
+    img: '../../../../assets/vector/fr/identidad-marca.png'
   }
 
   sectionCallToAction = {
@@ -40,19 +40,22 @@ export class ProjectsComponent {
     img: '../../../../assets/vector/vector-women-solar-planet-drop.svg'
   }
 
-  containerServiceEnergy: boolean = true;
-  navegationContainEnergy: boolean = true;
-
-  containerServiceSwimming: boolean = false;
-  navegationContainSwimming: boolean = false;
-
-  containerProductDetail: boolean = false;
-
-  stateDetailEnergy: boolean = false;
-  stateDetailSwimming: boolean = false;
-
-
-  projectEnergySelected: ProjectEnergy = {
+  projectVideoSelected: ProjectVideo = {
+    id: 0,
+    img: '',
+    category: '',
+    scale: '',
+    descriptionSmall: '',
+    descriptionLarge: '',
+    details: {
+      system: '',
+      numberPanels: 0,
+      powerPanels: '',
+      annualGeneration: ''
+    }
+  }
+  
+  projectPhotoSelected: ProjectDesign = {
     id: 0,
     img: '',
     category: '',
@@ -67,7 +70,7 @@ export class ProjectsComponent {
     }
   }
 
-  projectSwimmingSelected: ProjectSwimming = {
+  projectDesignSelected: ProjectPhoto = {
     id: 0,
     img: '',
     category: '',
@@ -75,83 +78,202 @@ export class ProjectsComponent {
     descriptionSmall: '',
     descriptionLarge: '',
     details: {
-      systemWater: '',
-      filters: 0,
-      space: '',
-      maintence: ''
+      system: '',
+      numberPanels: 0,
+      powerPanels: '',
+      annualGeneration: ''
     }
   }
 
-  activeEnergyService(state: boolean) {
-    this.containerServiceEnergy = state;
-    this.navegationContainEnergy = state;
+  projectSocialMediaSelected: ProjectSocialMedia = {
+    id: 0,
+    img: '',
+    category: '',
+    scale: '',
+    descriptionSmall: '',
+    descriptionLarge: '',
+    details: {
+      system: '',
+      numberPanels: 0,
+      powerPanels: '',
+      annualGeneration: ''
+    }
+  }
+
+  containerServiceVideo: boolean = true;
+  navegationContainVideo: boolean = true;
+
+  containerServicePhoto: boolean = false;
+  navegationContainPhoto: boolean = false;
+
+  containerServiceDesign: boolean = false;
+  navegationContainDesign: boolean = false;
+
+  containerServiceSocialMedia: boolean = false;
+  navegationContainSocialMedia: boolean = false;
+
+  containerProductDetail: boolean = false;
+
+  stateDetailVideo: boolean = false;
+  stateDetailPhoto: boolean = false;
+  stateDetailDesign: boolean = false;
+  stateDetailSocialMedia: boolean = false;
+
+
+  activeVideoService(state: boolean) {
+    this.containerServiceVideo= state;
+    this.navegationContainVideo = state;
     
-    this.containerServiceSwimming = false;
-    this.navegationContainSwimming = false;
+    this.containerServicePhoto = false;
+    this.navegationContainPhoto = false;
+
+    this.containerServiceDesign = false;
+    this.navegationContainDesign = false;
+
+    this.containerServiceSocialMedia = false;
+    this.navegationContainSocialMedia = false;
 
     this.containerProductDetail = false;
   }
 
-  activeSwimmingService(state: boolean) {
-    this.containerServiceEnergy = false;
-    this.navegationContainEnergy = false;
+  activePhotoService(state: boolean) {
+    this.containerServiceVideo= false;
+    this.navegationContainVideo = false;
+    
+    this.containerServicePhoto = state;
+    this.navegationContainPhoto = state;
 
-    this.containerServiceSwimming = state;
-    this.navegationContainSwimming = state;
+    this.containerServiceDesign = false;
+    this.navegationContainDesign = false;
+
+    this.containerServiceSocialMedia = false;
+    this.navegationContainSocialMedia = false;
 
     this.containerProductDetail = false;
   }
 
-  activeProjectEnergyDetail(state: boolean) {
+  activeDesignService(state: boolean) {
+    this.containerServiceVideo= false;
+    this.navegationContainVideo = false;
+    
+    this.containerServicePhoto = false;
+    this.navegationContainPhoto = false;
+
+    this.containerServiceDesign = state;
+    this.navegationContainDesign = state;
+
+    this.containerServiceSocialMedia = false;
+    this.navegationContainSocialMedia = false;
+
+    this.containerProductDetail = false;
+  }
+
+  activeSocialMediaService(state: boolean) {
+    this.containerServiceVideo= false;
+    this.navegationContainVideo = false;
+    
+    this.containerServicePhoto = false;
+    this.navegationContainPhoto = false;
+
+    this.containerServiceDesign = false;
+    this.navegationContainDesign = false;
+
+    this.containerServiceSocialMedia = state;
+    this.navegationContainSocialMedia = state;
+
+    this.containerProductDetail = false;
+  }
+
+  activeProjectVideoDetail(state: boolean) {
     if(state === true) {
-      this.containerServiceEnergy = false;
-      this.navegationContainEnergy = true;
+      this.containerServiceVideo= false;
+      this.navegationContainVideo = true;
 
-      this.containerServiceSwimming = false;
-      this.navegationContainSwimming = false;
+      this.containerServicePhoto = false;
+      this.navegationContainPhoto = false;
 
       this.containerProductDetail = true;
-      this.stateDetailEnergy = true;
-      this.stateDetailSwimming = false;
+      this.stateDetailVideo = true;
+      this.stateDetailPhoto = false;
     } else {
       this.containerProductDetail = false;
     }
   }
 
-  activeProjectSwimmingDetail(state: boolean) {
+  activeProjectPhotoDetail(state: boolean) {
     if(state === true) {
-      this.containerServiceEnergy = false;
-      this.navegationContainEnergy = false; 
+      this.containerServiceVideo= false;
+      this.navegationContainVideo = false; 
 
-      this.containerServiceSwimming = false;
-      this.navegationContainSwimming = true;
+      this.containerServicePhoto = false;
+      this.navegationContainPhoto = true;
 
       this.containerProductDetail = true;
-      this.stateDetailSwimming = true;
-      this.stateDetailEnergy = false;
+      this.stateDetailPhoto = true;
+      this.stateDetailVideo = false;
     } else {
       this.containerProductDetail = false;
     }
   }
 
-  sendProjectEnergyDetail(event: ProjectEnergy) {
-    this.projectEnergySelected = event;
+  activeProjectDesignDetail(state: boolean) {
+    if(state === true) {
+      this.containerServiceVideo= false;
+      this.navegationContainVideo = false; 
+
+      this.containerServicePhoto = false;
+      this.navegationContainPhoto = true;
+
+      this.containerProductDetail = true;
+      this.stateDetailPhoto = true;
+      this.stateDetailVideo = false;
+    } else {
+      this.containerProductDetail = false;
+    }
   }
 
-  sendProjectSwimmingDetail(event: ProjectSwimming) {
-    this.projectSwimmingSelected = event;
+  activeProjectSocialMediaDetail(state: boolean) {
+    if(state === true) {
+      this.containerServiceVideo= false;
+      this.navegationContainVideo = false; 
+
+      this.containerServicePhoto = false;
+      this.navegationContainPhoto = true;
+
+      this.containerProductDetail = true;
+      this.stateDetailPhoto = true;
+      this.stateDetailVideo = false;
+    } else {
+      this.containerProductDetail = false;
+    }
   }
 
-  testimonialsEnergy: ProjectEnergy[] = [];
-  testimonialsSwimming: ProjectSwimming[] = [];
+  sendProjectEnergyDetail(event: ProjectVideo) {
+    this.projectVideoSelected = event;
+  }
+
+  sendProjectPhotoDetail(event: ProjectPhoto) {
+    this.projectPhotoSelected = event;
+  }
+
+  sendProjectDesignDetail(event: ProjectDesign) {
+    this.projectDesignSelected = event;
+  }
+
+  sendProjectSocialMediaDetail(event: ProjectSocialMedia) {
+    this.projectSocialMediaSelected = event;
+  }
+
+  testimonialsVideo: ProjectVideo[] = [];
+  testimonialsPhoto: ProjectPhoto[] = [];
 
   backSelectProjects() {
     window.scrollTo(0, 380);
   }
 
   ngOnInit(): void {
-    this.testimonialsEnergy = this.dataInfoPageService.getTestimonialsEnergy();
-    this.testimonialsSwimming = this.dataInfoPageService.getTestimonialsSwimming();
+    this.testimonialsVideo = this.dataInfoPageService.getTestimonialsEnergy();
+    this.testimonialsPhoto = this.dataInfoPageService.getTestimonialsSwimming();
     this.route.data.subscribe(data => {
       const pageTitle = data['title'];
       this.titleService.setTitle(pageTitle);

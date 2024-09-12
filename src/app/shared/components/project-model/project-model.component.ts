@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { ProjectEnergy, ProjectSwimming } from 'src/app/models/project.model';
+import { ProjectVideo, ProjectPhoto, ProjectDesign, ProjectSocialMedia } from 'src/app/models/project.model';
 
 @Component({
   selector: 'app-project-model',
@@ -8,7 +8,7 @@ import { ProjectEnergy, ProjectSwimming } from 'src/app/models/project.model';
 })
 export class ProjectModelComponent {
 
-  @Input() projectEnergy: ProjectEnergy = {
+  @Input() projectEnergy: ProjectVideo = {
     id: 0,
     img: '',
     category: '',
@@ -23,7 +23,7 @@ export class ProjectModelComponent {
     }
   }
   
-  @Input() projectSwimming: ProjectSwimming = {
+  @Input() projectSwimming: ProjectPhoto = {
     id: 0,
     img: '',
     category: '',
@@ -31,10 +31,10 @@ export class ProjectModelComponent {
     descriptionSmall: '',
     descriptionLarge: '',
     details: {
-      systemWater: '',
-      filters: 0,
-      space: '',
-      maintence: ''
+      system: '',
+      numberPanels: 0,
+      powerPanels: '',
+      annualGeneration: ''
     }
   }
   
@@ -43,12 +43,12 @@ export class ProjectModelComponent {
   @Input() activeProjectDetailListener: boolean = false;
 
   @Output() activeProjectDetail = new EventEmitter<boolean>();
-  @Output() projectEnergySelected = new EventEmitter<ProjectEnergy>();
-  @Output() projectSwimmingSelected = new EventEmitter<ProjectSwimming>();
+  @Output() projectVideoSelected = new EventEmitter<ProjectVideo>();
+  @Output() projectPhotoSelected = new EventEmitter<ProjectPhoto>();
 
   showProjectDetailEnergy() {
     this.activeProjectDetail.emit(true);
-    this.projectEnergySelected.emit(this.projectEnergy);
+    this.projectVideoSelected.emit(this.projectEnergy);
 
     console.log('IDDD MODEL ENERGY', this.projectEnergy);
 
@@ -57,7 +57,7 @@ export class ProjectModelComponent {
 
   showProjectDetailSwimming() {
     this.activeProjectDetail.emit(true);
-    this.projectSwimmingSelected.emit(this.projectSwimming);
+    this.projectPhotoSelected.emit(this.projectSwimming);
 
     console.log('IDDD MODEL SWIMMING', this.projectSwimming);
     this.activeProjectDetailListener = true;

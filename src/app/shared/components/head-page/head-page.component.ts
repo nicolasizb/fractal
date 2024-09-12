@@ -15,10 +15,10 @@ export class HeadPageComponent {
   containerButtonOne = {
     width: 210,
     height: 48,
-    colorBorder: 'var(--color-dark)',
+    colorBorder: 'var(--color-3)',
     backgroundColor: 'var(--color-4)',
     span: false,
-    text: '¡Quiero cotizar!'
+    text: '¡Empezar!'
   }
 
 }

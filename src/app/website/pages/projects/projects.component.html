@@ -9,34 +9,42 @@
         <div class="na">
             <div class="na__se" id="type-project" >
                 <button class="se__ti se--en" 
-                (click)="activeEnergyService(true)" 
-                [class.active]="navegationContainEnergy"
-                >Energía Solar</button>
-                <button class="se__ti se--sw"
-                (click)="activeSwimmingService(true)" 
-                [class.active]="navegationContainSwimming"
-                >Piscinas</button>
+                (click)="activeVideoService(true)" 
+                [class.active]="navegationContainVideo"
+                >Vídeo profesional</button>
+                <button class="se__ti se--en"
+                (click)="activePhotoService(true)" 
+                [class.active]="navegationContainPhoto"
+                >Fotografía</button>
+                <button class="se__ti se--en"
+                (click)="activeDesignService(true)" 
+                [class.active]="navegationContainDesign"
+                >Diseño gráfico</button>
+                <button class="se__ti se--en"
+                (click)="activeSocialMediaService(true)" 
+                [class.active]="navegationContainSocialMedia"
+                >Contenido redes</button>
             </div>
 
-            <div class="na__ca" *ngIf="containerServiceEnergy">
+            <div class="na__ca" *ngIf="containerServiceVideo">
                 <app-project-model
-                *ngFor="let card of testimonialsEnergy"
+                *ngFor="let card of testimonialsVideo"
                 [projectEnergy]="card"
-                [activeEnergyListener]="containerServiceEnergy"
-                (activeProjectDetail)="activeProjectEnergyDetail($event)"
-                (projectEnergySelected)="sendProjectEnergyDetail($event)"
+                [activeEnergyListener]="containerServiceVideo"
+                (activeProjectDetail)="activeProjectVideoDetail($event)"
+                (projectVideoSelected)="sendProjectEnergyDetail($event)"
                 ></app-project-model>
                 <div class="ctr-bt">
                     <button class="ca__bt" (click)="backSelectProjects()" >Volver al comienzo <span></span></button> 
                 </div>
             </div>
-            <div class="na__ca" *ngIf="containerServiceSwimming">
+            <div class="na__ca" *ngIf="containerServicePhoto">
                 <app-project-model
-                *ngFor="let card of testimonialsSwimming"
+                *ngFor="let card of testimonialsPhoto"
                 [projectSwimming]="card"
-                [activeSwimmingListener]="containerServiceSwimming"
-                (activeProjectDetail)="activeProjectSwimmingDetail($event)"
-                (projectSwimmingSelected)="sendProjectSwimmingDetail($event)"
+                [activeSwimmingListener]="containerServicePhoto"
+                (activeProjectDetail)="activeProjectPhotoDetail($event)"
+                (projectPhotoSelected)="sendProjectPhotoDetail($event)"
                 ></app-project-model>
                 <div class="ctr-bt">
                     <button class="ca__bt" (click)="backSelectProjects()" >Volver al comienzo <span></span></button> 
@@ -45,16 +53,16 @@
 
             <div class="na__ptd" *ngIf="containerProductDetail" #detalleProducto >
                 <app-project-detail
-                [projectEnergySelectedListener]="projectEnergySelected"
-                [projectSwimmingSelectedListener]="projectSwimmingSelected"
-                [stateDetailEnergyListener]="stateDetailEnergy"
-                [stateDetailSwimmingListener]="stateDetailSwimming"
+                [projectVideoSelectedListener]="projectVideoSelected"
+                [projectPhotoSelectedListener]="projectPhotoSelected"
+                [stateDetailVideoListener]="stateDetailVideo"
+                [stateDetailPhotoListener]="stateDetailPhoto"
                 
-                (hideContainerProjectDetail)="activeProjectEnergyDetail($event)"
-                (hideContainerEnergy)="activeEnergyService($event)"
+                (hideContainerProjectDetail)="activeProjectVideoDetail($event)"
+                (hideContainerVideo)="activeVideoService($event)"
 
-                (hideContainerProjectDetail)="activeProjectEnergyDetail($event)"
-                (hideContainerSwimming)="activeSwimmingService($event)"
+                (hideContainerProjectDetail)="activeProjectVideoDetail($event)"
+                (hideContainerPhoto)="activePhotoService($event)"
                 >
                 </app-project-detail>
             </div>

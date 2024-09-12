@@ -6,7 +6,7 @@
     height: 100%;
     padding: 2rem;
     border-bottom: 0.2rem solid var(--color-gray-3);
-    background-color: var(--color-dark);
+    background-color: var(--color-black);
 
     > div {
         display: flex;
@@ -131,7 +131,7 @@
     height: 100%;
     padding: 1rem 2rem;
     text-align: center;
-    background-color: var(--color-dark);
+    background-color: var(--color-gray-4);
 
     p {
         font-size: var(--font-small);

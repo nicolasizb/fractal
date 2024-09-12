@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { ProjectEnergy, ProjectSwimming } from 'src/app/models/project.model';
+import { ProjectPhoto, ProjectDesign, ProjectSocialMedia, ProjectVideo } from 'src/app/models/project.model';
 
 @Component({
   selector: 'app-project-detail',
@@ -8,7 +8,7 @@ import { ProjectEnergy, ProjectSwimming } from 'src/app/models/project.model';
 })
 export class ProjectDetailComponent {
 
-  @Input() projectEnergySelectedListener: ProjectEnergy = {
+  @Input() projectVideoSelectedListener: ProjectVideo = {
     id: 0,
     img: '',
     category: '',
@@ -22,7 +22,7 @@ export class ProjectDetailComponent {
       annualGeneration: ''
     }
   }
-  @Input() projectSwimmingSelectedListener: ProjectSwimming = {
+  @Input() projectPhotoSelectedListener: ProjectPhoto = {
     id: 0,
     img: '',
     category: '',
@@ -30,28 +30,72 @@ export class ProjectDetailComponent {
     descriptionSmall: '',
     descriptionLarge: '',
     details: {
-      systemWater: '',
-      filters: 0,
-      space: '',
-      maintence: ''
+      system: '',
+      numberPanels: 0,
+      powerPanels: '',
+      annualGeneration: ''
     }
   }
 
-  @Input() stateDetailEnergyListener: boolean = false;
-  @Input() stateDetailSwimmingListener: boolean = false;
+  @Input() projectDesignSelectedListener: ProjectDesign = {
+    id: 0,
+    img: '',
+    category: '',
+    scale: '',
+    descriptionSmall: '',
+    descriptionLarge: '',
+    details: {
+      system: '',
+      numberPanels: 0,
+      powerPanels: '',
+      annualGeneration: ''
+    }
+  }
 
-  @Output() hideContainerEnergy = new EventEmitter<boolean>();
-  @Output() hideContainerSwimming = new EventEmitter<boolean>();
+  @Input() projectSocialMediaSelectedListener: ProjectSocialMedia = {
+    id: 0,
+    img: '',
+    category: '',
+    scale: '',
+    descriptionSmall: '',
+    descriptionLarge: '',
+    details: {
+      system: '',
+      numberPanels: 0,
+      powerPanels: '',
+      annualGeneration: ''
+    }
+  }
+
+  @Input() stateDetailVideoListener: boolean = false;
+  @Input() stateDetailPhotoListener: boolean = false;
+  @Input() stateDetailDesignListener: boolean = false;
+  @Input() stateDetailSocialMediaListener: boolean = false;
+
+  @Output() hideContainerVideo = new EventEmitter<boolean>();
+  @Output() hideContainerPhoto = new EventEmitter<boolean>();
+  @Output() hideContainerDesign = new EventEmitter<boolean>();
+  @Output() hideContainerSocialMedia = new EventEmitter<boolean>();
 
   @Output() hideContainerProjectDetail = new EventEmitter<boolean>();
 
-  hideProjectEnergyDetail() {
-    this.hideContainerEnergy.emit(true);
+  hideProjectVideoDetail() {
+    this.hideContainerVideo.emit(true);
     this.hideContainerProjectDetail.emit(false);
   }
 
-  hideProjectSwimmingDetail() {
-    this.hideContainerSwimming.emit(true);
+  hideProjectPhotoDetail() {
+    this.hideContainerPhoto.emit(true);
+    this.hideContainerProjectDetail.emit(false);
+  }
+
+  hideProjectDesignDetail() {
+    this.hideContainerPhoto.emit(true);
+    this.hideContainerProjectDetail.emit(false);
+  }
+
+  hideProjectSocialMediaDetail() {
+    this.hideContainerPhoto.emit(true);
     this.hideContainerProjectDetail.emit(false);
   }
 }

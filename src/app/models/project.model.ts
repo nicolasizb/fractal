@@ -1,15 +1,38 @@
-export interface EnergyDetails {
+export interface VideoDetails {
     system: string,
     numberPanels: number,
     powerPanels: string,
     annualGeneration: string
 }
 
-export interface SwimmingDetails {
-    systemWater: string,
-    filters: number,
-    space: string,
-    maintence: string
+export interface PhotoDetails {
+    system: string,
+    numberPanels: number,
+    powerPanels: string,
+    annualGeneration: string
+}
+
+
+export interface DesignDetails {
+    system: string,
+    numberPanels: number,
+    powerPanels: string,
+    annualGeneration: string
+}
+
+export interface SocialMediaDetails {
+    system: string,
+    numberPanels: number,
+    powerPanels: string,
+    annualGeneration: string
+}
+
+
+export interface VideoDetails {
+    system: string,
+    numberPanels: number,
+    powerPanels: string,
+    annualGeneration: string
 }
 
 export interface ProjectDefault {
@@ -21,13 +44,19 @@ export interface ProjectDefault {
     descriptionLarge: string
 }
 
-export interface ProjectEnergy extends ProjectDefault {
-    details: EnergyDetails
+export interface ProjectPhoto extends ProjectDefault {
+    details: VideoDetails
 }
 
-export interface ProjectSwimming extends ProjectDefault {
-    details: SwimmingDetails
+export interface ProjectVideo extends ProjectDefault {
+    details: PhotoDetails
 }
 
+export interface ProjectSocialMedia extends ProjectDefault {
+    details: DesignDetails
+}
 
+export interface ProjectDesign extends ProjectDefault {
+    details: SocialMediaDetails
+}
   
