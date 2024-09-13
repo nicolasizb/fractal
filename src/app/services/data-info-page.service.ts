@@ -7,13 +7,13 @@ import { ProjectPhoto, ProjectDesign, ProjectSocialMedia, ProjectVideo } from 's
 })
 export class DataInfoPageService {
 
-  testimonialsEnergy: ProjectVideo[] = [
+  testimonialsVideo: ProjectVideo[] = [
     {
       id: 1,
       img: '../../assets/img/tes-siessa-one-small.jpg',
-      category: 'Energía Solar',
+      category: 'Video',
       scale: 'Hogar',
-      descriptionSmall: '1 Sistema de energía solar Virel de 13.64 kWp',
+      descriptionSmall: '1 Sistema de Video Virel de 13.64 kWp',
       descriptionLarge: '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
         system: 'Off-Grid',
@@ -25,9 +25,9 @@ export class DataInfoPageService {
     {
       id: 2,
       img: '../../assets/img/tes-gaiga-small.jpg',
-      category: 'Energía Solar',
+      category: 'Video',
       scale: 'Empresa',
-      descriptionSmall: '2 Sistema de energía solar Virel de 13.64 kWp',
+      descriptionSmall: '2 Sistema de Video Virel de 13.64 kWp',
       descriptionLarge: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
         system: 'Solar interconectado',
@@ -39,9 +39,9 @@ export class DataInfoPageService {
     {
       id: 3,
       img: '../../assets/img/tes-solar-three-re.jpg',
-      category: 'Energía Solar',
+      category: 'Video',
       scale: 'Hogar',
-      descriptionSmall: '3 Sistema de energía solar Virel de 13.64 kWp',
+      descriptionSmall: '3 Sistema de Video Virel de 13.64 kWp',
       descriptionLarge: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
         system: 'Solar interconectado',
@@ -53,7 +53,7 @@ export class DataInfoPageService {
     {
       id: 4,
       img: '../../assets/img/tes-solar-four.jpg',
-      category: 'Energía Solar',
+      category: 'Video',
       scale: 'Empresa',
       descriptionSmall: '4 Sistema de energía solar Virel de 13.64 kWp',
       descriptionLarge: '4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
@@ -94,27 +94,27 @@ export class DataInfoPageService {
     },
   ];
 
-  testimonialsSwimming: ProjectPhoto[] = [
+  testimonialsPhoto: ProjectPhoto[] = [
     {
-      id: 7,
-      img: '../../assets/img/tes-curz-roja-three.jpg',
-      category: 'Piscinas',
-      scale: 'Empresa',
-      descriptionSmall: 'Piscina semi olímpica',
-      descriptionLarge: 'Mantenimiento piscina semi olímpica. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      id: 1,
+      img: '../../assets/img/tes-siessa-one-small.jpg',
+      category: 'Photo',
+      scale: 'Hogar',
+      descriptionSmall: '1 Sistema de Photo Virel de 13.64 kWp',
+      descriptionLarge: '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
-        system: 'Solar interconectado',
+        system: 'Off-Grid',
         numberPanels: 30,
         powerPanels: '310 WP',
         annualGeneration: '18512 kWh'
       }
     },
     {
-      id: 8,
-      img: '../../assets/img/tes-swimming-pool-small.jpg',
-      category: 'Piscinas',
+      id: 2,
+      img: '../../assets/img/tes-gaiga-small.jpg',
+      category: 'Photo',
       scale: 'Empresa',
-      descriptionSmall: '2 Sistema de mantenimiento piscinas',
+      descriptionSmall: '2 Sistema de Photo Virel de 13.64 kWp',
       descriptionLarge: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
         system: 'Solar interconectado',
@@ -124,11 +124,11 @@ export class DataInfoPageService {
       }
     },
     {
-      id: 9,
-      img: '../../assets/img/tes-swimming-pool-three.jpg',
-      category: 'Piscinas',
-      scale: 'Empresa',
-      descriptionSmall: '3 Sistema de mantenimiento piscinas',
+      id: 3,
+      img: '../../assets/img/tes-solar-three-re.jpg',
+      category: 'Photo',
+      scale: 'Hogar',
+      descriptionSmall: '3 Sistema de Photo Virel de 13.64 kWp',
       descriptionLarge: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
         system: 'Solar interconectado',
@@ -138,11 +138,11 @@ export class DataInfoPageService {
       }
     },
     {
-      id: 10,
-      img: '../../assets/img/tes-swimming-pool-four.jpg',
-      category: 'Piscinas',
+      id: 4,
+      img: '../../assets/img/tes-solar-four.jpg',
+      category: 'Photo',
       scale: 'Empresa',
-      descriptionSmall: '4 Sistema de mantenimiento piscinas',
+      descriptionSmall: '4 Sistema de Photo Virel de 13.64 kWp',
       descriptionLarge: '4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
         system: 'Solar interconectado',
@@ -152,11 +152,11 @@ export class DataInfoPageService {
       }
     },
     {
-      id: 11,
-      img: '../../assets/img/tes-swimming-pool-five.jpg',
-      category: 'Piscinas',
+      id: 5,
+      img: '../../assets/img/tes-solar-five.jpg',
+      category: 'Photo',
       scale: 'Empresa',
-      descriptionSmall: '5 Sistema de mantenimiento piscinas',
+      descriptionSmall: '5 Sistema de Photo Virel de 13.64 kWp',
       descriptionLarge: '5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
         system: 'Solar interconectado',
@@ -166,11 +166,185 @@ export class DataInfoPageService {
       }
     },
     {
-      id: 12,
-      img: '../../assets/img/tes-swimming-pool-six.jpg',
-      category: 'Empresa',
+      id: 6,
+      img: '../../assets/img/tes-solar-six.jpg',
+      category: 'Energía Solar',
       scale: 'Hogar',
-      descriptionSmall: '6 Sistema de mantenimiento piscinas',
+      descriptionSmall: '6 Sistema de energía solar Virel de 13.64 kWp',
+      descriptionLarge: '6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+  ];
+
+  testimonialsDesign: ProjectDesign[] = [
+    {
+      id: 1,
+      img: '../../assets/img/tes-siessa-one-small.jpg',
+      category: 'Design',
+      scale: 'Hogar',
+      descriptionSmall: '1 Sistema de Design Virel de 13.64 kWp',
+      descriptionLarge: '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Off-Grid',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+    {
+      id: 2,
+      img: '../../assets/img/tes-gaiga-small.jpg',
+      category: 'Design',
+      scale: 'Empresa',
+      descriptionSmall: '2 Sistema de Design Virel de 13.64 kWp',
+      descriptionLarge: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+    {
+      id: 3,
+      img: '../../assets/img/tes-solar-three-re.jpg',
+      category: 'Design',
+      scale: 'Hogar',
+      descriptionSmall: '3 Sistema de Design Virel de 13.64 kWp',
+      descriptionLarge: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+    {
+      id: 4,
+      img: '../../assets/img/tes-solar-four.jpg',
+      category: 'Design',
+      scale: 'Empresa',
+      descriptionSmall: '4 Sistema de Design Virel de 13.64 kWp',
+      descriptionLarge: '4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+    {
+      id: 5,
+      img: '../../assets/img/tes-solar-five.jpg',
+      category: 'Energía Solar',
+      scale: 'Empresa',
+      descriptionSmall: '5 Sistema de energía solar Virel de 13.64 kWp',
+      descriptionLarge: '5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+    {
+      id: 6,
+      img: '../../assets/img/tes-solar-six.jpg',
+      category: 'Energía Solar',
+      scale: 'Hogar',
+      descriptionSmall: '6 Sistema de energía solar Virel de 13.64 kWp',
+      descriptionLarge: '6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+  ];
+
+  testimonialsSocialMedia: ProjectSocialMedia[] = [
+    {
+      id: 1,
+      img: '../../assets/img/tes-siessa-one-small.jpg',
+      category: 'SocialMedia',
+      scale: 'Hogar',
+      descriptionSmall: '1 Sistema de SocialMedia Virel de 13.64 kWp',
+      descriptionLarge: '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Off-Grid',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+    {
+      id: 2,
+      img: '../../assets/img/tes-gaiga-small.jpg',
+      category: 'SocialMedia',
+      scale: 'Empresa',
+      descriptionSmall: '2 Sistema de SocialMedia Virel de 13.64 kWp',
+      descriptionLarge: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+    {
+      id: 3,
+      img: '../../assets/img/tes-solar-three-re.jpg',
+      category: 'SocialMedia',
+      scale: 'Hogar',
+      descriptionSmall: '3 Sistema de SocialMedia Virel de 13.64 kWp',
+      descriptionLarge: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+    {
+      id: 4,
+      img: '../../assets/img/tes-solar-four.jpg',
+      category: 'SocialMedia',
+      scale: 'Empresa',
+      descriptionSmall: '4 Sistema de SocialMedia Virel de 13.64 kWp',
+      descriptionLarge: '4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+    {
+      id: 5,
+      img: '../../assets/img/tes-solar-five.jpg',
+      category: 'Energía Solar',
+      scale: 'Empresa',
+      descriptionSmall: '5 Sistema de energía solar Virel de 13.64 kWp',
+      descriptionLarge: '5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
+      details: {
+        system: 'Solar interconectado',
+        numberPanels: 30,
+        powerPanels: '310 WP',
+        annualGeneration: '18512 kWh'
+      }
+    },
+    {
+      id: 6,
+      img: '../../assets/img/tes-solar-six.jpg',
+      category: 'Energía Solar',
+      scale: 'Hogar',
+      descriptionSmall: '6 Sistema de energía solar Virel de 13.64 kWp',
       descriptionLarge: '6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate est ab adipisci sapiente id doloremque fugit ad minima! Id saepe vero provident non praesentium facilis laboriosam veritatis, cum quisquam architecto',
       details: {
         system: 'Solar interconectado',
@@ -252,15 +426,23 @@ export class DataInfoPageService {
     return this.accordionSection;
   }
 
-  getTestimonialsEnergy() {
-    return this.testimonialsEnergy;
+  getTestimonialsVideo() {
+    return this.testimonialsVideo;
   }
 
-  getTestimonialsSwimming() {
-    return this.testimonialsSwimming;
+  getTestimonialsPhoto() {
+    return this.testimonialsPhoto;
   }
 
-  getProjectId(projectEnergy: ProjectVideo) {
-    return this.testimonialsEnergy.forEach(project => project === projectEnergy);
+  getTestimonialsDesign() {
+    return this.testimonialsDesign;
+  }
+
+  getTestimonialsSocialMedia() {
+    return this.testimonialsSocialMedia;
+  }
+
+  getProjectId(projectVideo: ProjectVideo) {
+    return this.testimonialsVideo.forEach(project => project === projectVideo);
   }
 }

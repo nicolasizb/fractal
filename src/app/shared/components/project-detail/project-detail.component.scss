@@ -55,7 +55,7 @@
             border-radius: 0.5rem;
         }
         .en {
-            background-color: var(--color-5);
+            background-color: var(--color-4);
             color: var(--color-dark);
         }
         .sw {
@@ -87,7 +87,7 @@
             font-weight: 300;
         }
         .en {
-            color: var(--color-5);
+            color: var(--color-4);
         }
         .sw {
             color: var(--color-2);
@@ -105,7 +105,7 @@
             margin: 0.5rem 0;
             font-size: var(--font-big);
             font-weight: 600;
-            color: var(--color-5);
+            color: var(--color-4);
         }
         .dl__ct {
             display: flex;
@@ -123,7 +123,7 @@
                 padding: 0 0.2rem 0 0;
             }
             .en {
-                color: var(--color-5);
+                color: var(--color-4);
             }
             .sw {
                 color: var(--color-2);
@@ -133,10 +133,7 @@
             border-bottom: dashed 0.2rem var(--color-gray);
         }
         .energy {
-            color: var(--color-5);
-        }
-        .swimming {
-            color: var(--color-2);
+            color: var(--color-4);
         }
     }
 }

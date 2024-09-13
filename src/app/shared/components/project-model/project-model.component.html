@@ -1,17 +1,35 @@
-<button (click)="showProjectDetailEnergy()" class="ca en" *ngIf="activeEnergyListener">
-    <img [src]="projectEnergy.img" alt="image">
+<button (click)="showProjectDetailVideo()" class="ca en" *ngIf="activeVideoListener">
+    <img [src]="projectVideo.img" alt="image">
     <div class="ca__se">
-        <div class="se etx">{{ projectEnergy.scale }}</div>
-        <div class="se etx">{{ projectEnergy.category }}</div>
+        <div class="se etx">{{ projectVideo.scale }}</div>
+        <div class="se etx">{{ projectVideo.category }}</div>
     </div>
-    <p class="ca__de">{{ projectEnergy.descriptionSmall }}</p>
+    <p class="ca__de">{{ projectVideo.descriptionSmall }}</p>
 </button>
 
-<button (click)="showProjectDetailSwimming()" class="ca sw" *ngIf="activeSwimmingListener">
-    <img [src]="projectSwimming.img" alt="image">
+<button (click)="showProjectDetailPhoto()" class="ca en" *ngIf="activePhotoListener">
+    <img [src]="projectPhoto.img" alt="image">
     <div class="ca__se">
-        <div class="se swtx">{{ projectSwimming.scale }}</div>
-        <div class="se swtx">{{ projectSwimming.category }}</div>
+        <div class="se etx">{{ projectPhoto.scale }}</div>
+        <div class="se etx">{{ projectPhoto.category }}</div>
     </div>
-    <p class="ca__de">{{ projectSwimming.descriptionSmall }}</p>
+    <p class="ca__de">{{ projectPhoto.descriptionSmall }}</p>
+</button>
+
+<button (click)="showProjectDetailDesign()" class="ca en" *ngIf="activeDesignListener">
+    <img [src]="projectDesign.img" alt="image">
+    <div class="ca__se">
+        <div class="se etx">{{ projectDesign.scale }}</div>
+        <div class="se etx">{{ projectDesign.category }}</div>
+    </div>
+    <p class="ca__de">{{ projectDesign.descriptionSmall }}</p>
+</button>
+
+<button (click)="showProjectDetailSocialMedia()" class="ca en" *ngIf="activeSocialMediaListener">
+    <img [src]="projectSocialMedia.img" alt="image">
+    <div class="ca__se">
+        <div class="se etx">{{ projectSocialMedia.scale }}</div>
+        <div class="se etx">{{ projectSocialMedia.category }}</div>
+    </div>
+    <p class="ca__de">{{ projectSocialMedia.descriptionSmall }}</p>
 </button>

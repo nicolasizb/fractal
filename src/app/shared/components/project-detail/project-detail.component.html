@@ -31,7 +31,7 @@
     </div>
 </article>
 
-<article class="pt" *ngIf="stateDetailVideoListener" >
+<article class="pt" *ngIf="stateDetailPhotoListener" >
     <button class="pt__bcl" (click)="hideProjectPhotoDetail()" ><span></span></button>
     <p class="pt__de" >{{ projectPhotoSelectedListener.descriptionSmall }}</p>
     <div class="pt__se" >
@@ -60,6 +60,72 @@
         <div  class="dl__ct" >
             <p class="ct__ti" >Generarión anual:</p>
             <p class="ct__dl en" >{{ projectPhotoSelectedListener.details.annualGeneration }}</p>
+        </div>
+    </div>
+</article>
+
+<article class="pt" *ngIf="stateDetailDesignListener" >
+    <button class="pt__bcl" (click)="hideProjectDesignDetail()" ><span></span></button>
+    <p class="pt__de" >{{ projectDesignSelectedListener.descriptionSmall }}</p>
+    <div class="pt__se" >
+        <p class="se sw" >{{ projectDesignSelectedListener.scale }}</p>
+        <p class="se sw" >{{ projectDesignSelectedListener.category }}</p>
+    </div>
+    <img class="pt__im" [src]="projectDesignSelectedListener.img" alt="">
+    <div class="pt__de" >
+        <p class="de__ti sw" >Descripción</p>
+        <p class="de__pa" >{{ projectDesignSelectedListener.descriptionLarge }}</p>
+    </div>
+    <div class="pt__dl">
+        <p class="dl__ti en" >Detalles</p>
+        <div class="dl__ct" >
+            <p class="ct__ti" >Sistema:</p>
+            <p class="ct__dl en" >{{ projectDesignSelectedListener.details.system }}</p>
+        </div>
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Número de paneles:</p>
+            <p class="ct__dl en" >{{ projectDesignSelectedListener.details.numberPanels }}</p> 
+        </div>
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Potencia de paneles:</p>
+            <p class="ct__dl en" >{{ projectDesignSelectedListener.details.powerPanels }}</p>
+        </div>
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Generarión anual:</p>
+            <p class="ct__dl en" >{{ projectDesignSelectedListener.details.annualGeneration }}</p>
+        </div>
+    </div>
+</article>
+
+<article class="pt" *ngIf="stateDetailSocialMediaListener" >
+    <button class="pt__bcl" (click)="hideProjectSocialMediaDetail()" ><span></span></button>
+    <p class="pt__de" >{{ projectSocialMediaSelectedListener.descriptionSmall }}</p>
+    <div class="pt__se" >
+        <p class="se sw" >{{ projectSocialMediaSelectedListener.scale }}</p>
+        <p class="se sw" >{{ projectSocialMediaSelectedListener.category }}</p>
+    </div>
+    <img class="pt__im" [src]="projectSocialMediaSelectedListener.img" alt="">
+    <div class="pt__de" >
+        <p class="de__ti sw" >Descripción</p>
+        <p class="de__pa" >{{ projectSocialMediaSelectedListener.descriptionLarge }}</p>
+    </div>
+    <div class="pt__dl">
+        <p class="dl__ti en" >Detalles</p>
+        <div class="dl__ct" >
+            <p class="ct__ti" >Sistema:</p>
+            <p class="ct__dl en" >{{ projectSocialMediaSelectedListener.details.system }}</p>
+        </div>
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Número de paneles:</p>
+            <p class="ct__dl en" >{{ projectSocialMediaSelectedListener.details.numberPanels }}</p> 
+        </div>
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Potencia de paneles:</p>
+            <p class="ct__dl en" >{{ projectSocialMediaSelectedListener.details.powerPanels }}</p>
+        </div>
+        <div  class="dl__ct" >
+            <p class="ct__ti" >Generarión anual:</p>
+            <p class="ct__dl en" >{{ projectSocialMediaSelectedListener.details.annualGeneration }}</p>
         </div>
     </div>
 </article>

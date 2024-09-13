@@ -29,8 +29,8 @@
             <div class="na__ca" *ngIf="containerServiceVideo">
                 <app-project-model
                 *ngFor="let card of testimonialsVideo"
-                [projectEnergy]="card"
-                [activeEnergyListener]="containerServiceVideo"
+                [projectVideo]="card"
+                [activeVideoListener]="containerServiceVideo"
                 (activeProjectDetail)="activeProjectVideoDetail($event)"
                 (projectVideoSelected)="sendProjectEnergyDetail($event)"
                 ></app-project-model>
@@ -41,10 +41,34 @@
             <div class="na__ca" *ngIf="containerServicePhoto">
                 <app-project-model
                 *ngFor="let card of testimonialsPhoto"
-                [projectSwimming]="card"
-                [activeSwimmingListener]="containerServicePhoto"
+                [projectPhoto]="card"
+                [activePhotoListener]="containerServicePhoto"
                 (activeProjectDetail)="activeProjectPhotoDetail($event)"
                 (projectPhotoSelected)="sendProjectPhotoDetail($event)"
+                ></app-project-model>
+                <div class="ctr-bt">
+                    <button class="ca__bt" (click)="backSelectProjects()" >Volver al comienzo <span></span></button> 
+                </div>
+            </div>
+            <div class="na__ca" *ngIf="containerServiceDesign">
+                <app-project-model
+                *ngFor="let card of testimonialsDesign"
+                [projectDesign]="card"
+                [activeDesignListener]="containerServiceDesign"
+                (activeProjectDetail)="activeProjectDesignDetail($event)"
+                (projectDesignSelected)="sendProjectDesignDetail($event)"
+                ></app-project-model>
+                <div class="ctr-bt">
+                    <button class="ca__bt" (click)="backSelectProjects()" >Volver al comienzo <span></span></button> 
+                </div>
+            </div>
+            <div class="na__ca" *ngIf="containerServiceSocialMedia">
+                <app-project-model
+                *ngFor="let card of testimonialsSocialMedia"
+                [projectSocialMedia]="card"
+                [activeSocialMediaListener]="containerServiceSocialMedia"
+                (activeProjectDetail)="activeProjectSocialMediaDetail($event)"
+                (projectSocialMediaSelected)="sendProjectSocialMediaDetail($event)"
                 ></app-project-model>
                 <div class="ctr-bt">
                     <button class="ca__bt" (click)="backSelectProjects()" >Volver al comienzo <span></span></button> 
@@ -55,14 +79,24 @@
                 <app-project-detail
                 [projectVideoSelectedListener]="projectVideoSelected"
                 [projectPhotoSelectedListener]="projectPhotoSelected"
+                [projectDesignSelectedListener]="projectDesignSelected"
+                [projectSocialMediaSelectedListener]="projectSocialMediaSelected"
                 [stateDetailVideoListener]="stateDetailVideo"
                 [stateDetailPhotoListener]="stateDetailPhoto"
+                [stateDetailDesignListener]="stateDetailDesign"
+                [stateDetailSocialMediaListener]="stateDetailSocialMedia"
                 
                 (hideContainerProjectDetail)="activeProjectVideoDetail($event)"
                 (hideContainerVideo)="activeVideoService($event)"
 
-                (hideContainerProjectDetail)="activeProjectVideoDetail($event)"
+                (hideContainerProjectDetail)="activeProjectPhotoDetail($event)"
                 (hideContainerPhoto)="activePhotoService($event)"
+
+                (hideContainerProjectDetail)="activeProjectDesignDetail($event)"
+                (hideContainerDesign)="activeDesignService($event)"
+
+                (hideContainerProjectDetail)="activeProjectSocialMediaDetail($event)"
+                (hideContainerSocialMedia)="activeSocialMediaService($event)"
                 >
                 </app-project-detail>
             </div>

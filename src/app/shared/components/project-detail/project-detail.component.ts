@@ -90,12 +90,12 @@ export class ProjectDetailComponent {
   }
 
   hideProjectDesignDetail() {
-    this.hideContainerPhoto.emit(true);
+    this.hideContainerDesign.emit(true);
     this.hideContainerProjectDetail.emit(false);
   }
 
   hideProjectSocialMediaDetail() {
-    this.hideContainerPhoto.emit(true);
+    this.hideContainerSocialMedia.emit(true);
     this.hideContainerProjectDetail.emit(false);
   }
 }

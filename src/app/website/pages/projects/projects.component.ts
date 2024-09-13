@@ -191,10 +191,18 @@ export class ProjectsComponent {
 
       this.containerServicePhoto = false;
       this.navegationContainPhoto = false;
+      
+      this.containerServiceDesign= false;
+      this.navegationContainDesign = false;
+      
+      this.containerServiceSocialMedia = false;
+      this.navegationContainSocialMedia = false;
 
       this.containerProductDetail = true;
       this.stateDetailVideo = true;
       this.stateDetailPhoto = false;
+      this.stateDetailDesign = false;
+      this.stateDetailSocialMedia = false
     } else {
       this.containerProductDetail = false;
     }
@@ -203,14 +211,22 @@ export class ProjectsComponent {
   activeProjectPhotoDetail(state: boolean) {
     if(state === true) {
       this.containerServiceVideo= false;
-      this.navegationContainVideo = false; 
+      this.navegationContainVideo = false;
 
       this.containerServicePhoto = false;
       this.navegationContainPhoto = true;
+      
+      this.containerServiceDesign= false;
+      this.navegationContainDesign = false;
+      
+      this.containerServiceSocialMedia = false;
+      this.navegationContainSocialMedia = false;
 
       this.containerProductDetail = true;
       this.stateDetailPhoto = true;
       this.stateDetailVideo = false;
+      this.stateDetailDesign = false;
+      this.stateDetailSocialMedia = false
     } else {
       this.containerProductDetail = false;
     }
@@ -219,14 +235,22 @@ export class ProjectsComponent {
   activeProjectDesignDetail(state: boolean) {
     if(state === true) {
       this.containerServiceVideo= false;
-      this.navegationContainVideo = false; 
+      this.navegationContainVideo = false;
 
       this.containerServicePhoto = false;
-      this.navegationContainPhoto = true;
+      this.navegationContainPhoto = false;
+      
+      this.containerServiceDesign= false;
+      this.navegationContainDesign = true;
+      
+      this.containerServiceSocialMedia = false;
+      this.navegationContainSocialMedia = false;
 
       this.containerProductDetail = true;
-      this.stateDetailPhoto = true;
+      this.stateDetailPhoto = false;
       this.stateDetailVideo = false;
+      this.stateDetailDesign = true;
+      this.stateDetailSocialMedia = false
     } else {
       this.containerProductDetail = false;
     }
@@ -235,14 +259,22 @@ export class ProjectsComponent {
   activeProjectSocialMediaDetail(state: boolean) {
     if(state === true) {
       this.containerServiceVideo= false;
-      this.navegationContainVideo = false; 
+      this.navegationContainVideo = false;
 
       this.containerServicePhoto = false;
-      this.navegationContainPhoto = true;
+      this.navegationContainPhoto = false;
+      
+      this.containerServiceDesign= false;
+      this.navegationContainDesign = false;
+      
+      this.containerServiceSocialMedia = false;
+      this.navegationContainSocialMedia = true;
 
       this.containerProductDetail = true;
-      this.stateDetailPhoto = true;
+      this.stateDetailPhoto = false;
       this.stateDetailVideo = false;
+      this.stateDetailDesign = false;
+      this.stateDetailSocialMedia = true;
     } else {
       this.containerProductDetail = false;
     }
@@ -266,14 +298,18 @@ export class ProjectsComponent {
 
   testimonialsVideo: ProjectVideo[] = [];
   testimonialsPhoto: ProjectPhoto[] = [];
+  testimonialsDesign: ProjectDesign[] = [];
+  testimonialsSocialMedia: ProjectSocialMedia[] = [];
 
   backSelectProjects() {
     window.scrollTo(0, 380);
   }
 
   ngOnInit(): void {
-    this.testimonialsVideo = this.dataInfoPageService.getTestimonialsEnergy();
-    this.testimonialsPhoto = this.dataInfoPageService.getTestimonialsSwimming();
+    this.testimonialsVideo = this.dataInfoPageService.getTestimonialsVideo();
+    this.testimonialsPhoto = this.dataInfoPageService.getTestimonialsPhoto();
+    this.testimonialsDesign = this.dataInfoPageService.getTestimonialsDesign();
+    this.testimonialsSocialMedia = this.dataInfoPageService.getTestimonialsSocialMedia();
     this.route.data.subscribe(data => {
       const pageTitle = data['title'];
       this.titleService.setTitle(pageTitle);
